@@ -1,24 +1,24 @@
 
-import 'dart:math';
-import 'package:flutter/foundation.dart';
-import 'package:map4u/models/estabelecimento.dart';
-import 'package:map4u/utils/db_util.dart';
+// import 'dart:math';
+// import 'package:flutter/foundation.dart';
+// import 'package:map4u/models/estabelecimento.dart';
+// import 'package:map4u/utils/db_util.dart';
 
 
-class GreatEstab with ChangeNotifier {
-  List<Estabelecimento> _items = [];
+// class GreatEstab with ChangeNotifier {
+//   List<Estabelecimento> _items = [];
 
-    List<Estabelecimento> get items {
-      return [... _items];
-    }
+//     List<Estabelecimento> get items {
+//       return [... _items];
+//     }
 
-    int get itemsCount {
-      return _items.length;
-    }
+//     int get itemsCount {
+//       return _items.length;
+//     }
 
-    Estabelecimento getItem(int index) {
-      return _items[index];
-    }
+//     Estabelecimento getItem(int index) {
+//       return _items[index];
+//     }
   
 
   // Future<void> addEstabelecimento(
@@ -45,4 +45,4 @@ class GreatEstab with ChangeNotifier {
   //   'servicos': newEstabelecimento.servicos
   // });
   // notifyListeners();
-}
+// }
