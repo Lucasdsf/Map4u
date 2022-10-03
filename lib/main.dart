@@ -22,11 +22,21 @@ class _HomeState extends State<Home> {
 
   double x = 0, y = 0, z = 0;
   String direction = "none";
+  String eventTelaX = "none";
+  String eventTelaY = "none";
+  String eventTelaZ = "none";
+
 
   @override
   void initState() {
     gyroscopeEvents.listen((GyroscopeEvent event) {
        print(event);
+
+       eventTelaX = event.x.toString();
+       eventTelaY = event.y.toString();
+       eventTelaZ = event.z.toString();
+
+
 
        x = event.x;
        y = event.y;
@@ -55,7 +65,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) { 
     return  Scaffold(
           appBar: AppBar( 
-              title: Text("Gyroscope Sensor in Flutter"),
+              title: Text("Teste giroscopio"),
               backgroundColor: Colors.redAccent,
           ),
           body: Container( 
@@ -63,7 +73,13 @@ class _HomeState extends State<Home> {
             padding: EdgeInsets.all(30),
             child: Column(
                children:[
-                   Text(direction, style: TextStyle(fontSize: 30),)
+                   Text(direction, style: TextStyle(fontSize: 30),),
+                   Text("\nX: ", style: TextStyle(fontSize: 30)),
+                   Text(eventTelaX, style: TextStyle(fontSize: 30), ),
+                   Text("\nY: ", style: TextStyle(fontSize: 30)),
+                   Text(eventTelaY, style: TextStyle(fontSize: 30),),
+                   Text("\nZ: ", style: TextStyle(fontSize: 30)),
+                   Text(eventTelaZ, style: TextStyle(fontSize: 30),),
                ]
             )
           ),
