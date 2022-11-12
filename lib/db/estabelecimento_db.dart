@@ -2,9 +2,9 @@ import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 import '../models/estabelecimento.dart';
 
-
 class EstabelecimentosDatabase {
-  static final EstabelecimentosDatabase instance = EstabelecimentosDatabase._init();
+  static final EstabelecimentosDatabase instance =
+      EstabelecimentosDatabase._init();
   static Database? _database;
   EstabelecimentosDatabase._init();
 
@@ -19,7 +19,7 @@ class EstabelecimentosDatabase {
     final path = join(dbPath, filePath);
     return await openDatabase(path, version: 2, onCreate: _createDB);
   }
-  
+
   Future _createDB(Database db, int version) async {
     final idType = 'INTEGER PRIMARY KEY AUTOINCREMENT';
     final boolType = 'BOOLEAN NOT NULL';
@@ -41,17 +41,7 @@ class EstabelecimentosDatabase {
 
   Future<Estabelecimento> create(Estabelecimento Estabelecimento) async {
     final db = await instance.database;
-
-    // final json = Estabelecimento.toJson();
-
-    // final columns = '${EstabFields.title}, ${EstabFields.description}, ${EstabFields.time}';
-
-    // final values = '${json[EstabFields.title]}, ${json[EstabFields.description]}, ${json[EstabFields.time]}';
-
-    // final id = await db.rawInsert('INSERT INTO table_name ($columns) VALUES ($values)');
-
     final id = await db.insert(tableEstabelecimentos, Estabelecimento.toJson());
-    
     return Estabelecimento.copy(id: id);
   }
 

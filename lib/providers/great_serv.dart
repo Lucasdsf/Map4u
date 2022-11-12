@@ -5,7 +5,7 @@ import 'package:form_field_validator/form_field_validator.dart';
 Widget build(BuildContext context) {
   return Scaffold(
     appBar: AppBar(
-      title: Text('Cadastro de estabelecimento'),
+      title: Text('Cadastro de serviço'),
     ),
     body: Column(children: <Widget>[
       TextField(
@@ -15,9 +15,3 @@ Widget build(BuildContext context) {
     ]),
   );
 }
-
-// class FormScreen extends StatefulWidget {
-//   @override
-//   _FormScreenState createState() => _FormScreenState();
-// }
-
