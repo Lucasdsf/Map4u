@@ -1,21 +1,20 @@
 final String tableEstabelecimentos = 'Estabelecimentos';
 
 class EstabFields {
+  static final List<String> values = [
+    //Add all fields
+    id, nomeEstab, temEscadas, numeroDegraus, temElevador, numeroAndares,
+    servicos, horaCadastro
+  ];
 
-    static final List<String> values = [
-      //Add all fields
-      id, nomeEstab, temEscadas, numeroDegraus, temElevador, numeroAndares, servicos, horaCadastro
-    ];
-
-    static final String id = '_id';
-    static final String nomeEstab = 'nomeEstab';
-    static final String temEscadas = 'temEscadas';
-    static final String numeroDegraus = 'numeroDegraus';
-    static final String temElevador = 'temElevador';
-    static final String numeroAndares = 'numeroAndares';
-    static final String servicos = 'servicos';
-    static final String horaCadastro = 'horaCadastro';
-
+  static final String id = '_id';
+  static final String nomeEstab = 'nomeEstab';
+  static final String temEscadas = 'temEscadas';
+  static final String numeroDegraus = 'numeroDegraus';
+  static final String temElevador = 'temElevador';
+  static final String numeroAndares = 'numeroAndares';
+  static final String servicos = 'servicos';
+  static final String horaCadastro = 'horaCadastro';
 }
 
 class Estabelecimento {
@@ -27,7 +26,6 @@ class Estabelecimento {
   final int numeroAndares;
   final String servicos;
   final DateTime horaCadastro;
-
 
   const Estabelecimento({
     this.id,
@@ -49,7 +47,6 @@ class Estabelecimento {
     int? numeroAndares,
     String? servicos,
     DateTime? horaCadastro,
-
   }) =>
       Estabelecimento(
         id: id ?? this.id,
@@ -62,17 +59,16 @@ class Estabelecimento {
         horaCadastro: horaCadastro ?? this.horaCadastro,
       );
 
-    static Estabelecimento fromJson(Map<String, Object?> json) => Estabelecimento(
-      id: json[EstabFields.id] as int?,
-      nomeEstab: json[EstabFields.nomeEstab] as String,
-      temEscadas: json[EstabFields.temEscadas] == 1,
-      numeroDegraus: json[EstabFields.numeroDegraus] as int,
-      temElevador: json[EstabFields.temElevador] == 1,
-      numeroAndares: json[EstabFields.numeroAndares] as int,
-      servicos: json[EstabFields.servicos] as String,
-      horaCadastro: DateTime.parse(json[EstabFields.horaCadastro] as String),
-
-    );
+  static Estabelecimento fromJson(Map<String, Object?> json) => Estabelecimento(
+        id: json[EstabFields.id] as int?,
+        nomeEstab: json[EstabFields.nomeEstab] as String,
+        temEscadas: json[EstabFields.temEscadas] == 1,
+        numeroDegraus: json[EstabFields.numeroDegraus] as int,
+        temElevador: json[EstabFields.temElevador] == 1,
+        numeroAndares: json[EstabFields.numeroAndares] as int,
+        servicos: json[EstabFields.servicos] as String,
+        horaCadastro: DateTime.parse(json[EstabFields.horaCadastro] as String),
+      );
 
   Map<String, Object?> toJson() => {
         EstabFields.id: id,

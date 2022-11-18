@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:sensors_plus/sensors_plus.dart';
+
 Future<void> main() async {
   runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget{
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -13,95 +14,138 @@ class MyApp extends StatelessWidget{
   }
 }
 
-class Home extends StatefulWidget{
+class Home extends StatefulWidget {
   @override
   _HomeState createState() => _HomeState();
 }
 
 class _HomeState extends State<Home> {
-
   double x = 0, y = 0, z = 0;
   String direction = "none";
   String eventTelaX = "none";
   String eventTelaY = "none";
   String eventTelaZ = "none";
 
-
   @override
   void initState() {
     gyroscopeEvents.listen((GyroscopeEvent event) {
-       print(event);
+      print(event);
 
-       eventTelaX = event.x.toString();
-       eventTelaY = event.y.toString();
-       eventTelaZ = event.z.toString();
+      eventTelaX = event.x.toString();
+      eventTelaY = event.y.toString();
+      eventTelaZ = event.z.toString();
 
+      x = event.x;
+      y = event.y;
+      z = event.z;
 
+      //rough calculation, you can use
+      //advance formula to calculate the orentation
+      if (x > 1) {
+        direction = "back";
+      } else if (x < 1) {
+        direction = "forward";
+      } else if (y > 0 && z > 0) {
+        direction = "left";
+      } else if (y < 0 && z < 0) {
+        direction = "right";
+      }
 
-       x = event.x;
-       y = event.y;
-       z = event.z;
-
-       //rough calculation, you can use 
-       //advance formula to calculate the orentation
-       if(x > 1){ 
-           direction = "back";
-       }else if(x < 1){
-           direction = "forward";
-       }else if(y > 0 && z > 0){
-           direction = "left";
-       }else if(y < 0 && z < 0){
-           direction = "right";
-       }
-
-       setState(() {
-         
-       });
+      setState(() {});
     });
     super.initState();
   }
 
   @override
-  Widget build(BuildContext context) { 
-    return  Scaffold(
-          appBar: AppBar( 
-              title: Text("Teste giroscopio"),
-              backgroundColor: Colors.redAccent,
+  Widget build(BuildContext context) {
+    return Center(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: <Widget>[
+          const SizedBox(height: 30),
+          ClipRRect(
+            borderRadius: BorderRadius.circular(4),
+            child: Stack(
+              children: <Widget>[
+                Positioned.fill(
+                  child: Container(
+                    decoration: const BoxDecoration(
+                      gradient: LinearGradient(
+                        colors: <Color>[
+                          Color(0xFF0D47A1),
+                          Color(0xFF1976D2),
+                          Color(0xFF42A5F5),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                TextButton(
+                  style: TextButton.styleFrom(
+                    foregroundColor: Colors.white,
+                    padding: const EdgeInsets.all(16.0),
+                    textStyle: const TextStyle(fontSize: 20),
+                  ),
+                  onPressed: () {
+                    print('startou');
+                  },
+                  child: const Text('Start'),
+                ),
+              ],
+            ),
           ),
-          body: Container( 
-            alignment: Alignment.center,
-            padding: EdgeInsets.all(30),
-            child: Column(
-               children:[
-                   Text(direction, style: TextStyle(fontSize: 30),),
-                   Text("\nX: ", style: TextStyle(fontSize: 30)),
-                   Text(eventTelaX, style: TextStyle(fontSize: 30), ),
-                   Text("\nY: ", style: TextStyle(fontSize: 30)),
-                   Text(eventTelaY, style: TextStyle(fontSize: 30),),
-                   Text("\nZ: ", style: TextStyle(fontSize: 30)),
-                   Text(eventTelaZ, style: TextStyle(fontSize: 30),),
-               ]
-            )
+          const SizedBox(height: 30),
+          ClipRRect(
+            borderRadius: BorderRadius.circular(4),
+            child: Stack(
+              children: <Widget>[
+                Positioned.fill(
+                  child: Container(
+                    decoration: const BoxDecoration(
+                      gradient: LinearGradient(
+                        colors: <Color>[
+                          Color(0xFF0D47A1),
+                          Color(0xFF1976D2),
+                          Color(0xFF42A5F5),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                TextButton(
+                  style: TextButton.styleFrom(
+                    foregroundColor: Colors.white,
+                    padding: const EdgeInsets.all(16.0),
+                    textStyle: const TextStyle(fontSize: 20),
+                  ),
+                  onPressed: () {
+                    print('stopou');
+                  },
+                  child: const Text('Stop'),
+                ),
+              ],
+            ),
           ),
-       );
+        ],
+      ),
+    );
   }
-}
-    // return MaterialApp(
-    //   title: 'Map4u',
-    //   theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
-    //     primarySwatch: Colors.red,
-    //   ),
-    //   home: const MyHomePage(title: 'MENU PRINCIPAL'),
-    // );
+  // return MaterialApp(
+  //   title: 'Map4u',
+  //   theme: ThemeData(
+  // This is the theme of your application.
+  //
+  // Try running your application with "flutter run". You'll see the
+  // application has a blue toolbar. Then, without quitting the app, try
+  // changing the primarySwatch below to Colors.green and then invoke
+  // "hot reload" (press "r" in the console where you ran "flutter run",
+  // or simply save your changes to "hot reload" in a Flutter IDE).
+  // Notice that the counter didn't reset back to zero; the application
+  // is not restarted.
+  //     primarySwatch: Colors.red,
+  //   ),
+  //   home: const MyHomePage(title: 'MENU PRINCIPAL'),
+  // );
 
 // class MyHomePage extends StatefulWidget {
 //   const MyHomePage({super.key, required this.title});
@@ -126,23 +170,23 @@ class _HomeState extends State<Home> {
 
 //   void _incrementCounter() {
 //     setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
+  // This call to setState tells the Flutter framework that something has
+  // changed in this State, which causes it to rerun the build method below
+  // so that the display can reflect the updated values. If we changed
+  // _counter without calling setState(), then the build method would not be
+  // called again, and so nothing would appear to happen.
   //     _counter++;
   //   });
   // }
 
   // @override
   // Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
-    //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
+  // This method is rerun every time setState is called, for instance as done
+  // by the _incrementCounter method above.
+  //
+  // The Flutter framework has been optimized to make rerunning build methods
+  // fast, so that you can just rebuild anything that needs updating rather
+  // than having to individually change instances of widgets.
   //   return Scaffold(
   //     appBar: AppBar(
   //       // Here we take the value from the MyHomePage object that was created by
@@ -187,3 +231,4 @@ class _HomeState extends State<Home> {
   //   );
   // }
 // }
+}

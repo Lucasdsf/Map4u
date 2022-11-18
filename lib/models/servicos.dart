@@ -1,4 +1,4 @@
-final String tableServicos = 'servicos';
+/* final String tableServicos = 'servicos';
 
 class ServicoFields {
   static final List<String> values = [
@@ -51,3 +51,4 @@ class Servico {
         ServicoFields.descServico: descServico,
       };
 }
+ */
