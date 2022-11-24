@@ -8,7 +8,7 @@ class DbLogGps {
       path.join(dbPath, 'logGps.db'),
       onCreate: (db, version) {
         return db.execute(
-            'CREATE TABLE logGps (id TEXT PRIMARY KEY, latitude TEXT, longitude TEXT, timesTemp TEXT, x TEXT, y TEXT, z TEXT)');
+            'CREATE TABLE logGps (id TEXT PRIMARY KEY, timeStamp TEXT, latitude TEXT, longitude TEXT, x TEXT, y TEXT, z TEXT)');
       },
     );
   }

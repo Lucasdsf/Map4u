@@ -3,6 +3,11 @@ import 'package:sensors_plus/sensors_plus.dart';
 import 'dart:async';
 import 'package:geolocator/geolocator.dart';
 
+import 'db/logGps_db.dart' as db;
+import 'models/logGps.dart';
+import 'utils/db_logGps.dart';
+//import 'package:stop_watch_timer/stop_watch_timer.dart';
+
 Future<void> main() async {
   runApp(MyApp());
 }
@@ -22,6 +27,9 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  var isStarted = false;
+  int timeStamp = DateTime.now().millisecondsSinceEpoch;
+
   //gps
   bool servicestatus = false;
   bool haspermission = false;
@@ -45,7 +53,7 @@ class _HomeState extends State<Home> {
 
     //giroscopio
     gyroscopeEvents.listen((GyroscopeEvent event) {
-      print(event);
+      //print(event);
 
       eventTelaX = event.x.toString();
       eventTelaY = event.y.toString();
@@ -109,8 +117,8 @@ class _HomeState extends State<Home> {
   getLocation() async {
     position = await Geolocator.getCurrentPosition(
         desiredAccuracy: LocationAccuracy.high);
-    print(position.longitude); //Output: 80.24599079
-    print(position.latitude); //Output: 29.6593457
+    //print(position.longitude); //Output: 80.24599079
+    //print(position.latitude); //Output: 29.6593457
 
     long = position.longitude.toString();
     lat = position.latitude.toString();
@@ -128,8 +136,8 @@ class _HomeState extends State<Home> {
     StreamSubscription<Position> positionStream =
         Geolocator.getPositionStream(locationSettings: locationSettings)
             .listen((Position position) {
-      print(position.longitude); //Output: 80.24599079
-      print(position.latitude); //Output: 29.6593457
+      //print(position.longitude); //Output: 80.24599079
+      //print(position.latitude); //Output: 29.6593457
 
       long = position.longitude.toString();
       lat = position.latitude.toString();
@@ -146,76 +154,134 @@ class _HomeState extends State<Home> {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
-          const SizedBox(height: 30),
-          ClipRRect(
-            borderRadius: BorderRadius.circular(4),
-            child: Stack(
-              children: <Widget>[
-                Positioned.fill(
-                  child: Container(
-                    decoration: const BoxDecoration(
-                      gradient: LinearGradient(
-                        colors: <Color>[
-                          Color(0xFF0D47A1),
-                          Color(0xFF1976D2),
-                          Color(0xFF42A5F5),
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-                TextButton(
+          // const SizedBox(height: 30),
+          // ClipRRect(
+          //   borderRadius: BorderRadius.circular(4),
+          //   child: Stack(
+          //     children: <Widget>[
+          //       Positioned.fill(
+          //         child: Container(
+          //           decoration: const BoxDecoration(
+          //             gradient: LinearGradient(
+          //               colors: <Color>[
+          //                 Color(0xFF0D47A1),
+          //                 Color(0xFF1976D2),
+          //                 Color(0xFF42A5F5),
+          //               ],
+          //             ),
+          //           ),
+          //         ),
+          //       ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 4),
+                child: TextButton(
                   style: TextButton.styleFrom(
-                    foregroundColor: Colors.white,
+                    foregroundColor: Color.fromARGB(255, 150, 138, 253),
                     padding: const EdgeInsets.all(16.0),
                     textStyle: const TextStyle(fontSize: 20),
                   ),
-                  onPressed: () {
-                    print('x: ' + eventTelaX);
-                    print('y: ' + eventTelaY);
-                    print('z: ' + eventTelaZ);
-                    print('Long: ' + long);
-                    print('Lat: ' + lat);
-                  },
-                  child: const Text('Start'),
+                  onPressed: isStarted
+                      ? () async {
+                          //stop
+                          db.select();
+                          setState(() {
+                            isStarted = false;
+                          });
+                        }
+                      : () async {
+                          // start;
+                          
+                          db.insert(timeStamp.toString(), long, lat,
+                              x.toString(), y.toString(), z.toString());
+                          
+                          setState(() {
+                            isStarted = true;
+                          });
+                        },
+                  child: Text(isStarted ? "Stop" : "Start"),
                 ),
-              ],
-            ),
-          ),
-          const SizedBox(height: 30),
-          ClipRRect(
-            borderRadius: BorderRadius.circular(4),
-            child: Stack(
-              children: <Widget>[
-                Positioned.fill(
-                  child: Container(
-                    decoration: const BoxDecoration(
-                      gradient: LinearGradient(
-                        colors: <Color>[
-                          Color(0xFF0D47A1),
-                          Color(0xFF1976D2),
-                          Color(0xFF42A5F5),
-                        ],
-                      ),
-                    ),
-                  ),
+              ),
+              TextButton(
+                style: TextButton.styleFrom(
+                  foregroundColor: Color.fromARGB(255, 253, 4, 4),
+                  padding: const EdgeInsets.all(16.0),
+                  textStyle: const TextStyle(fontSize: 20),
                 ),
-                TextButton(
-                  style: TextButton.styleFrom(
-                    foregroundColor: Colors.white,
-                    padding: const EdgeInsets.all(16.0),
-                    textStyle: const TextStyle(fontSize: 20),
-                  ),
-                  onPressed: () {
-                    print('stopou');
-                  },
-                  child: const Text('Stop'),
-                ),
-              ],
-            ),
+                onPressed: () {
+                  db.delete(db.LogGpsDatabase.table);
+                  setState(() {
+                    isStarted = false;
+                  });
+                },
+                child: Text("Delete data"),
+              ),
+            ],
           ),
         ],
       ),
     );
   }
+
+  /* _stopWatchTime.onStartTimer();
+                    timer = _stopWatchTime.rawTime.value; */
+  //             timer = 1;
+  //             while (timer == 1) {
+  //               print('x: ' + eventTelaX);
+  //               print('y: ' + eventTelaY);
+  //               print('z: ' + eventTelaZ);
+  //               print('Long: ' + long);
+  //               print('Lat: ' + lat);
+  //             }
+  //           },
+  //           child: const Text('Start'),
+  //         ),
+  //       ],
+  //     ),
+  //   ),
+  //   const SizedBox(height: 30),
+  //   ClipRRect(
+  //     borderRadius: BorderRadius.circular(4),
+  //     child: Stack(
+  //       children: <Widget>[
+  //         Positioned.fill(
+  //           child: Container(
+  //             decoration: const BoxDecoration(
+  //               gradient: LinearGradient(
+  //                 colors: <Color>[
+  //                   Color(0xFF0D47A1),
+  //                   Color(0xFF1976D2),
+  //                   Color(0xFF42A5F5),
+  //                 ],
+  //               ),
+  //             ),
+  //           ),
+  //         ),
+  //         TextButton(
+  //           style: TextButton.styleFrom(
+  //             foregroundColor: Colors.white,
+  //             padding: const EdgeInsets.all(16.0),
+  //             textStyle: const TextStyle(fontSize: 20),
+  //           ),
+  //           onPressed: () {
+  //             //_stopWatchTime.onStopTimer();
+  //             timer = 0;
+  //             while (timer == 0) {
+  //               //_stopWatchTime.onStopTimer();
+  //               print('stopou');
+  //             }
+  //           },
+  //           child: const Text('Stop'),
+//                 ),
+//               ],
+//             ),
+//           ),
+//         ],
+//       ),
+//     );
+//   }
+// }
+
 }

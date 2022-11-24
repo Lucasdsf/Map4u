@@ -8,6 +8,15 @@ class LogGpsDatabase extends Home {
 
   static Database? _database;
 
+  static final table = 'logGps';
+  static final id = 'id';
+  static final timeStamp = 'timeStamp';
+  static final latitude = 'latitude';
+  static final longitude = 'longitude';
+  static final x = 'x';
+  static final y = 'y';
+  static final z = 'z';
+
   LogGpsDatabase._init();
 
   Future<Database> get database async {
@@ -31,9 +40,9 @@ class LogGpsDatabase extends Home {
 
     await db.execute('''CREATE TABLE $tableLogGps (
       ${LogGpsFields.id} $idType,
+      ${LogGpsFields.timeStamp} $textType,
       ${LogGpsFields.latitude} $realType,
       ${LogGpsFields.longitude} $realType,
-      ${LogGpsFields.timesTemp} $textType,
       ${LogGpsFields.x} $textType,
       ${LogGpsFields.y} $textType,
       ${LogGpsFields.z} $textType
@@ -67,7 +76,7 @@ class LogGpsDatabase extends Home {
   Future<List<LogGps>> readAllLogGps() async {
     final db = await instance.database;
 
-    final orderBy = '${LogGpsFields.timesTemp} ASC';
+    final orderBy = '${LogGpsFields.timeStamp} ASC';
     final result = await db.query(tableLogGps, orderBy: orderBy);
     print(result.map((json) => LogGps.fromJsonGps(json)).toList());
 
@@ -99,4 +108,36 @@ class LogGpsDatabase extends Home {
     final db = await instance.database;
     db.close();
   }
+}
+
+insert(String _timeStamp, String _longitude, String _latitude, String _x,
+    String _y, String _z) async {
+  // get a reference to the database
+  // because this is an expensive operation we use async and await
+  Database db = await LogGpsDatabase.instance.database;
+
+  // row to insert
+  Map<String, dynamic> row = {
+    LogGpsDatabase.timeStamp: _timeStamp,
+    LogGpsDatabase.longitude: _longitude,
+    LogGpsDatabase.latitude: _latitude,
+    LogGpsDatabase.x: _x,
+    LogGpsDatabase.y: _y,
+    LogGpsDatabase.z: _z
+  };
+
+  // do the insert and get the id of the inserted row
+  int id = await db.insert(LogGpsDatabase.table, row);
+}
+
+select() async {
+  Database db = await LogGpsDatabase.instance.database;
+  // show the results: print all rows in the db
+  print(await db.query(LogGpsDatabase.table));
+}
+
+delete(String nameTable) async {
+  Database db = await LogGpsDatabase.instance.database;
+
+  return db.rawQuery('DELETE FROM ${nameTable}');
 }
