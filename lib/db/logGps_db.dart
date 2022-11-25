@@ -1,3 +1,6 @@
+import 'dart:developer';
+
+import 'package:logger/logger.dart';
 import 'package:map4u/main.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
@@ -132,8 +135,9 @@ insert(String _timeStamp, String _longitude, String _latitude, String _x,
 
 select() async {
   Database db = await LogGpsDatabase.instance.database;
+  var logger = Logger();
+  logger.d(await db.query(LogGpsDatabase.table));
   // show the results: print all rows in the db
-  print(await db.query(LogGpsDatabase.table));
 }
 
 delete(String nameTable) async {
