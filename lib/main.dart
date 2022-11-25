@@ -27,7 +27,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  var isStarted = false;
+  var isStarted = true;
   int timeStamp = DateTime.now().millisecondsSinceEpoch;
 
   //gps
@@ -185,23 +185,21 @@ class _HomeState extends State<Home> {
                   ),
                   onPressed: isStarted
                       ? () async {
-                          //stop
-                          db.select();
+                          // start;
+                          db.insert(timeStamp.toString(), long, lat,
+                              x.toString(), y.toString(), z.toString());
                           setState(() {
                             isStarted = false;
                           });
                         }
                       : () async {
-                          // start;
-                          
-                          db.insert(timeStamp.toString(), long, lat,
-                              x.toString(), y.toString(), z.toString());
-                          
+                          //stop
+                          db.select();
                           setState(() {
                             isStarted = true;
                           });
                         },
-                  child: Text(isStarted ? "Stop" : "Start"),
+                  child: Text(isStarted ? "Start" : "Stop"),
                 ),
               ),
               TextButton(
@@ -213,7 +211,7 @@ class _HomeState extends State<Home> {
                 onPressed: () {
                   db.delete(db.LogGpsDatabase.table);
                   setState(() {
-                    isStarted = false;
+                    isStarted = true;
                   });
                 },
                 child: Text("Delete data"),
