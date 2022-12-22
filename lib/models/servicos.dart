@@ -1,54 +1,61 @@
-/* final String tableServicos = 'servicos';
+final String tableServicos = 'Servicos';
 
-class ServicoFields {
+class ServicosFields {
   static final List<String> values = [
     //Add all fields
-    id, nomeServico, descricaoServico, horaCadastro
+    id, servicos, descricaoServico, horaCadastro
   ];
 
   static final String id = '_id';
-  static final String nomeServico = 'nomeServico';
+  static final String servicos = 'servicos';
+  static final String nomeEstab = 'nomeEstab';
   static final String descricaoServico = 'descricaoServico';
   static final String horaCadastro = 'horaCadastro';
 }
 
-class Servico {
+class Servicos {
   final int? id;
-  final String nomeServico;
-  final String estabServico;
-  final DateTime descServico;
+  final String servicos;
+  final String nomeEstab;
+  final String descricaoServico;
+  final DateTime horaCadastro;
 
-  const Servico({
+  const Servicos({
     this.id,
-    required this.nomeServico,
-    required this.estabServico,
-    required this.descServico,
+    required this.servicos,
+    required this.nomeEstab,
+    required this.descricaoServico,
+    required this.horaCadastro,
   });
 
-  Servico copy({
+  Servicos copy({
     int? id,
-    String? nomeServico,
-    String? estabServico,
-    DateTime? descServico,
+    String? servicos,
+    String? nomeEstab,
+    String? descricaoServico,
+    DateTime? horaCadastro,
   }) =>
-      Servico(
+      Servicos(
         id: id ?? this.id,
-        nomeServico: nomeServico ?? this.nomeServico,
-        estabServico: estabServico ?? this.estabServico,
-        descServico: descServico ?? this.descServico,
+        servicos: servicos ?? this.servicos,
+        nomeEstab: nomeEstab ?? this.nomeEstab,
+        descricaoServico: descricaoServico ?? this.descricaoServico,
+        horaCadastro: horaCadastro ?? this.horaCadastro,
       );
 
-  static Servico fromJson(Map<String, Object?> json) => Servico(
-        id: json[ServicoFields.id] as int?,
-        nomeServico: json[ServicoFields.nomeServico] as String,
-        estabServico: json[ServicoFields.estabServico] as String,
-        descServico: json[ServicoFields.descServico] as DateTime,
+  static Servicos fromJson(Map<String, Object?> json) => Servicos(
+        id: json[ServicosFields.id] as int?,
+        servicos: json[ServicosFields.servicos] as String,
+        nomeEstab: json[ServicosFields.nomeEstab] as String,
+        descricaoServico: json[ServicosFields.descricaoServico] as String,
+        horaCadastro: json[ServicosFields.horaCadastro] as DateTime,
       );
+
   Map<String, Object?> toJson() => {
-        ServicoFields.id: id,
-        ServicoFields.nomeServico: nomeServico,
-        ServicoFields.estabServico: estabServico,
-        ServicoFields.descServico: descServico,
+        ServicosFields.id: id,
+        ServicosFields.servicos: servicos,
+        ServicosFields.nomeEstab: nomeEstab,
+        ServicosFields.descricaoServico: descricaoServico,
+        ServicosFields.horaCadastro: horaCadastro,
       };
 }
- */

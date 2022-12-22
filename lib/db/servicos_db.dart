@@ -1,6 +1,6 @@
-/* import 'package:sqflite/sqflite.dart';
+import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
-import '../models/servico.dart';
+import '../models/servicos.dart';
 
 class ServicosDatabase {
   static final ServicosDatabase instance = ServicosDatabase._init();
@@ -26,64 +26,55 @@ class ServicosDatabase {
     final textType = 'TEXT NOT NULL';
     await db.execute('''
     CREATE TABLE $tableServicos (
-      ${ServicoFields.id} $idType,
-      ${ServicoFields.nomeServico} $textType,
-      ${ServicoFields.estabServico} $textType,
-      ${ServicoFields.descServico} $textType
+      ${ServicosFields.id} $idType,
+      ${ServicosFields.servicos} $textType,
+      ${ServicosFields.nomeEstab} $textType
+      ${ServicosFields.descricaoServico} $textType,
+      ${ServicosFields.horaCadastro} $textType
     )
     ''');
   }
 
-  Future<Servico> create(Servico Servico) async {
+  Future<Servicos> create(Servicos Servicos) async {
     final db = await instance.database;
-    final id = await db.insert(tableServicos, Servico.toJson());
-    return Servico.copy(id: id);
+    final id = await db.insert(tableServicos, Servicos.toJson());
+    return Servicos.copy(id: id);
   }
 
-  Future<Servico> readServico(int id) async {
+  Future<Servicos> readServicos(int id) async {
     final db = await instance.database;
 
     final maps = await db.query(
       tableServicos,
-      columns: ServicoFields.values,
-      where: '${ServicoFields.values} = ?',
+      columns: ServicosFields.values,
+      where: '${ServicosFields.values} = ?',
       whereArgs: [id],
     );
 
     if (maps.isNotEmpty) {
-      return Servico.fromJson(maps.first);
+      return Servicos.fromJson(maps.first);
     } else {
       throw Exception('ID $id not found');
     }
   }
 
-  Future<List<Servico>> readAllServicos() async {
+  Future<List<Servicos>> readAllServicos() async {
     final db = await instance.database;
 
-    final orderBy = '${ServicoFields.nomeServico} ASC';
+    final orderBy = '${ServicosFields.horaCadastro} ASC';
     final result = await db.query(tableServicos, orderBy: orderBy);
 
-    return result.map((json) => Servico.fromJson(json)).toList();
+    return result.map((json) => Servicos.fromJson(json)).toList();
   }
 
-  Future<int> update(Servico Servico) async {
+  Future<int> update(Servicos Servicos) async {
     final db = await instance.database;
 
     return db.update(
       tableServicos,
-      Servico.toJson(),
-      where: '${ServicoFields.id} = ?',
-      whereArgs: [Servico.id],
-    );
-  }
-
-  Future<int> delete(int id) async {
-    final db = await instance.database;
-
-    return await db.delete(
-      tableServicos,
-      where: '${ServicoFields.id} = ?',
-      whereArgs: [id],
+      Servicos.toJson(),
+      where: '${ServicosFields.id} = ?',
+      whereArgs: [Servicos.id],
     );
   }
 
@@ -92,4 +83,3 @@ class ServicosDatabase {
     db.close();
   }
 }
- */

@@ -1,6 +1,5 @@
 import 'package:sqflite/sqflite.dart' as sql;
 import 'package:path/path.dart' as path;
-import 'package:path_provider/path_provider.dart';
 
 class DbServ {
   static Future<sql.Database> database() async {
@@ -9,7 +8,7 @@ class DbServ {
       path.join(dbPath, 'servicos.db'),
       onCreate: (db, version) {
         return db.execute(
-            'CREATE TABLE servicos (cod_serv TEXT PRIMARY KEY, nome_serv TEXT, estab_serv TEXT, desc_serv TEXT)');
+            'CREATE TABLE servicos (id TEXT PRIMARY KEY, servicos TEXT, nomeEstab TEXT, descricaoServico TEXT, horaCadastro TEXT)');
       },
     );
   }

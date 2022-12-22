@@ -2,7 +2,6 @@ final String tableEstabelecimentos = 'Estabelecimentos';
 
 class EstabFields {
   static final List<String> values = [
-    //Add all fields
     id, nomeEstab, temEscadas, numeroDegraus, temElevador, numeroAndares,
     servicos, horaCadastro
   ];
