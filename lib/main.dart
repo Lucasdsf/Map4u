@@ -48,6 +48,26 @@ class _HomeState extends State<Home> {
   String eventTelaY = "none";
   String eventTelaZ = "none";
 
+  /* Future<String> getFilePath() async {
+    Directory appDocumentsDirectory = await getApplicationDocumentsDirectory(); // 1
+    String appDocumentsPath = appDocumentsDirectory.path; // 2
+    String filePath = '$appDocumentsPath/log.txt'; // 3
+
+    return filePath;
+  }
+
+  void saveFile() async {
+      File file = File(await getFilePath()); // 1
+      file.writeAsString("This is my demo text that will be saved to : log.txt"); // 2
+  }
+
+  void readFile() async {
+    File file = File(await getFilePath());
+    String fileContent = await file.readAsString();
+
+    print('File Content: $fileContent');
+  } */
+
   @override
   void initState() {
     //gps
@@ -191,6 +211,8 @@ class _HomeState extends State<Home> {
                           // start;
                           db.insert(timeStamp.toString(), long, lat,
                               x.toString(), y.toString(), z.toString());
+                          db.saveFile();
+                          db.readFile();
                           setState(() {
                             isStarted = false;
                           });

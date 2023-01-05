@@ -1,7 +1,9 @@
 import 'dart:developer';
+import 'dart:io';
 
 import 'package:logger/logger.dart';
 import 'package:map4u/main.dart';
+import 'package:path_provider/path_provider.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 import '../models/logGps.dart';
@@ -131,6 +133,28 @@ insert(String _timeStamp, String _longitude, String _latitude, String _x,
 
   // do the insert and get the id of the inserted row
   int id = await db.insert(LogGpsDatabase.table, row);
+}
+
+Future<String> getFilePath() async {
+  Directory appDocumentsDirectory =
+      await getApplicationDocumentsDirectory(); // 1
+  String appDocumentsPath = appDocumentsDirectory.path; // 2
+  String filePath = '$appDocumentsPath/log.txt'; // 3
+
+  return filePath;
+}
+
+void saveFile() async {
+  File file = File(await getFilePath()); // 1
+  file.writeAsString(
+      "This is my demo text that will be saved to : log.txt"); // 2
+}
+
+void readFile() async {
+  File file = File(await getFilePath());
+  String fileContent = await file.readAsString();
+
+  print('File Content: $fileContent');
 }
 
 select() async {
