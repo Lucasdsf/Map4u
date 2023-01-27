@@ -1,17 +1,16 @@
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
-import 'package:map_for_u/data/botoes_cadastro.dart';
-import '../components/botao_item.dart';
-import '../data/botoes_menu_texto.dart';
-import '../screens/rota_screen.dart';
 
-class CadastroScreen extends StatelessWidget {
+import '../components/botao_item.dart';
+import '../data/botoes_rota.dart';
+
+class RotaScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('CADASTRAR'),
+        title: Text('ROTA'),
         backgroundColor: Colors.black,
       ),
       body: Center(
@@ -24,14 +23,10 @@ class CadastroScreen extends StatelessWidget {
           crossAxisSpacing: 20,
           mainAxisSpacing: 20,
         ),
-        children: BOTOES_CADASTRO.map((e) {
+        children: BOTOES_ROTA.map((e) {
           return BotaoItem(e);
         }).toList(),
       )),
     );
   }
 }
-
-// BOTOES_CADASTRO.map((e) {
-//                     return BotaoItem(e);
-//                   }).toList()
