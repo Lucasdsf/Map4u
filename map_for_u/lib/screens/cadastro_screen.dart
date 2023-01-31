@@ -2,9 +2,8 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
 import 'package:map_for_u/data/botoes_cadastro.dart';
-import '../components/botao_item.dart';
+import '../components/botaoCadastro_item.dart';
 import '../data/botoes_menu_texto.dart';
-import '../screens/rota_screen.dart';
 
 class CadastroScreen extends StatelessWidget {
   @override
@@ -25,7 +24,7 @@ class CadastroScreen extends StatelessWidget {
           mainAxisSpacing: 20,
         ),
         children: BOTOES_CADASTRO.map((e) {
-          return BotaoItem(e);
+          return BotaoCadastroItem(e);
         }).toList(),
       )),
     );

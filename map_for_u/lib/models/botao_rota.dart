@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class Botao {
+class BotaoRota {
   final String id;
   final String title;
   final Color color;
 
-  const Botao ({
+  const BotaoRota ({
     required this.id,
     required this.title,
     this.color = Colors.orange,

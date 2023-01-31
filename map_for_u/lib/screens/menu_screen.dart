@@ -2,7 +2,7 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
 
-import '../components/botao_item.dart';
+import '../components/botaoMenu_item.dart';
 import '../data/botoes_menu_texto.dart';
 
 class MenuScreen extends StatelessWidget {
@@ -24,7 +24,7 @@ class MenuScreen extends StatelessWidget {
           mainAxisSpacing: 20,
         ),
         children: BOTOES_MENU.map((e) {
-          return BotaoItem(e);
+          return BotaoMenuItem(e);
         }).toList(),
       )),
     );
