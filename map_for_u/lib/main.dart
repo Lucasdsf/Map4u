@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:map_for_u/screens/cadastro_screen.dart';
+import 'package:map_for_u/screens/pesquisa_screen.dart';
 import 'package:map_for_u/screens/rota_screen.dart';
 import 'package:map_for_u/utils/app_routes.dart';
 
@@ -22,6 +23,7 @@ class _Map4uState extends State<Map4u> {
         AppRoutes.HOME: (context) => MenuScreen(),
         AppRoutes.CADASTRAR:(context) => CadastroScreen(),
         AppRoutes.CADASTRAR_ROTA:(context) => RotaScreen(),
+        AppRoutes.PESQUISAR:(context) => PesquisaScreen(),
       }
     );
   }
