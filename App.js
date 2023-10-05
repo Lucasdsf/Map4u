@@ -1,13 +1,14 @@
+import * as React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
-import * as React from 'react';
-import { HomeScreen } from './source/HomeScreen';
-import { Portarias } from './source/Portarias';
-import { Piaui } from './source/Piaui';
-import { ParaFrentePiaui } from './source/ParaFrentePiaui';
-import { ParaFrente45 } from './source/ParaFrente45';
-import { ParaFrente25 } from './source/ParaFrente25';
-import { Predio31 } from './source/Predio31';
+import { HomeScreen } from "./source/components/HomeScreen";
+import { Portarias } from './source/components/Portarias';
+import { Piaui } from './source/components/Piaui';
+import { ParaFrentePiaui } from './source/components/ParaFrentePiaui';
+import { ParaFrente45 } from './source/components/ParaFrente45';
+import { ParaFrente25 } from './source/components/ParaFrente25';
+import { Predio31 } from './source/components/Predio31';
+
 
 const Stack = createNativeStackNavigator();
 
@@ -16,11 +17,17 @@ function App() {
     <NavigationContainer>
       <Stack.Navigator
         initialRouteName="HomeScreen"
-        screenOptions={{ headerStyle: { backgroundColor: 'red' } }}>
+        screenOptions={{
+          headerStyle: {
+            backgroundColor: 'red'
+          }
+        }} >
         <Stack.Screen
           name="Menu Principal"
           component={HomeScreen}
-          options={{ headerBackTitleVisible: false }} />
+          options={{
+            headerBackTitleVisible: false
+          }} />
         <Stack.Screen
           name="Portarias"
           component={Portarias}
