@@ -4,9 +4,9 @@ import { Button, View, Text, Alert, ImageBackground } from "react-native";
 
 export function Portarias({ navigation }) {
     return (
-        <ImageBackground source={require('../../assets/cima.jpg')} style={HomeScreenstyle.HomeScreenImage}>
-            <View style={HomeScreenstyle.HomeScreenView}>
-                <Text style={HomeScreenstyle.HomeScreenText}>Qual portaria você deseja iniciar o trajeto ?</Text>
+        <ImageBackground source={require('../../assets/cima.jpg')} style={PortariasStyle.PortariasImage}>
+            <View style={PortariasStyle.PortariasView}>
+                <Text style={PortariasStyle.PortariasText}>Qual portaria você deseja iniciar o trajeto ?</Text>
                 <Button
                     title='Rua Piauí'
                     color='red'
@@ -32,18 +32,18 @@ export function Portarias({ navigation }) {
     );
 }
 
-const HomeScreenstyle = {
-    HomeScreenImage: {
+const PortariasStyle = {
+    PortariasImage: {
         flex: 1,
         resizeMode: 'cover',
         justifyContent: 'center'
     },
-    HomeScreenView: {
+    PortariasView: {
         flex: 1,
         justifyContent: 'center',
         backgroundColor: 'rgba(0,0,0,.5)',
     },
-    HomeScreenText: {
+    PortariasText: {
         color: 'white',
         fontSize: 32,
         textAlign: 'center',

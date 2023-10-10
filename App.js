@@ -3,11 +3,11 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 import { HomeScreen } from "./source/components/HomeScreen";
 import { Portarias } from './source/components/Portarias';
-import { Piaui } from './source/components/Piaui';
-import { ParaFrentePiaui } from './source/components/ParaFrentePiaui';
-import { ParaFrente45 } from './source/components/ParaFrente45';
-import { ParaFrente25 } from './source/components/ParaFrente25';
-import { Predio31 } from './source/components/Predio31';
+import { Piaui } from './source/componentsPiaui/Piaui';
+import { ParaFrentePiaui } from './source/componentsPiaui/ParaFrentePiaui';
+import { ParaFrente45 } from './source/componentsPiaui/ParaFrente45';
+import { ParaFrente25 } from './source/componentsPiaui/ParaFrente25';
+import { Predio31 } from './source/componentsPiaui/Predio31';
 
 
 const Stack = createNativeStackNavigator();

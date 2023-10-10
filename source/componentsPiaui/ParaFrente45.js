@@ -2,7 +2,7 @@ import * as React from "react";
 import { Button, View, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-
+//Tela 3
 export function ParaFrente45({ navigation }) {
     return (
         <SafeAreaView style={ParaFrente45style.areaView}>
@@ -11,7 +11,7 @@ export function ParaFrente45({ navigation }) {
             </View>
             <View style={ParaFrente45style.esquerdaBottomView}>
                 <Button
-                    title='Área de descanso.'
+                    title='Seguindo à esquerda, temos uma área de descanso externa com bancos de madeira.'
                     color='black' />
             </View>
             <View style={ParaFrente45style.frenteTopView}>
@@ -19,7 +19,7 @@ export function ParaFrente45({ navigation }) {
             </View>
             <View style={ParaFrente45style.frenteBottomView}>
                 <Button
-                    title='Seguindo em frente temos acesso ao prédio 31.'
+                    title='Seguindo em frente temos o prédio 31.'
                     color='black'
                     onPress={() => navigation.navigate('ParaFrente25')} />
             </View>
@@ -31,7 +31,7 @@ export function ParaFrente45({ navigation }) {
             </View>
             <View style={{ borderBottomLeftRadius: 10, borderBottomRightRadius: 10, padding: 16, marginBottom: 16, backgroundColor: 'gray' }}>
                 <Button
-                    title='Acesso ao Mackgraphe e às quadras do prédio 29'
+                    title='Seguindo à direita, temos acesso ao Mackgraphe e às quadras do prédio 29.'
                     color='black' />
             </View>
         </SafeAreaView>
