@@ -2,40 +2,40 @@ import * as React from "react";
 import { Button, View, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-//Tela 4
-export function ParaFrente25({ navigation }) {
+
+export function MariaAntoniaTela2({ navigation }) {
     return (
-        <SafeAreaView style={ParaFrente25style.areaView}>
-            <View style={ParaFrente25style.esquerdaTopView}>
-                <Text style={ParaFrente25style.esquerdaText}>Esquerda</Text>
+        <SafeAreaView style={MariaAntoniaTela2Style.areaView}>
+            <View style={MariaAntoniaTela2Style.esquerdaTopView}>
+                <Text style={MariaAntoniaTela2Style.esquerdaText}>Esquerda</Text>
             </View>
-            <View style={ParaFrente25style.esquerdaBottomView}>
+            <View style={MariaAntoniaTela2Style.esquerdaBottomView}>
                 <Button
-                    title='Seguindo à esquerda, temos a lanchonete Borges e o prédio 25.'
+                    title='Na esquerda temos o prédio 24.'
                     color='black' />
             </View>
-            <View style={ParaFrente25style.frenteTopView}>
-                <Text style={ParaFrente25style.frenteText}>Para Frente</Text>
+            <View style={MariaAntoniaTela2Style.frenteTopView}>
+                <Text style={MariaAntoniaTela2Style.frenteText}>Para Frente</Text>
             </View>
-            <View style={ParaFrente25style.frenteBottomView}>
+            <View style={MariaAntoniaTela2Style.frenteBottomView}>
                 <Button
-                    title='Seguindo em frente, temos acesso ao térreo do prédio 31 que é a parte do Ensino à Distância. O acesso é por meio de rampa.'
+                    title='Seguindo em frente encontraremos acesso ao prédio 25 e a lanchonete Borges. O acesso é por meio de rampa ou escadas.'
                     color='black'
-                    onPress={() => navigation.navigate('Predio31')} />
+                    onPress={() => navigation.navigate('MariaAntoniaTela3')} />
             </View>
-            <View style={ParaFrente25style.direitaTopView}>
-                <Text style={ParaFrente25style.direitaText}>Direita</Text>
+            <View style={MariaAntoniaTela2Style.direitaTopView}>
+                <Text style={MariaAntoniaTela2Style.direitaText}>Direita</Text>
             </View>
-            <View style={ParaFrente25style.direitaBottomView}>
+            <View style={MariaAntoniaTela2Style.direitaBottomView}>
                 <Button
-                    title='Seguindo à direita, temos acesso ao primeiro andar do prédio 31 e o prédio 33. O acesso é por meio de escadas.'
+                    title='Na direita temos o prédio 6.'
                     color='black' />
             </View>
         </SafeAreaView>
     );
 }
 
-const ParaFrente25style = {
+const MariaAntoniaTela2Style = {
     areaView: {
         flex: 1,
         backgroundColor: 'black',

@@ -2,42 +2,41 @@ import * as React from "react";
 import { Button, View, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-//Tela 2
-export function ParaFrentePiaui({ navigation }) {
+
+export function MariaAntoniaTela1({ navigation }) {
     return (
-        <SafeAreaView style={ParaFrentePiauiStyle.areaView}>
-            <View style={ParaFrentePiauiStyle.esquerdaTopView}>
-                <View>
-                    <Text style={ParaFrentePiauiStyle.esquerdaText}>Esquerda</Text>
-                </View>
+        <SafeAreaView style={MariaAntoniaTela1Style.areaView}>
+            <View style={MariaAntoniaTela1Style.esquerdaTopView}>
+                <Text style={MariaAntoniaTela1Style.esquerdaText}>Esquerda</Text>
             </View>
-            <View style={ParaFrentePiauiStyle.esquerdaBottomView}>
+            <View style={MariaAntoniaTela1Style.esquerdaBottomView}>
                 <Button
-                    title='Seguindo a esquerda, temos o acesso ao subsolo do prédio 45. O acesso ao prédio é por meio de escadas.'
-                    color='black' />
-            </View>
-            <View style={ParaFrentePiauiStyle.frenteTopView}>
-                <Text style={ParaFrentePiauiStyle.frenteText}>Para Frente</Text>
-            </View>
-            <View style={ParaFrentePiauiStyle.frenteBottomView}>
-                <Button
-                    title='Seguindo em frente temos acesso ao Mackgraphe e ao prédio 29.'
+                    title='Seguindo à esquerda temos os prédios 24 e 6.'
                     color='black'
-                    onPress={() => navigation.navigate('ParaFrente45')} />
+                    onPress={() => navigation.navigate('MariaAntoniaTela2')} />
             </View>
-            <View style={ParaFrentePiauiStyle.direitaTopView}>
-                <Text style={ParaFrentePiauiStyle.direitaText}>Direita</Text>
+            <View style={MariaAntoniaTela1Style.frenteTopView}>
+                <Text style={MariaAntoniaTela1Style.frenteText}>Para Frente</Text>
             </View>
-            <View style={ParaFrentePiauiStyle.direitaBottomView}>
+            <View style={MariaAntoniaTela1Style.frenteBottomView}>
                 <Button
-                    title='Seguindo à direita, temos acesso aos vestiários, quadras externas e prédio 50. O acesso ao vestiário feminino é por meio de escada.'
+                    title='Seguindo em frente temos o prédio 5.'
+                    color='black'
+                />
+            </View>
+            <View style={MariaAntoniaTela1Style.direitaTopView}>
+                <Text style={MariaAntoniaTela1Style.direitaText}>Direita</Text>
+            </View>
+            <View style={MariaAntoniaTela1Style.direitaBottomView}>
+                <Button
+                    title='Seguindo à direita, temos escadas para acessar o prédio 4.'
                     color='black' />
             </View>
         </SafeAreaView>
     );
 }
 
-const ParaFrentePiauiStyle = {
+const MariaAntoniaTela1Style = {
     areaView: {
         flex: 1,
         backgroundColor: 'black',

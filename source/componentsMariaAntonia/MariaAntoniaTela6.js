@@ -2,30 +2,30 @@ import * as React from "react";
 import { Button, View, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-//Tela 5
-export function Predio31({ navigation }) {
+
+export function MariaAntoniaTela6({ navigation }) {
     return (
-        <SafeAreaView style={Predio31Style.areaView}>
-            <View style={Predio31Style.esquerdaTopView}>
-                <Text style={Predio31Style.esquerdaText}>Esquerda</Text>
+        <SafeAreaView style={MariaAntoniaTela6Style.areaView}>
+            <View style={MariaAntoniaTela6Style.esquerdaTopView}>
+                <Text style={MariaAntoniaTela6Style.esquerdaText}>Esquerda</Text>
             </View>
-            <View style={Predio31Style.esquerdaBottomView}>
+            <View style={MariaAntoniaTela6Style.esquerdaBottomView}>
                 <Button
-                    title='Na esquerda temos o acesso ao primeiro andar do prédio 31. O acesso é por meio de escadas.'
+                    title='Na esquerda temos acesso ao primeiro andar do prédio 31. O acesso é por meio de escadas.'
+                    color='black'/>
+            </View>
+            <View style={MariaAntoniaTela6Style.frenteTopView}>
+                <Text style={MariaAntoniaTela6Style.frenteText}>Para Frente</Text>
+            </View>
+            <View style={MariaAntoniaTela6Style.frenteBottomView}>
+                <Button
+                    title='Seguindo em frente encontraremos o prédio 33.'
                     color='black' />
             </View>
-            <View style={Predio31Style.frenteTopView}>
-                <Text style={Predio31Style.frenteText}>Para Frente</Text>
+            <View style={MariaAntoniaTela6Style.direitaTopView}>
+                <Text style={MariaAntoniaTela6Style.direitaText}>Direita</Text>
             </View>
-            <View style={Predio31Style.frenteBottomView}>
-                <Button
-                    title='Seguindo em frente temos o prédio 33 e 35.'
-                    color='black' />
-            </View>
-            <View style={Predio31Style.direitaTopView}>
-                <Text style={Predio31Style.direitaText}>Direita</Text>
-            </View>
-            <View style={Predio31Style.direitaBottomView}>
+            <View style={MariaAntoniaTela6Style.direitaBottomView}>
                 <Button
                     title='Na direita temos o Mackgraphe.'
                     color='black' />
@@ -34,7 +34,7 @@ export function Predio31({ navigation }) {
     );
 }
 
-const Predio31Style = {
+const MariaAntoniaTela6Style = {
     areaView: {
         flex: 1,
         backgroundColor: 'black',

@@ -2,40 +2,42 @@ import * as React from "react";
 import { Button, View, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-//Tela 1
-export function Piaui({ navigation }) {
+
+export function PiauiTela2({ navigation }) {
     return (
-        <SafeAreaView style={PiauiStyle.areaView}>
-            <View style={PiauiStyle.esquerdaTopView}>
-                <Text style={PiauiStyle.esquerdaText}>Esquerda</Text>
+        <SafeAreaView style={ParaFrentePiauiStyle.areaView}>
+            <View style={ParaFrentePiauiStyle.esquerdaTopView}>
+                <View>
+                    <Text style={ParaFrentePiauiStyle.esquerdaText}>Esquerda</Text>
+                </View>
             </View>
-            <View style={PiauiStyle.esquerdaBottomView}>
+            <View style={ParaFrentePiauiStyle.esquerdaBottomView}>
                 <Button
-                    title='Seguindo à esquerda temos acesso ao prédio 46.'
+                    title='Seguindo a esquerda, temos o acesso ao subsolo do prédio 45. O acesso ao prédio é por meio de escadas.'
                     color='black' />
             </View>
-            <View style={PiauiStyle.frenteTopView}>
-                <Text style={PiauiStyle.frenteText}>Para Frente</Text>
+            <View style={ParaFrentePiauiStyle.frenteTopView}>
+                <Text style={ParaFrentePiauiStyle.frenteText}>Para Frente</Text>
             </View>
-            <View style={PiauiStyle.frenteBottomView}>
+            <View style={ParaFrentePiauiStyle.frenteBottomView}>
                 <Button
-                    title='Seguindo em frente temos acesso ao subsolo do prédio 45, às quadras externas e vestiários, ao Mackgraphe e ao prédio 29.'
+                    title='Seguindo em frente temos acesso ao Mackgraphe e ao prédio 29.'
                     color='black'
-                    onPress={() => navigation.navigate('ParaFrentePiaui')} />
+                    onPress={() => navigation.navigate('PiauiTela3')} />
             </View>
-            <View style={PiauiStyle.direitaTopView}>
-                <Text style={PiauiStyle.direitaText}>Direita</Text>
+            <View style={ParaFrentePiauiStyle.direitaTopView}>
+                <Text style={ParaFrentePiauiStyle.direitaText}>Direita</Text>
             </View>
-            <View style={PiauiStyle.direitaBottomView}>
+            <View style={ParaFrentePiauiStyle.direitaBottomView}>
                 <Button
-                    title='Seguindo à direita, temos acesso aos prédios 48 e 49.'
+                    title='Seguindo à direita, temos acesso aos vestiários, quadras externas e prédio 50. O acesso ao vestiário feminino é por meio de escada.'
                     color='black' />
             </View>
         </SafeAreaView>
     );
 }
 
-const PiauiStyle = {
+const ParaFrentePiauiStyle = {
     areaView: {
         flex: 1,
         backgroundColor: 'black',

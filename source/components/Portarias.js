@@ -11,12 +11,12 @@ export function Portarias({ navigation }) {
                     title='Rua Piauí'
                     color='red'
                     justifyContent='center'
-                    onPress={() => navigation.navigate('Piaui')} />
+                    onPress={() => navigation.navigate('PiauiTela1')} />
                 <Button
                     title='Rua Maria Antônia'
                     color='red'
                     justifyContent='center'
-                    onPress={() => Alert.alert('Button with adjusted color pressed')} />
+                    onPress={() => navigation.navigate('MariaAntoniaTela1')} />
                 <Button
                     title='Rua Consolação'
                     color='red'
