@@ -14,6 +14,11 @@ import { MariaAntoniaTela3 } from './source/componentsMariaAntonia/MariaAntoniaT
 import { MariaAntoniaTela4 } from './source/componentsMariaAntonia/MariaAntoniaTela4';
 import { MariaAntoniaTela5 } from './source/componentsMariaAntonia/MariaAntoniaTela5';
 import { MariaAntoniaTela6 } from './source/componentsMariaAntonia/MariaAntoniaTela6';
+import { InfoTela1 } from './source/componentsInfo/InfoTela1';
+import { InfoTela2 } from './source/componentsInfo/InfoTela2';
+import { InfoTela3 } from './source/componentsInfo/InfoTela3';
+import { InfoTela4 } from './source/componentsInfo/InfoTela4';
+import { InfoTela5 } from './source/componentsInfo/InfoTela5';
 
 
 const Stack = createNativeStackNavigator();
@@ -125,6 +130,46 @@ function App() {
         <Stack.Screen
           name='MariaAntoniaTela6'
           component={MariaAntoniaTela6}
+          options={{
+            headerTitle: '',
+            headerBackTitle: 'Voltar',
+            headerBackTitleVisible: true
+          }} />
+        <Stack.Screen
+          name='InfoTela1'
+          component={InfoTela1}
+          options={{
+            headerTitle: '',
+            headerBackTitle: 'Voltar',
+            headerBackTitleVisible: true
+          }} />
+        <Stack.Screen
+          name='InfoTela2'
+          component={InfoTela2}
+          options={{
+            headerTitle: '',
+            headerBackTitle: 'Voltar',
+            headerBackTitleVisible: true
+          }} />
+        <Stack.Screen
+          name='InfoTela3'
+          component={InfoTela3}
+          options={{
+            headerTitle: '',
+            headerBackTitle: 'Voltar',
+            headerBackTitleVisible: true
+          }} />
+        <Stack.Screen
+          name='InfoTela4'
+          component={InfoTela4}
+          options={{
+            headerTitle: '',
+            headerBackTitle: 'Voltar',
+            headerBackTitleVisible: true
+          }} />
+        <Stack.Screen
+          name='InfoTela5'
+          component={InfoTela5}
           options={{
             headerTitle: '',
             headerBackTitle: 'Voltar',

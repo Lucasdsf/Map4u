@@ -1,39 +1,45 @@
 import * as React from "react";
-import { Button, View, Text, ImageBackground } from "react-native";
-
+import { Button, View, Text } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export function HomeScreen({ navigation }) {
     return (
-        <ImageBackground source={require('../../assets/baixo.png')} style={HomeScreenStyle.homeImage}>
-            <View style={HomeScreenStyle.homeView}>
+        <SafeAreaView style={HomeScreenStyle.homeView}>
+            <View>
                 <Text style={HomeScreenStyle.homeText}>Map4u</Text>
+            </View>
+            <View style={HomeScreenStyle.buttonView}>
                 <Button
                     title='Iniciar'
                     color='red'
                     onPress={() => navigation.navigate('Portarias')}
                 />
             </View>
-        </ImageBackground>
+            <View style={HomeScreenStyle.buttonView}>
+                <Button
+                    title='Mais Informações'
+                    color='red'
+                    onPress={() => navigation.navigate('InfoTela1')}
+                />
+            </View>
+        </SafeAreaView>
     );
 }
 
-
 const HomeScreenStyle = {
-    homeImage: {
-        flex: 1,
-        resizeMode: 'cover',
-        justifyContent: 'center'
-    },
     homeView: {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'rgba(0,0,0,.5)',
+        backgroundColor: 'black'
     },
     homeText: {
         color: 'white',
         fontSize: 32,
         textAlign: 'center',
         lineHeight: 32,
-    }
+    },
+    buttonView: {
+        margin: 32
+    },
 }
