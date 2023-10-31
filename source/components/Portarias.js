@@ -16,16 +16,6 @@ export function Portarias({ navigation }) {
                 color='red'
                 justifyContent='center'
                 onPress={() => navigation.navigate('MariaAntoniaTela1')} />
-            <Button
-                title='Rua Consolação'
-                color='red'
-                justifyContent='center'
-                onPress={() => Alert.alert('Button with adjusted color pressed')} />
-            <Button
-                title='Rua Itambé'
-                color='red'
-                justifyContent='center'
-                onPress={() => Alert.alert('Button with adjusted color pressed')} />
         </View>
     );
 }
@@ -34,10 +24,10 @@ const PortariasStyle = {
     PortariasView: {
         flex: 1,
         justifyContent: 'center',
-        backgroundColor: 'black',
+        backgroundColor: 'white',
     },
     PortariasText: {
-        color: 'white',
+        color: 'black',
         fontSize: 32,
         textAlign: 'center',
         lineHeight: 32,

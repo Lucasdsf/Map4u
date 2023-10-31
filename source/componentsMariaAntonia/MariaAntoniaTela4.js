@@ -12,7 +12,10 @@ export function MariaAntoniaTela4({ navigation }) {
             <View style={MariaAntoniaTela4Style.esquerdaBottomView}>
                 <Button
                     title='Na esquerda temos o prédio 31.'
-                    color='black' />
+                    color='black'
+                //onPress={() => Alert.alert('Você chegou no acesso ao primeiro andar do prédio 31. O acesso é por meio de escadas.')} 
+                />
+
             </View>
             <View style={MariaAntoniaTela4Style.frenteTopView}>
                 <Text style={MariaAntoniaTela4Style.frenteText}>Para Frente</Text>

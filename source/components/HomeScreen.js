@@ -31,10 +31,10 @@ const HomeScreenStyle = {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'black'
+        backgroundColor: 'white'
     },
     homeText: {
-        color: 'white',
+        color: 'black',
         fontSize: 32,
         textAlign: 'center',
         lineHeight: 32,

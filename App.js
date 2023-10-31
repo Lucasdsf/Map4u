@@ -30,7 +30,7 @@ function App() {
         initialRouteName="HomeScreen"
         screenOptions={{
           headerStyle: {
-            backgroundColor: 'red'
+            backgroundColor: 'white'
           }
         }} >
         <Stack.Screen

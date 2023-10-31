@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Button, View, Text } from "react-native";
+import { Button, View, Text, Alert } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 
@@ -12,7 +12,8 @@ export function PiauiTela5({ navigation }) {
             <View style={PiauiTela5Style.esquerdaBottomView}>
                 <Button
                     title='Na esquerda temos o acesso ao primeiro andar do prédio 31. O acesso é por meio de escadas.'
-                    color='black' />
+                    color='black'
+                    onPress={() => Alert.alert('Você chegou no acesso ao primeiro andar do prédio 31. O acesso é por meio de escadas.')} />
             </View>
             <View style={PiauiTela5Style.frenteTopView}>
                 <Text style={PiauiTela5Style.frenteText}>Para Frente</Text>
