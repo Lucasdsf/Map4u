@@ -1,25 +1,29 @@
 import * as React from "react";
-import { View, Text, TouchableOpacity } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { SafeAreaView, View, Text, TouchableOpacity } from "react-native";
 
-
-export function Portarias({ navigation }) {
+export function Predio31({ navigation }) {
     return (
         <SafeAreaView style={PortariasStyle.PortariasView}>
             <View>
-                <Text style={PortariasStyle.PortariasText}>QUAL PORTARIA VOCÊ DESEJA INICIAR O TRAJETO ?</Text>
+                <Text style={PortariasStyle.PortariasText}>
+                    EDIFÍCIOS
+                </Text>
             </View>
             <View style={PortariasStyle.buttonsView}>
-                <TouchableOpacity style={PortariasStyle.button} onPress={() => navigation.navigate('PiauiTela1')}>
-                    <Text style={PortariasStyle.buttonText}>RUA PIAUÍ</Text>
+                <TouchableOpacity
+                    style={PortariasStyle.button}
+                    onPress={() => navigation.navigate('Portarias')}>
+                    <Text style={PortariasStyle.buttonText}>PRÉDIO 31</Text>
                 </TouchableOpacity>
             </View>
             <View style={PortariasStyle.buttonsView}>
-                <TouchableOpacity style={PortariasStyle.button} onPress={() => navigation.navigate('MariaAntoniaTela1')}>
-                    <Text style={PortariasStyle.buttonText1}>RUA MARIA ANTÔNIA</Text>
+                <TouchableOpacity
+                    style={PortariasStyle.button}
+                    onPress={() => navigation.navigate('InfoTela1')}>
+                    <Text style={PortariasStyle.buttonText1}>OUTROS</Text>
                 </TouchableOpacity>
             </View>
-        </SafeAreaView >
+        </SafeAreaView>
     );
 }
 
@@ -28,7 +32,7 @@ const PortariasStyle = {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'white',
+        backgroundColor: 'white'
     },
     PortariasText: {
         color: 'black',
@@ -37,7 +41,6 @@ const PortariasStyle = {
         lineHeight: 32,
         fontWeight: 'bold',
         padding: 32,
-        margin: 10,
         fontFamily: 'Arial'
     },
     buttonsView: {
@@ -52,7 +55,7 @@ const PortariasStyle = {
         lineHeight: 32,
         fontWeight: 'bold',
         paddingVertical: 10,
-        paddingHorizontal: 93,
+        paddingHorizontal: 90,
         fontFamily: 'Arial'
     },
     buttonText1: {
@@ -62,7 +65,7 @@ const PortariasStyle = {
         lineHeight: 32,
         fontWeight: 'bold',
         paddingVertical: 10,
-        paddingHorizontal: 40,
+        paddingHorizontal: 100,
         fontFamily: 'Arial'
     }
 }

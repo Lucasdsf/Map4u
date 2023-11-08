@@ -8,30 +8,32 @@ export function PiauiTela2({ navigation }) {
         <SafeAreaView style={ParaFrentePiauiStyle.areaView}>
             <View style={ParaFrentePiauiStyle.esquerdaTopView}>
                 <View>
-                    <Text style={ParaFrentePiauiStyle.esquerdaText}>Esquerda</Text>
+                    <Text style={ParaFrentePiauiStyle.esquerdaText}>ESQUERDA</Text>
                 </View>
             </View>
             <View style={ParaFrentePiauiStyle.esquerdaBottomView}>
                 <Button
-                    title='Seguindo a esquerda, temos o acesso ao subsolo do prédio 45. O acesso ao prédio é por meio de escadas.'
-                    color='black' />
+                    title='SEGUINDO A ESQUERDA, TEMOS O ACESSO AO SUBSOLO DO PRÉDIO 45 DE CIÊNCIAS SOCIAIS E APLICADAS. O ACESSO AO PRÉDIO É POR MEIO DE ESCADAS.'
+                    color='black'
+                    onPress={() => navigation.navigate('InfoTela6')} />
             </View>
             <View style={ParaFrentePiauiStyle.frenteTopView}>
-                <Text style={ParaFrentePiauiStyle.frenteText}>Para Frente</Text>
+                <Text style={ParaFrentePiauiStyle.frenteText}>PARA FRENTE</Text>
             </View>
             <View style={ParaFrentePiauiStyle.frenteBottomView}>
                 <Button
-                    title='Seguindo em frente temos acesso ao Mackgraphe e ao prédio 29.'
+                    title='SEGUINDO EM FRENTE TEMOS ACESSO AO MACKGRAPHE E AO PRÉDIO 29 COM QUADRAS POLIESPORTIVAS E VESTIÁRIOS. ESSA É A DIREÇÃO INDICADA PARA CHEGAR AO PRÉDIO 31.'
                     color='black'
                     onPress={() => navigation.navigate('PiauiTela3')} />
             </View>
             <View style={ParaFrentePiauiStyle.direitaTopView}>
-                <Text style={ParaFrentePiauiStyle.direitaText}>Direita</Text>
+                <Text style={ParaFrentePiauiStyle.direitaText}>DIREITA</Text>
             </View>
             <View style={ParaFrentePiauiStyle.direitaBottomView}>
                 <Button
-                    title='Seguindo à direita, temos acesso aos vestiários, quadras externas e prédio 50. O acesso ao vestiário feminino é por meio de escada.'
-                    color='black' />
+                    title='SEGUINDO À DIREITA, TEMOS ACESSO AOS VESTIÁRIOS, QUADRAS EXTERNAS E AO PRÉDIO 50 DE CIÊNCIAS BIOLÓGICAS E SAÚDE. O ACESSO AO VESTIÁRIO FEMININO É POR MEIO DE ESCADA.'
+                    color='black'
+                    onPress={() => navigation.navigate('InfoTela7')} />
             </View>
         </SafeAreaView>
     );
@@ -40,57 +42,66 @@ export function PiauiTela2({ navigation }) {
 const ParaFrentePiauiStyle = {
     areaView: {
         flex: 1,
-        backgroundColor: 'black',
+        backgroundColor: 'white',
     },
     esquerdaTopView: {
         borderTopLeftRadius: 10,
         borderTopRightRadius: 10,
         padding: 16,
-        backgroundColor: 'red'
+        backgroundColor: 'gray'
     },
     esquerdaText: {
-        color: 'white',
-        fontSize: 24
+        color: 'black',
+        fontSize: 24,
+        fontFamily: 'Arial',
+        fontWeight: 'bold'
     },
     esquerdaBottomView: {
         borderBottomLeftRadius: 10,
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'gray'
+        backgroundColor: 'rgb(190, 190, 190)',
+        fontFamily: 'Arial'
     },
     frenteTopView: {
         borderTopLeftRadius: 10,
         borderTopRightRadius: 10,
         padding: 16,
-        backgroundColor: 'red'
+        backgroundColor: 'gray'
     },
     frenteText: {
-        color: 'white',
-        fontSize: 24
+        color: 'black',
+        fontSize: 24,
+        fontFamily: 'Arial',
+        fontWeight: 'bold'
     },
     frenteBottomView: {
         borderBottomLeftRadius: 10,
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'gray'
+        backgroundColor: 'rgb(190, 190, 190)',
+        fontFamily: 'Arial'
     },
     direitaTopView: {
         borderTopLeftRadius: 10,
         borderTopRightRadius: 10,
         padding: 16,
-        backgroundColor: 'red'
+        backgroundColor: 'gray'
     },
     direitaText: {
-        color: 'white',
-        fontSize: 24
+        color: 'black',
+        fontSize: 24,
+        fontFamily: 'Arial',
+        fontWeight: 'bold'
     },
     direitaBottomView: {
         borderBottomLeftRadius: 10,
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'gray'
+        backgroundColor: 'rgb(190, 190, 190)',
+        fontFamily: 'Arial'
     }
 }

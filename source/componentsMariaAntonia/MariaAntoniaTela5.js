@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Button, View, Text } from "react-native";
+import { Button, View, Text, Alert } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 
@@ -7,29 +7,31 @@ export function MariaAntoniaTela5({ navigation }) {
     return (
         <SafeAreaView style={MariaAntoniaTela5Style.areaView}>
             <View style={MariaAntoniaTela5Style.esquerdaTopView}>
-                <Text style={MariaAntoniaTela5Style.esquerdaText}>Esquerda</Text>
+                <Text style={MariaAntoniaTela5Style.esquerdaText}>ESQUERDA</Text>
             </View>
             <View style={MariaAntoniaTela5Style.esquerdaBottomView}>
                 <Button
-                    title='Na esquerda temos acesso ao térreo do prédio 31 que é a parte do Ensino à Distância. O acesso é por meio de rampa.'
+                    title='NA ESQUERDA TEMOS ACESSO AO TÉRREO DO PRÉDIO 31 DE TECNOLOGIA E INFORMAÇÃO QUE É A PARTE DO ENSINO À DISTÂNCIA. O ACESSO É POR MEIO DE RAMPA.'
                     color='black'
                     onPress={() => navigation.navigate('MariaAntoniaTela6')} />
             </View>
             <View style={MariaAntoniaTela5Style.frenteTopView}>
-                <Text style={MariaAntoniaTela5Style.frenteText}>Para Frente</Text>
+                <Text style={MariaAntoniaTela5Style.frenteText}>PARA FRENTE</Text>
             </View>
             <View style={MariaAntoniaTela5Style.frenteBottomView}>
                 <Button
-                    title='Seguindo em frente encontraremos acesso ao primeiro andar do prédio 31 e o prédio 33.'
-                    color='black' />
+                    title='SEGUINDO EM FRENTE ENCONTRAREMOS ACESSO AO PRIMEIRO ANDAR DO PRÉDIO 31 E O PRÉDIO 33, AMBOS DE TECNOLOGIA E INFORMAÇÃO.'
+                    color='black'
+                    onPress={() => Alert.alert('VOCÊ CHEGOU NO ACESSO AO PRIMEIRO ANDAR DO PRÉDIO 31. O ACESSO É POR MEIO DE ESCADAS.')} />
             </View>
             <View style={MariaAntoniaTela5Style.direitaTopView}>
-                <Text style={MariaAntoniaTela5Style.direitaText}>Direita</Text>
+                <Text style={MariaAntoniaTela5Style.direitaText}>DIREITA</Text>
             </View>
             <View style={MariaAntoniaTela5Style.direitaBottomView}>
                 <Button
-                    title='Na direita temos o caminho para a portaria Piauí.'
-                    color='black' />
+                    title='NA DIREITA TEMOS O CAMINHO PARA A PORTARIA PIAUÍ.'
+                    color='black'
+                    onPress={() => navigation.navigate('Portarias')} />
             </View>
         </SafeAreaView>
     );
@@ -38,57 +40,66 @@ export function MariaAntoniaTela5({ navigation }) {
 const MariaAntoniaTela5Style = {
     areaView: {
         flex: 1,
-        backgroundColor: 'black',
+        backgroundColor: 'white',
     },
     esquerdaTopView: {
         borderTopLeftRadius: 10,
         borderTopRightRadius: 10,
         padding: 16,
-        backgroundColor: 'red'
+        backgroundColor: 'gray'
     },
     esquerdaText: {
-        color: 'white',
-        fontSize: 24
+        color: 'black',
+        fontSize: 24,
+        fontFamily: 'Arial',
+        fontWeight: 'bold'
     },
     esquerdaBottomView: {
         borderBottomLeftRadius: 10,
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'gray'
+        backgroundColor: 'rgb(190, 190, 190)',
+        fontFamily: 'Arial'
     },
     frenteTopView: {
         borderTopLeftRadius: 10,
         borderTopRightRadius: 10,
         padding: 16,
-        backgroundColor: 'red'
+        backgroundColor: 'gray'
     },
     frenteText: {
-        color: 'white',
-        fontSize: 24
+        color: 'black',
+        fontSize: 24,
+        fontFamily: 'Arial',
+        fontWeight: 'bold'
     },
     frenteBottomView: {
         borderBottomLeftRadius: 10,
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'gray'
+        backgroundColor: 'rgb(190, 190, 190)',
+        fontFamily: 'Arial'
     },
     direitaTopView: {
         borderTopLeftRadius: 10,
         borderTopRightRadius: 10,
         padding: 16,
-        backgroundColor: 'red'
+        backgroundColor: 'gray'
     },
     direitaText: {
-        color: 'white',
-        fontSize: 24
+        color: 'black',
+        fontSize: 24,
+        fontFamily: 'Arial',
+        fontWeight: 'bold'
     },
     direitaBottomView: {
         borderBottomLeftRadius: 10,
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'gray'
+        backgroundColor: 'rgb(190, 190, 190)',
+        fontFamily: 'Arial'
     }
 }

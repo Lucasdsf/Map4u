@@ -7,29 +7,31 @@ export function PiauiTela5({ navigation }) {
     return (
         <SafeAreaView style={PiauiTela5Style.areaView}>
             <View style={PiauiTela5Style.esquerdaTopView}>
-                <Text style={PiauiTela5Style.esquerdaText}>Esquerda</Text>
+                <Text style={PiauiTela5Style.esquerdaText}>ESQUERDA</Text>
             </View>
             <View style={PiauiTela5Style.esquerdaBottomView}>
                 <Button
-                    title='Na esquerda temos o acesso ao primeiro andar do prédio 31. O acesso é por meio de escadas.'
+                    title='NA ESQUERDA TEMOS O ACESSO AO PRIMEIRO ANDAR DO PRÉDIO 31 DE TECNOLOGIA E INFORMAÇÃO. O ACESSO É POR MEIO DE ESCADAS.'
                     color='black'
-                    onPress={() => Alert.alert('Você chegou no acesso ao primeiro andar do prédio 31. O acesso é por meio de escadas.')} />
+                    onPress={() => Alert.alert('VOCÊ CHEGOU NO ACESSO AO PRIMEIRO ANDAR DO PRÉDIO 31. O ACESSO É POR MEIO DE ESCADAS.')} />
             </View>
             <View style={PiauiTela5Style.frenteTopView}>
-                <Text style={PiauiTela5Style.frenteText}>Para Frente</Text>
+                <Text style={PiauiTela5Style.frenteText}>PARA FRENTE</Text>
             </View>
             <View style={PiauiTela5Style.frenteBottomView}>
                 <Button
-                    title='Seguindo em frente temos o prédio 33 e 35.'
-                    color='black' />
+                    title='SEGUINDO EM FRENTE TEMOS O PRÉDIO 33 DE TECNOLOGIA E INFORMAÇÃO E O PRÉDIO 35 DE ACHADOS E PERDIDOS.'
+                    color='black'
+                    onPress={() => navigation.navigate('InfoTela5')} />
             </View>
             <View style={PiauiTela5Style.direitaTopView}>
-                <Text style={PiauiTela5Style.direitaText}>Direita</Text>
+                <Text style={PiauiTela5Style.direitaText}>DIREITA</Text>
             </View>
             <View style={PiauiTela5Style.direitaBottomView}>
                 <Button
-                    title='Na direita temos o Mackgraphe.'
-                    color='black' />
+                    title='NA DIREITA TEMOS O MACKGRAPHE, PRÉDIO FOCADO EM ESTUDOS DE NANOTECNOLOGIA E GRAFENO.'
+                    color='black'
+                    onPress={() => navigation.navigate('InfoTela4')} />
             </View>
         </SafeAreaView>
     );
@@ -38,57 +40,66 @@ export function PiauiTela5({ navigation }) {
 const PiauiTela5Style = {
     areaView: {
         flex: 1,
-        backgroundColor: 'black',
+        backgroundColor: 'white',
     },
     esquerdaTopView: {
         borderTopLeftRadius: 10,
         borderTopRightRadius: 10,
         padding: 16,
-        backgroundColor: 'red'
+        backgroundColor: 'gray'
     },
     esquerdaText: {
-        color: 'white',
-        fontSize: 24
+        color: 'black',
+        fontSize: 24,
+        fontFamily: 'Arial',
+        fontWeight: 'bold'
     },
     esquerdaBottomView: {
         borderBottomLeftRadius: 10,
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'gray'
+        backgroundColor: 'rgb(190, 190, 190)',
+        fontFamily: 'Arial'
     },
     frenteTopView: {
         borderTopLeftRadius: 10,
         borderTopRightRadius: 10,
         padding: 16,
-        backgroundColor: 'red'
+        backgroundColor: 'gray'
     },
     frenteText: {
-        color: 'white',
-        fontSize: 24
+        color: 'black',
+        fontSize: 24,
+        fontFamily: 'Arial',
+        fontWeight: 'bold'
     },
     frenteBottomView: {
         borderBottomLeftRadius: 10,
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'gray'
+        backgroundColor: 'rgb(190, 190, 190)',
+        fontFamily: 'Arial'
     },
     direitaTopView: {
         borderTopLeftRadius: 10,
         borderTopRightRadius: 10,
         padding: 16,
-        backgroundColor: 'red'
+        backgroundColor: 'gray'
     },
     direitaText: {
-        color: 'white',
-        fontSize: 24
+        color: 'black',
+        fontSize: 24,
+        fontFamily: 'Arial',
+        fontWeight: 'bold'
     },
     direitaBottomView: {
         borderBottomLeftRadius: 10,
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'gray'
+        backgroundColor: 'rgb(190, 190, 190)',
+        fontFamily: 'Arial'
     }
 }

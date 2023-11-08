@@ -1,34 +1,34 @@
 import * as React from "react";
-import { Button, View, Text } from "react-native";
+import { Button, View, Text, TouchableOpacity } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 
 export function InfoTela3({ navigation }) {
     return (
         <SafeAreaView style={InfoTela3Style.areaView}>
-            <View style={InfoTela3Style.esquerdaTopView}>
-                <Text style={InfoTela3Style.esquerdaText}>Prédio 30 - Mackgraphe</Text>
-            </View>
-            <View style={InfoTela3Style.esquerdaBottomView}>
-                <Text style={InfoTela3Style.prediosText}>O prédio 30, mais conhecido como Mackgraphe, é onde estão os laboratórios de pesquisa de grafeno e nanotecnologia.</Text>
-            </View>
             <View style={InfoTela3Style.frenteTopView}>
-                <Text style={InfoTela3Style.frenteText}>Prédio 31</Text>
+                <Text style={InfoTela3Style.frenteText}>PRÉDIO 25</Text>
             </View>
             <View style={InfoTela3Style.frenteBottomView}>
-                <Text style={InfoTela3Style.prediosText}>O prédio 31 é o prédio de Tecnologia e Informação. Ele tem quatro andares e pode ser acessado pelo térreo, por meio de rampa de acesso, ou pelo primeiro andar, por meio de escadas. Possui um elevador e escadas para acessar os andares. Nele tem laboratórios com notebooks onde são ministradas as aulas dos cursos de tecnologia. No primeiro andar fica a secretaria da Faculdade de Tecnologia e Informação e a sala de professores. Além disso, no terceiro andar, tem uma das entradas do laboratório da Apple Academy.</Text>
+                <Text style={InfoTela3Style.prediosText}>O PRÉDIO 25 É UM DOS PRÉDIOS DE DIREITO, MAS TAMBÉM É USADO PARA OUTROS CURSOS. ALÉM DE SALAS DE AULA, ELE TEM NO TÉRREO UM LABORATÓRIO DE ENGENHARIA. ELE TEM QUATRO ANDARES QUE PODEM SER ACESSADOS POR MEIO DE ELEVADOR OU ESCADAS.</Text>
+            </View>
+            <View style={InfoTela3Style.frenteTopView}>
+                <Text style={InfoTela3Style.frenteText}>PRÉDIO 28</Text>
+            </View>
+            <View style={InfoTela3Style.frenteBottomView}>
+                <Text style={InfoTela3Style.prediosText}>ENGENHARIA E LABORATÓRIOS DE FOTOGRAFIA, ÁUDIO E VÍDEO.</Text>
             </View>
             <View style={InfoTela3Style.direitaTopView}>
-                <Text style={InfoTela3Style.direitaText}>Prédio 33</Text>
+                <Text style={InfoTela3Style.direitaText}>PRÉDIO 29</Text>
             </View>
             <View style={InfoTela3Style.direitaBottomView}>
-                <Text style={InfoTela3Style.prediosText}>O prédio 33 é o outro prédio de Tecnologia e Informação. Ele tem quatro andares com salas e laboratórios. No térreo tem dois laboratórios de Engenharia e, no terceiro andar, fica um dos acessos ao laboratório da Apple Academy.</Text>
+                <Text style={InfoTela3Style.prediosText}>O PRÉDIO 29 É COMPOSTO POR DOIS ANDARES, NO TÉRREO TEM VESTIÁRIOS FEMININO E MASCULINO E DUAS QUADRAS DE VÔLEI. NO PRIMEIRO ANDAR, TEM UMA QUADRA POLIESPORTIVA, ELA É USADA PARA TREINOS DE HANDEBOL, FUTSAL E BASQUETE. O PRIMEIRO ANDAR PODE SER ACESSADO POR MEIO DE ESCADA OU ELEVADOR.</Text>
             </View>
-            <View style={InfoTela3Style.buttonView} >
-                <Button
-                    title='Próximo'
-                    color='red'
-                    onPress={() => navigation.navigate('InfoTela4')} />
+            <View style={InfoTela3Style.buttonsView}>
+                <TouchableOpacity
+                    onPress={() => navigation.navigate('InfoTela4')}>
+                    <Text style={InfoTela3Style.buttonText}>PRÓXIMO</Text>
+                </TouchableOpacity>
             </View>
         </SafeAreaView>
     );
@@ -37,60 +37,88 @@ export function InfoTela3({ navigation }) {
 const InfoTela3Style = {
     areaView: {
         flex: 1,
-        backgroundColor: 'black',
+        backgroundColor: 'white'
     },
     esquerdaTopView: {
         borderTopLeftRadius: 10,
         borderTopRightRadius: 10,
         padding: 16,
-        backgroundColor: 'red'
+        backgroundColor: 'gray'
     },
     esquerdaText: {
-        color: 'white',
-        fontSize: 24
+        color: 'black',
+        fontSize: 24,
+        fontFamily: 'Arial',
+        fontWeight: 'bold'
     },
     esquerdaBottomView: {
         borderBottomLeftRadius: 10,
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'gray'
+        backgroundColor: 'rgb(190, 190, 190)',
+        fontFamily: 'Arial'
     },
     frenteTopView: {
         borderTopLeftRadius: 10,
         borderTopRightRadius: 10,
         padding: 16,
-        backgroundColor: 'red'
+        backgroundColor: 'gray'
     },
     frenteText: {
-        color: 'white',
-        fontSize: 24
+        color: 'black',
+        fontSize: 24,
+        fontFamily: 'Arial',
+        fontWeight: 'bold'
     },
     frenteBottomView: {
         borderBottomLeftRadius: 10,
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'gray'
+        backgroundColor: 'rgb(190, 190, 190)',
+        fontFamily: 'Arial'
     },
     direitaTopView: {
         borderTopLeftRadius: 10,
         borderTopRightRadius: 10,
         padding: 16,
-        backgroundColor: 'red'
+        backgroundColor: 'gray'
     },
     direitaText: {
-        color: 'white',
-        fontSize: 24
+        color: 'black',
+        fontSize: 24,
+        fontFamily: 'Arial',
+        fontWeight: 'bold'
     },
     direitaBottomView: {
         borderBottomLeftRadius: 10,
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'gray'
+        backgroundColor: 'rgb(190, 190, 190)',
+        fontFamily: 'Arial',
+
     },
-    buttonView: {
-        margin: 8
+    buttonsView: {
+        backgroundColor: 'gray',
+        margin: 10,
+        borderRadius: 20
+    },
+    buttonText: {
+        color: 'white',
+        fontSize: 24,
+        textAlign: 'center',
+        lineHeight: 32,
+        fontWeight: 'bold',
+        paddingVertical: 10,
+        paddingHorizontal: 90,
+        fontFamily: 'Arial'
+    },
+    prediosText: {
+        color: 'black',
+        fontSize: 18,
+        fontFamily: 'Arial',
+        textAlign: 'center'
     }
 }

@@ -2,6 +2,7 @@ import * as React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 import { HomeScreen } from "./source/components/HomeScreen";
+import { Predio31 } from './source/components/Predio31';
 import { Portarias } from './source/components/Portarias';
 import { PiauiTela1 } from './source/componentsPiaui/PiauiTela1';
 import { PiauiTela2 } from './source/componentsPiaui/PiauiTela2';
@@ -19,6 +20,8 @@ import { InfoTela2 } from './source/componentsInfo/InfoTela2';
 import { InfoTela3 } from './source/componentsInfo/InfoTela3';
 import { InfoTela4 } from './source/componentsInfo/InfoTela4';
 import { InfoTela5 } from './source/componentsInfo/InfoTela5';
+import { InfoTela6 } from './source/componentsInfo/InfoTela6';
+import { InfoTela7 } from './source/componentsInfo/InfoTela7';
 
 
 const Stack = createNativeStackNavigator();
@@ -30,14 +33,27 @@ function App() {
         initialRouteName="HomeScreen"
         screenOptions={{
           headerStyle: {
-            backgroundColor: 'white'
+            backgroundColor: 'gray',
+            headerTintColor: 'black'
           }
         }} >
         <Stack.Screen
-          name="Menu Principal"
+          name="MENU PRINCIPAL"
           component={HomeScreen}
           options={{
-            headerBackTitleVisible: false
+            headerBackTitleVisible: false,
+            headerBackTitle: 'Menu',
+            headerBackTitleVisible: true,
+            headerTintColor: 'black'
+          }} />
+        <Stack.Screen
+          name="Predio31"
+          component={Predio31}
+          options={{
+            headerTitle: '',
+            headerBackTitle: 'Menu',
+            headerBackTitleVisible: true,
+            headerTintColor: 'black'
           }} />
         <Stack.Screen
           name="Portarias"
@@ -45,7 +61,8 @@ function App() {
           options={{
             headerTitle: '',
             headerBackTitle: 'Menu',
-            headerBackTitleVisible: true
+            headerBackTitleVisible: true,
+            headerTintColor: 'black'
           }} />
         <Stack.Screen
           name="PiauiTela1"
@@ -53,127 +70,161 @@ function App() {
           options={{
             headerTitle: '',
             headerBackTitle: 'Portarias',
-            headerBackTitleVisible: true
+            headerBackTitleVisible: true,
+            headerTintColor: 'black'
           }} />
         <Stack.Screen
           name="PiauiTela2"
           component={PiauiTela2}
           options={{
             headerTitle: '',
-            headerBackTitle: 'Voltar',
-            headerBackTitleVisible: true
+            headerBackTitle: 'VOLTAR',
+            headerBackTitleVisible: true,
+            headerTintColor: 'black'
           }} />
         <Stack.Screen
           name="PiauiTela3"
           component={PiauiTela3}
           options={{
             headerTitle: '',
-            headerBackTitle: 'Voltar',
-            headerBackTitleVisible: true
+            headerBackTitle: 'VOLTAR',
+            headerBackTitleVisible: true,
+            headerTintColor: 'black'
           }} />
         <Stack.Screen
           name="PiauiTela4"
           component={PiauiTela4}
           options={{
             headerTitle: '',
-            headerBackTitle: 'Voltar',
-            headerBackTitleVisible: true
+            headerBackTitle: 'VOLTAR',
+            headerBackTitleVisible: true,
+            headerTintColor: 'black'
           }} />
         <Stack.Screen
           name="PiauiTela5"
           component={PiauiTela5}
           options={{
             headerTitle: '',
-            headerBackTitle: 'Voltar',
-            headerBackTitleVisible: true
+            headerBackTitle: 'VOLTAR',
+            headerBackTitleVisible: true,
+            headerTintColor: 'black'
           }} />
         <Stack.Screen
           name="MariaAntoniaTela1"
           component={MariaAntoniaTela1}
           options={{
             headerTitle: '',
-            headerBackTitle: 'Voltar',
-            headerBackTitleVisible: true
+            headerBackTitle: 'VOLTAR',
+            headerBackTitleVisible: true,
+            headerTintColor: 'black'
           }} />
         <Stack.Screen
           name="MariaAntoniaTela2"
           component={MariaAntoniaTela2}
           options={{
             headerTitle: '',
-            headerBackTitle: 'Voltar',
-            headerBackTitleVisible: true
+            headerBackTitle: 'VOLTAR',
+            headerBackTitleVisible: true,
+            headerTintColor: 'black'
           }} />
         <Stack.Screen
           name="MariaAntoniaTela3"
           component={MariaAntoniaTela3}
           options={{
             headerTitle: '',
-            headerBackTitle: 'Voltar',
-            headerBackTitleVisible: true
+            headerBackTitle: 'VOLTAR',
+            headerBackTitleVisible: true,
+            headerTintColor: 'black'
           }} />
         <Stack.Screen
           name='MariaAntoniaTela4'
           component={MariaAntoniaTela4}
           options={{
             headerTitle: '',
-            headerBackTitle: 'Voltar',
-            headerBackTitleVisible: true
+            headerBackTitle: 'VOLTAR',
+            headerBackTitleVisible: true,
+            headerTintColor: 'black'
           }} />
         <Stack.Screen
           name='MariaAntoniaTela5'
           component={MariaAntoniaTela5}
           options={{
             headerTitle: '',
-            headerBackTitle: 'Voltar',
-            headerBackTitleVisible: true
+            headerBackTitle: 'VOLTAR',
+            headerBackTitleVisible: true,
+            headerTintColor: 'black'
           }} />
         <Stack.Screen
           name='MariaAntoniaTela6'
           component={MariaAntoniaTela6}
           options={{
             headerTitle: '',
-            headerBackTitle: 'Voltar',
-            headerBackTitleVisible: true
+            headerBackTitle: 'VOLTAR',
+            headerBackTitleVisible: true,
+            headerTintColor: 'black'
           }} />
         <Stack.Screen
           name='InfoTela1'
           component={InfoTela1}
           options={{
             headerTitle: '',
-            headerBackTitle: 'Voltar',
-            headerBackTitleVisible: true
+            headerBackTitle: 'VOLTAR',
+            headerBackTitleVisible: true,
+            headerTintColor: 'black'
           }} />
         <Stack.Screen
           name='InfoTela2'
           component={InfoTela2}
           options={{
             headerTitle: '',
-            headerBackTitle: 'Voltar',
-            headerBackTitleVisible: true
+            headerBackTitle: 'VOLTAR',
+            headerBackTitleVisible: true,
+            headerTintColor: 'black'
           }} />
         <Stack.Screen
           name='InfoTela3'
           component={InfoTela3}
           options={{
             headerTitle: '',
-            headerBackTitle: 'Voltar',
-            headerBackTitleVisible: true
+            headerBackTitle: 'VOLTAR',
+            headerBackTitleVisible: true,
+            headerTintColor: 'black'
           }} />
         <Stack.Screen
           name='InfoTela4'
           component={InfoTela4}
           options={{
             headerTitle: '',
-            headerBackTitle: 'Voltar',
-            headerBackTitleVisible: true
+            headerBackTitle: 'VOLTAR',
+            headerBackTitleVisible: true,
+            headerTintColor: 'black'
           }} />
         <Stack.Screen
           name='InfoTela5'
           component={InfoTela5}
           options={{
             headerTitle: '',
-            headerBackTitle: 'Voltar',
-            headerBackTitleVisible: true
+            headerBackTitle: 'VOLTAR',
+            headerBackTitleVisible: true,
+            headerTintColor: 'black'
+          }} />
+        <Stack.Screen
+          name='InfoTela6'
+          component={InfoTela6}
+          options={{
+            headerTitle: '',
+            headerBackTitle: 'VOLTAR',
+            headerBackTitleVisible: true,
+            headerTintColor: 'black',
+          }} />
+        <Stack.Screen
+          name='InfoTela7'
+          component={InfoTela7}
+          options={{
+            headerTitle: '',
+            headerBackTitle: 'VOLTAR',
+            headerBackTitleVisible: true,
+            headerTintColor: 'black',
           }} />
       </Stack.Navigator>
     </NavigationContainer>

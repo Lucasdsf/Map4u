@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Button, View, Text } from "react-native";
+import { Button, View, Text, TouchableOpacity } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 
@@ -7,28 +7,22 @@ export function InfoTela4({ navigation }) {
     return (
         <SafeAreaView style={InfoTela4Style.areaView}>
             <View style={InfoTela4Style.esquerdaTopView}>
-                <Text style={InfoTela4Style.esquerdaText}>Prédio 35</Text>
+                <Text style={InfoTela4Style.esquerdaText}>PRÉDIO 30 - MACKGRAPHE</Text>
             </View>
             <View style={InfoTela4Style.esquerdaBottomView}>
-                <Text style={InfoTela4Style.prediosText}>O prédio 35 é onde tem os achados e perdidos.</Text>
+                <Text style={InfoTela4Style.prediosText}>O PRÉDIO 30, MAIS CONHECIDO COMO MACKGRAPHE, É ONDE ESTÃO OS LABORATÓRIOS DE PESQUISA DE GRAFENO E NANOTECNOLOGIA.</Text>
             </View>
             <View style={InfoTela4Style.frenteTopView}>
-                <Text style={InfoTela4Style.frenteText}>Prédio 45</Text>
+                <Text style={InfoTela4Style.frenteText}>PRÉDIO 31</Text>
             </View>
             <View style={InfoTela4Style.frenteBottomView}>
-                <Text style={InfoTela4Style.prediosText}>O prédio 45 é o Centro de Ciências Sociais e Aplicadas. Ele tem cinco andares e pode ser acessado através do subsolo ou do primeiro andar, por meio de escadas, mas no prédio tem elevadores e escadas para acessar os outros andares. Além de salas de aula, ele tem uma biblioteca voltada às matérias de ciências sociais no subsolo 1 e 2 com salas privativas de estudo. E, no primeiro andar, tem uma praça de alimentação.</Text>
+                <Text style={InfoTela4Style.prediosText}>O PRÉDIO 31 É O PRÉDIO DE TECNOLOGIA E INFORMAÇÃO. ELE TEM QUATRO ANDARES E PODE SER ACESSADO PELO TÉRREO, POR MEIO DE RAMPA DE ACESSO, OU PELO PRIMEIRO ANDAR, POR MEIO DE ESCADAS. POSSUI UM ELEVADOR E ESCADAS PARA ACESSAR OS ANDARES. NELE TEM LABORATÓRIOS COM NOTEBOOKS ONDE SÃO MINISTRADAS AS AULAS DOS CURSOS DE TECNOLOGIA. NO PRIMEIRO ANDAR FICA A SECRETARIA DA FACULDADE DE TECNOLOGIA E INFORMAÇÃO E A SALA DE PROFESSORES. ALÉM DISSO, NO TERCEIRO ANDAR, TEM UMA DAS ENTRADAS DO LABORATÓRIO DA APPLE ACADEMY.</Text>
             </View>
-            <View style={InfoTela4Style.direitaTopView}>
-                <Text style={InfoTela4Style.direitaText}>Prédio 46</Text>
-            </View>
-            <View style={InfoTela4Style.direitaBottomView}>
-                <Text style={InfoTela4Style.prediosText}>O prédio 46 faz parte dos prédios da escola, nele têm salas de Educação Infantil e Fundamental I. Além disso, também possui um ambulatório.</Text>
-            </View>
-            <View style={InfoTela4Style.buttonView} >
-                <Button
-                    title='Próximo'
-                    color='red'
-                    onPress={() => navigation.navigate('InfoTela5')} />
+            <View style={InfoTela4Style.buttonsView}>
+                <TouchableOpacity
+                    onPress={() => navigation.navigate('InfoTela5')}>
+                    <Text style={InfoTela4Style.buttonText}>PRÓXIMO</Text>
+                </TouchableOpacity>
             </View>
         </SafeAreaView>
     );
@@ -37,60 +31,88 @@ export function InfoTela4({ navigation }) {
 const InfoTela4Style = {
     areaView: {
         flex: 1,
-        backgroundColor: 'black',
+        backgroundColor: 'white'
     },
     esquerdaTopView: {
         borderTopLeftRadius: 10,
         borderTopRightRadius: 10,
         padding: 16,
-        backgroundColor: 'red'
+        backgroundColor: 'gray'
     },
     esquerdaText: {
-        color: 'white',
-        fontSize: 24
+        color: 'black',
+        fontSize: 24,
+        fontFamily: 'Arial',
+        fontWeight: 'bold'
     },
     esquerdaBottomView: {
         borderBottomLeftRadius: 10,
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'gray'
+        backgroundColor: 'rgb(190, 190, 190)',
+        fontFamily: 'Arial'
     },
     frenteTopView: {
         borderTopLeftRadius: 10,
         borderTopRightRadius: 10,
         padding: 16,
-        backgroundColor: 'red'
+        backgroundColor: 'gray'
     },
     frenteText: {
-        color: 'white',
-        fontSize: 24
+        color: 'black',
+        fontSize: 24,
+        fontFamily: 'Arial',
+        fontWeight: 'bold'
     },
     frenteBottomView: {
         borderBottomLeftRadius: 10,
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'gray'
+        backgroundColor: 'rgb(190, 190, 190)',
+        fontFamily: 'Arial'
     },
     direitaTopView: {
         borderTopLeftRadius: 10,
         borderTopRightRadius: 10,
         padding: 16,
-        backgroundColor: 'red'
+        backgroundColor: 'gray'
     },
     direitaText: {
-        color: 'white',
-        fontSize: 24
+        color: 'black',
+        fontSize: 24,
+        fontFamily: 'Arial',
+        fontWeight: 'bold'
     },
     direitaBottomView: {
         borderBottomLeftRadius: 10,
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'gray'
+        backgroundColor: 'rgb(190, 190, 190)',
+        fontFamily: 'Arial',
+
     },
-    buttonView: {
-        margin: 8
+    buttonsView: {
+        backgroundColor: 'gray',
+        margin: 10,
+        borderRadius: 20
+    },
+    buttonText: {
+        color: 'white',
+        fontSize: 24,
+        textAlign: 'center',
+        lineHeight: 32,
+        fontWeight: 'bold',
+        paddingVertical: 10,
+        paddingHorizontal: 90,
+        fontFamily: 'Arial'
+    },
+    prediosText: {
+        color: 'black',
+        fontSize: 18,
+        fontFamily: 'Arial',
+        textAlign: 'center'
     }
 }

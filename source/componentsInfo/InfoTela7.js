@@ -1,34 +1,42 @@
 import * as React from "react";
-import { Button, View, Text, TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 
-export function InfoTela5({ navigation }) {
+export function InfoTela7({ navigation }) {
     return (
-        <SafeAreaView style={InfoTela5Style.areaView}>
-            <View style={InfoTela5Style.direitaTopView}>
-                <Text style={InfoTela5Style.direitaText}>PRÉDIO 33</Text>
+        <SafeAreaView style={InfoTela7Style.areaView}>
+            <View style={InfoTela7Style.direitaTopView}>
+                <Text style={InfoTela7Style.direitaText}>PRÉDIO 48</Text>
             </View>
-            <View style={InfoTela5Style.direitaBottomView}>
-                <Text style={InfoTela5Style.prediosText}>O PRÉDIO 33 É O OUTRO PRÉDIO DE TECNOLOGIA E INFORMAÇÃO. ELE TEM QUATRO ANDARES COM SALAS E LABORATÓRIOS. NO TÉRREO TEM DOIS LABORATÓRIOS DE ENGENHARIA E, NO TERCEIRO ANDAR, FICA UM DOS ACESSOS AO LABORATÓRIO DA APPLE ACADEMY.</Text>
+            <View style={InfoTela7Style.direitaBottomView}>
+                <Text style={InfoTela7Style.prediosText}>COLÉGIO P. MACK NOS DOIS PRIMEIROS ANDARES E FACULDADE NO TERCEIRO.
+                    POSSUI DUAS ENTRADAS, COM ELEVADOR E RAMPA DE ENTRADA. NA PARTE DE TRÁS DO PRÉDIO HÁ BANHEIROS COM ACESSIBILIDADE.
+                </Text>
             </View>
-            <View style={InfoTela5Style.esquerdaTopView}>
-                <Text style={InfoTela5Style.esquerdaText}>PRÉDIO 35</Text>
+            <View style={InfoTela7Style.esquerdaTopView}>
+                <Text style={InfoTela7Style.esquerdaText}>PRÉDIO 49</Text>
             </View>
-            <View style={InfoTela5Style.esquerdaBottomView}>
-                <Text style={InfoTela5Style.prediosText}>O PRÉDIO 35 É ONDE TEM OS ACHADOS E PERDIDOS, A GERÊNCIA DE SEGURANÇA DO CAMPUS E O CONTROLE E CHAVES.</Text>
+            <View style={InfoTela7Style.esquerdaBottomView}>
+                <Text style={InfoTela7Style.prediosText}>CENTRO DE COMUNICAÇÃO E LETRAS, POSSUI SALAS DO CURSO DE PUBLICIDADE, ENGENHARIA E OUTROS CURSOS DE EXATAS. POSSUI ACESSO POR ESCADAS E ELEVADOR.</Text>
             </View>
-            <View style={InfoTela5Style.buttonsView}>
-                <TouchableOpacity
-                    onPress={() => navigation.navigate('InfoTela6')}>
-                    <Text style={InfoTela5Style.buttonText}>PRÓXIMO</Text>
-                </TouchableOpacity>
+            <View style={InfoTela7Style.esquerdaTopView}>
+                <Text style={InfoTela7Style.esquerdaText}>PRÉDIO 50</Text>
+            </View>
+            <View style={InfoTela7Style.esquerdaBottomView}>
+                <Text style={InfoTela7Style.prediosText}>O PRÉDIO 50 É O CENTRO DE CIÊNCIAS BIOLÓGICAS E DA SAÚDE, ALÉM DE SER O PRÉDIO DA CHANCELARIA.</Text>
+            </View>
+            <View style={InfoTela7Style.frenteTopView}>
+                <Text style={InfoTela7Style.frenteText}>QUADRAS EXTERNAS</Text>
+            </View>
+            <View style={InfoTela7Style.frenteBottomView}>
+                <Text style={InfoTela7Style.prediosText}>SÃO QUADRAS POLIESPORTIVAS ONDE OCORREM TREINOS DE FUTSAL, VÔLEI, HANDEBOL, BASQUETE E RUGBY.</Text>
             </View>
         </SafeAreaView>
     );
 }
 
-const InfoTela5Style = {
+const InfoTela7Style = {
     areaView: {
         flex: 1,
         backgroundColor: 'white'

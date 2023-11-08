@@ -1,34 +1,36 @@
 import * as React from "react";
-import { Button, View, Text, TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 
-export function InfoTela5({ navigation }) {
+export function InfoTela6({ navigation }) {
     return (
-        <SafeAreaView style={InfoTela5Style.areaView}>
-            <View style={InfoTela5Style.direitaTopView}>
-                <Text style={InfoTela5Style.direitaText}>PRÉDIO 33</Text>
+        <SafeAreaView style={InfoTela6Style.areaView}>
+            <View style={InfoTela6Style.frenteTopView}>
+                <Text style={InfoTela6Style.frenteText}>PRÉDIO 45</Text>
             </View>
-            <View style={InfoTela5Style.direitaBottomView}>
-                <Text style={InfoTela5Style.prediosText}>O PRÉDIO 33 É O OUTRO PRÉDIO DE TECNOLOGIA E INFORMAÇÃO. ELE TEM QUATRO ANDARES COM SALAS E LABORATÓRIOS. NO TÉRREO TEM DOIS LABORATÓRIOS DE ENGENHARIA E, NO TERCEIRO ANDAR, FICA UM DOS ACESSOS AO LABORATÓRIO DA APPLE ACADEMY.</Text>
+            <View style={InfoTela6Style.frenteBottomView}>
+                <Text style={InfoTela6Style.prediosText}>O PRÉDIO 45 É O CENTRO DE CIÊNCIAS SOCIAIS E APLICADAS. ELE TEM CINCO ANDARES E PODE SER ACESSADO ATRAVÉS DO SUBSOLO OU DO PRIMEIRO ANDAR, POR MEIO DE ESCADAS, MAS NO PRÉDIO TEM ELEVADORES E ESCADAS PARA ACESSAR OS OUTROS ANDARES. ALÉM DE SALAS DE AULA, ELE TEM UMA BIBLIOTECA VOLTADA ÀS MATÉRIAS DE CIÊNCIAS SOCIAIS NO SUBSOLO 1 E 2 COM SALAS PRIVATIVAS DE ESTUDO. E, NO PRIMEIRO ANDAR, TEM UMA PRAÇA DE ALIMENTAÇÃO.
+                    POSSUI 6 ANDARES COM SALAS DE AULA.
+                </Text>
             </View>
-            <View style={InfoTela5Style.esquerdaTopView}>
-                <Text style={InfoTela5Style.esquerdaText}>PRÉDIO 35</Text>
+            <View style={InfoTela6Style.direitaTopView}>
+                <Text style={InfoTela6Style.direitaText}>PRÉDIO 46</Text>
             </View>
-            <View style={InfoTela5Style.esquerdaBottomView}>
-                <Text style={InfoTela5Style.prediosText}>O PRÉDIO 35 É ONDE TEM OS ACHADOS E PERDIDOS, A GERÊNCIA DE SEGURANÇA DO CAMPUS E O CONTROLE E CHAVES.</Text>
+            <View style={InfoTela6Style.direitaBottomView}>
+                <Text style={InfoTela6Style.prediosText}>O PRÉDIO 46 FAZ PARTE DOS PRÉDIOS DA ESCOLA, NELE TÊM SALAS DE EDUCAÇÃO INFANTIL E FUNDAMENTAL I. ALÉM DISSO, TAMBÉM POSSUI UM AMBULATÓRIO.</Text>
             </View>
-            <View style={InfoTela5Style.buttonsView}>
+            <View style={InfoTela6Style.buttonsView}>
                 <TouchableOpacity
-                    onPress={() => navigation.navigate('InfoTela6')}>
-                    <Text style={InfoTela5Style.buttonText}>PRÓXIMO</Text>
+                    onPress={() => navigation.navigate('InfoTela7')}>
+                    <Text style={InfoTela6Style.buttonText}>PRÓXIMO</Text>
                 </TouchableOpacity>
             </View>
         </SafeAreaView>
     );
 }
 
-const InfoTela5Style = {
+const InfoTela6Style = {
     areaView: {
         flex: 1,
         backgroundColor: 'white'

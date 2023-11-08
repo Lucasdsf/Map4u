@@ -7,29 +7,31 @@ export function PiauiTela3({ navigation }) {
     return (
         <SafeAreaView style={PiauiTela3Style.areaView}>
             <View style={PiauiTela3Style.esquerdaTopView}>
-                <Text style={PiauiTela3Style.esquerdaText}>Esquerda</Text>
+                <Text style={PiauiTela3Style.esquerdaText}>ESQUERDA</Text>
             </View>
             <View style={PiauiTela3Style.esquerdaBottomView}>
                 <Button
-                    title='Seguindo à esquerda, temos uma área de descanso externa com bancos de madeira.'
-                    color='black' />
+                    title='SEGUINDO À ESQUERDA, TEMOS UMA ÁREA DE DESCANSO EXTERNA COM BANCOS DE MADEIRA E ESPAÇO SOCIAL.'
+                    color='black'
+                    onPress={() => navigation.navigate('InfoTela4')} />
             </View>
             <View style={PiauiTela3Style.frenteTopView}>
-                <Text style={PiauiTela3Style.frenteText}>Para Frente</Text>
+                <Text style={PiauiTela3Style.frenteText}>PARA FRENTE</Text>
             </View>
             <View style={PiauiTela3Style.frenteBottomView}>
                 <Button
-                    title='Seguindo em frente temos o prédio 31.'
+                    title='SEGUINDO EM FRENTE TEMOS O PRÉDIO 31 DE TECNOLOGIA E INFORMAÇÃO.'
                     color='black'
                     onPress={() => navigation.navigate('PiauiTela4')} />
             </View>
             <View style={PiauiTela3Style.direitaTopView}>
-                <Text style={PiauiTela3Style.direitaText}>Direita</Text>
+                <Text style={PiauiTela3Style.direitaText}>DIREITA</Text>
             </View>
             <View style={PiauiTela3Style.direitaBottomView}>
                 <Button
-                    title='Seguindo à direita, temos acesso ao Mackgraphe e às quadras do prédio 29.'
-                    color='black' />
+                    title='SEGUINDO À DIREITA, TEMOS ACESSO AO MACKGRAPHE E AO PRÉDIO 29 COM AS QUADRAS POLIESPORTIVAS E VESTIÁRIOS.'
+                    color='black'
+                    onPress={() => navigation.navigate('InfoTela3')} />
             </View>
         </SafeAreaView>
     );
@@ -38,57 +40,66 @@ export function PiauiTela3({ navigation }) {
 const PiauiTela3Style = {
     areaView: {
         flex: 1,
-        backgroundColor: 'black',
+        backgroundColor: 'white',
     },
     esquerdaTopView: {
         borderTopLeftRadius: 10,
         borderTopRightRadius: 10,
         padding: 16,
-        backgroundColor: 'red'
+        backgroundColor: 'gray'
     },
     esquerdaText: {
-        color: 'white',
-        fontSize: 24
+        color: 'black',
+        fontSize: 24,
+        fontFamily: 'Arial',
+        fontWeight: 'bold'
     },
     esquerdaBottomView: {
         borderBottomLeftRadius: 10,
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'gray'
+        backgroundColor: 'rgb(190, 190, 190)',
+        fontFamily: 'Arial'
     },
     frenteTopView: {
         borderTopLeftRadius: 10,
         borderTopRightRadius: 10,
         padding: 16,
-        backgroundColor: 'red'
+        backgroundColor: 'gray'
     },
     frenteText: {
-        color: 'white',
-        fontSize: 24
+        color: 'black',
+        fontSize: 24,
+        fontFamily: 'Arial',
+        fontWeight: 'bold'
     },
     frenteBottomView: {
         borderBottomLeftRadius: 10,
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'gray'
+        backgroundColor: 'rgb(190, 190, 190)',
+        fontFamily: 'Arial'
     },
     direitaTopView: {
         borderTopLeftRadius: 10,
         borderTopRightRadius: 10,
         padding: 16,
-        backgroundColor: 'red'
+        backgroundColor: 'gray'
     },
     direitaText: {
-        color: 'white',
-        fontSize: 24
+        color: 'black',
+        fontSize: 24,
+        fontFamily: 'Arial',
+        fontWeight: 'bold'
     },
     direitaBottomView: {
         borderBottomLeftRadius: 10,
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'gray'
+        backgroundColor: 'rgb(190, 190, 190)',
+        fontFamily: 'Arial'
     }
 }
