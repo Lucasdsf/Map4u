@@ -3,26 +3,32 @@ import { View, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 
-export function InfoTela8 ({ navigation }) {
+export function InfoTela8({ navigation }) {
     return (
-        <SafeAreaView style={InfoTela7Style.areaView}>
-            <View style={InfoTela7Style.esquerdaTopView}>
-                <Text style={InfoTela7Style.esquerdaText}>PRÉDIO 50</Text>
+        <SafeAreaView style={InfoTela8Style.areaView}>
+            <View style={InfoTela8Style.esquerdaTopView}>
+                <Text style={InfoTela8Style.esquerdaText}>PRÉDIO 49</Text>
             </View>
-            <View style={InfoTela7Style.esquerdaBottomView}>
-                <Text style={InfoTela7Style.prediosText}>O PRÉDIO 50 É O CENTRO DE CIÊNCIAS BIOLÓGICAS E DA SAÚDE, ALÉM DE SER O PRÉDIO DA CHANCELARIA.</Text>
+            <View style={InfoTela8Style.esquerdaBottomView}>
+                <Text style={InfoTela8Style.prediosText}>O PRÉDIO 49 É O CENTRO DE COMUNICAÇÃO E LETRAS, POSSUI SALAS DO CURSO DE PUBLICIDADE, ENGENHARIA E OUTROS CURSOS DE EXATAS. POSSUI ACESSO POR ESCADAS E ELEVADOR.</Text>
             </View>
-            <View style={InfoTela7Style.frenteTopView}>
-                <Text style={InfoTela7Style.frenteText}>QUADRAS EXTERNAS</Text>
+            <View style={InfoTela8Style.esquerdaTopView}>
+                <Text style={InfoTela8Style.esquerdaText}>PRÉDIO 50</Text>
             </View>
-            <View style={InfoTela7Style.frenteBottomView}>
-                <Text style={InfoTela7Style.prediosText}>SÃO QUADRAS POLIESPORTIVAS ONDE OCORREM TREINOS DE FUTSAL, VÔLEI, HANDEBOL, BASQUETE E RUGBY.</Text>
+            <View style={InfoTela8Style.esquerdaBottomView}>
+                <Text style={InfoTela8Style.prediosText}>O PRÉDIO 50 É O CENTRO DE CIÊNCIAS BIOLÓGICAS E DA SAÚDE, ALÉM DE SER O PRÉDIO DA CHANCELARIA. O ACESSO É POR MEIO DE RAMPA.</Text>
+            </View>
+            <View style={InfoTela8Style.frenteTopView}>
+                <Text style={InfoTela8Style.frenteText}>QUADRAS EXTERNAS</Text>
+            </View>
+            <View style={InfoTela8Style.frenteBottomView}>
+                <Text style={InfoTela8Style.prediosText}>SÃO QUADRAS POLIESPORTIVAS ONDE OCORREM TREINOS DE FUTSAL, VÔLEI, HANDEBOL, BASQUETE E RUGBY. O ACESSO É POR MEIO DE RAMPA.</Text>
             </View>
         </SafeAreaView>
     );
 }
 
-const InfoTela7Style = {
+const InfoTela8Style = {
     areaView: {
         flex: 1,
         backgroundColor: 'white'

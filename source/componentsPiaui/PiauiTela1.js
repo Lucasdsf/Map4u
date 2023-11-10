@@ -10,7 +10,7 @@ export function PiauiTela1({ navigation }) {
             </View>
             <View style={PiauiTela1Style.esquerdaBottomView}>
                 <TouchableOpacity
-                    onPress={() => navigation.navigate('InfoTela6')}>
+                    onPress={() => navigation.navigate('InfoTela7')}>
                     <Text style={PiauiTela1Style.esquerdaBottomText}>SEGUINDO À ESQUERDA TEMOS ACESSO AO PRÉDIO 46.</Text>
                 </TouchableOpacity>
             </View>

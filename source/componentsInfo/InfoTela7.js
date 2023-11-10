@@ -7,18 +7,16 @@ export function InfoTela7({ navigation }) {
     return (
         <SafeAreaView style={InfoTela7Style.areaView}>
             <View style={InfoTela7Style.direitaTopView}>
+                <Text style={InfoTela7Style.direitaText}>PRÉDIO 46</Text>
+            </View>
+            <View style={InfoTela7Style.direitaBottomView}>
+                <Text style={InfoTela7Style.prediosText}>O PRÉDIO 46 FAZ PARTE DOS PRÉDIOS DA ESCOLA, O QUAL POSSUI SALAS DE EDUCAÇÃO INFANTIL E FUNDAMENTAL I. ALÉM DISSO, TAMBÉM POSSUI UM AMBULATÓRIO. O ACESSO É POR MEIO DE RAMPA.</Text>
+            </View>
+            <View style={InfoTela7Style.direitaTopView}>
                 <Text style={InfoTela7Style.direitaText}>PRÉDIO 48</Text>
             </View>
             <View style={InfoTela7Style.direitaBottomView}>
-                <Text style={InfoTela7Style.prediosText}>COLÉGIO P. MACK NOS DOIS PRIMEIROS ANDARES E FACULDADE NO TERCEIRO.
-                    POSSUI DUAS ENTRADAS, COM ELEVADOR E RAMPA DE ENTRADA. NA PARTE DE TRÁS DO PRÉDIO HÁ BANHEIROS COM ACESSIBILIDADE.
-                </Text>
-            </View>
-            <View style={InfoTela7Style.esquerdaTopView}>
-                <Text style={InfoTela7Style.esquerdaText}>PRÉDIO 49</Text>
-            </View>
-            <View style={InfoTela7Style.esquerdaBottomView}>
-                <Text style={InfoTela7Style.prediosText}>CENTRO DE COMUNICAÇÃO E LETRAS, POSSUI SALAS DO CURSO DE PUBLICIDADE, ENGENHARIA E OUTROS CURSOS DE EXATAS. POSSUI ACESSO POR ESCADAS E ELEVADOR.</Text>
+                <Text style={InfoTela7Style.prediosText}>O PRÉDIO 48 TEM OS DOIS PRIMEIROS ANDARES FOCADO EM AULAS DO COLÉGIO E NO TERCEIRO AULAS DA FACULDADE. ELE POSSUI DUAS ENTRADAS, COM ELEVADOR E RAMPA. NA PARTE DE TRÁS DO PRÉDIO HÁ BANHEIROS COM ACESSIBILIDADE.</Text>
             </View>
             <View style={InfoTela7Style.buttonsView}>
                 <TouchableOpacity

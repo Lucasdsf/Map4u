@@ -10,19 +10,19 @@ export function InfoTela1({ navigation }) {
                 <Text style={InfoTela1Style.direitaText}>PRÉDIO 4</Text>
             </View>
             <View style={InfoTela1Style.direitaBottomView}>
-                <Text style={InfoTela1Style.prediosText}>DIREITO E ENGENHARIA</Text>
+                <Text style={InfoTela1Style.prediosText}>O PRÉDIO 4 É A ESCOLA DE DIREITO E ENGENHARIA. ELE TEM ACESSO POR MEIO DE ESCADAS, RAMPA E O PRÉDIO CONTÉM ELEVADORES.</Text>
             </View>
             <View style={InfoTela1Style.esquerdaTopView}>
                 <Text style={InfoTela1Style.esquerdaText}>PRÉDIO 5</Text>
             </View>
             <View style={InfoTela1Style.esquerdaBottomView}>
-                <Text style={InfoTela1Style.prediosText}>PRÉDIO 5 É O PRÉDIO DAS ENGENHARIAS.</Text>
+                <Text style={InfoTela1Style.prediosText}>O PRÉDIO 5 É VOLTADO PARA OS CURSOS DE ENGENHARIA. ELE POSSUI ACESSO POR MEIO DE ESCADAS E ATRAVÉS DO PRÉDIO 6.</Text>
             </View>
             <View style={InfoTela1Style.frenteTopView}>
                 <Text style={InfoTela1Style.frenteText}>PRÉDIO 6</Text>
             </View>
             <View style={InfoTela1Style.frenteBottomView}>
-                <Text style={InfoTela1Style.prediosText}>O PRÉDIO 6 É O PRÉDIO DA ESCOLA DE ENGENHARIA. NELE TEM SALAS DE AULA E LABORATÓRIOS DE ENGENHARIA E QUÍMICA. ALÉM DISSO, NO TÉRREO TEM A BIBLIOTECA VOLTADA A ASSUNTOS DE ENGENHARIA E TECNOLOGIA.</Text>
+                <Text style={InfoTela1Style.prediosText}>O PRÉDIO 6 É A ESCOLA DE ENGENHARIA. NELE TEM SALAS DE AULA E LABORATÓRIOS DE ENGENHARIA E QUÍMICA. ALÉM DISSO, NO TÉRREO TEM A BIBLIOTECA VOLTADA A ASSUNTOS DE ENGENHARIA E TECNOLOGIA. O ACESSO AO PRÉDIO É POR MEIO DE ESCADAS OU RAMPAS DE ACESSO.</Text>
             </View>
             <View style={InfoTela1Style.buttonsView}>
                 <TouchableOpacity

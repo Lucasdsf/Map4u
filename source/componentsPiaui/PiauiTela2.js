@@ -28,7 +28,7 @@ export function PiauiTela2({ navigation }) {
             </View>
             <View style={ParaFrentePiauiStyle.direitaBottomView}>
                 <TouchableOpacity
-                    onPress={() => navigation.navigate('InfoTela7')}>
+                    onPress={() => navigation.navigate('InfoTela8')}>
                     <Text style={ParaFrentePiauiStyle.direitaBottomText}>SEGUINDO À DIREITA, TEMOS ACESSO AOS VESTIÁRIOS, QUADRAS EXTERNAS E AO PRÉDIO 50 DE CIÊNCIAS BIOLÓGICAS E SAÚDE. O ACESSO AO VESTIÁRIO FEMININO É POR MEIO DE ESCADA.</Text>
                 </TouchableOpacity>
             </View>

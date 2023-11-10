@@ -10,19 +10,19 @@ export function InfoTela2({ navigation }) {
                 <Text style={InfoTela2Style.direitaText}>PRÉDIO 20</Text>
             </View>
             <View style={InfoTela2Style.direitaBottomView}>
-                <Text style={InfoTela2Style.prediosText}>O PRÉDIO 20 É ONDE TEM A QUADRA INTERNA DE BASQUETE, VESTIÁRIOS E UMA DAS PAPELARIAS NA UNIVERSIDADE.</Text>
+                <Text style={InfoTela2Style.prediosText}>O PRÉDIO 20 É ONDE TEM A QUADRA INTERNA DE BASQUETE, VESTIÁRIOS E UMA DAS PAPELARIAS NA UNIVERSIDADE. O ACESSO É POR MEIO DE ESCADAS OU RAMPAS DE ACESSO.</Text>
             </View>
             <View style={InfoTela2Style.esquerdaTopView}>
                 <Text style={InfoTela2Style.esquerdaText}>PRÉDIO 23</Text>
             </View>
             <View style={InfoTela2Style.esquerdaBottomView}>
-                <Text style={InfoTela2Style.prediosText}>ENFERMARIA E LABORATÓRIOS FACULDADE DE ARQUITETURA E URBANISMO.</Text>
+                <Text style={InfoTela2Style.prediosText}>O PRÉDIO 23 É ONDE TEM A ENFERMARIA E LABORATÓRIOS FACULDADE DE ARQUITETURA E URBANISMO. O ACESSO É POR MEIO DE RAMPAS.</Text>
             </View>
             <View style={InfoTela2Style.esquerdaTopView}>
                 <Text style={InfoTela2Style.esquerdaText}>PRÉDIO 24</Text>
             </View>
             <View style={InfoTela2Style.esquerdaBottomView}>
-                <Text style={InfoTela2Style.prediosText}>O PRÉDIO 24 É OUTRO PRÉDIO DA ESCOLA DE ENGENHARIA E POSSUI DIVERSOS LABORATÓRIOS.</Text>
+                <Text style={InfoTela2Style.prediosText}>O PRÉDIO 24 É OUTRO PRÉDIO DA ESCOLA DE ENGENHARIA E POSSUI DIVERSOS LABORATÓRIOS. O ACESSO É POR MEIO DE RAMPA E POSSUI ELEVADOR.</Text>
             </View>
             <View style={InfoTela2Style.buttonsView}>
                 <TouchableOpacity

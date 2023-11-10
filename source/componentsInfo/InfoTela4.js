@@ -6,17 +6,17 @@ import { SafeAreaView } from "react-native-safe-area-context";
 export function InfoTela4({ navigation }) {
     return (
         <SafeAreaView style={InfoTela4Style.areaView}>
+            <View style={InfoTela4Style.direitaTopView}>
+                <Text style={InfoTela4Style.direitaText}>PRÉDIO 29</Text>
+            </View>
+            <View style={InfoTela4Style.direitaBottomView}>
+                <Text style={InfoTela4Style.prediosText}>O PRÉDIO 29 É COMPOSTO POR DOIS ANDARES, NO TÉRREO TEM VESTIÁRIOS FEMININO E MASCULINO E DUAS QUADRAS DE VÔLEI. NO PRIMEIRO ANDAR, TEM UMA QUADRA POLIESPORTIVA, ELA É USADA PARA TREINOS DE HANDEBOL, FUTSAL E BASQUETE. O PRIMEIRO ANDAR PODE SER ACESSADO POR MEIO DE ESCADA OU ELEVADOR.</Text>
+            </View>
             <View style={InfoTela4Style.esquerdaTopView}>
                 <Text style={InfoTela4Style.esquerdaText}>PRÉDIO 30 - MACKGRAPHE</Text>
             </View>
             <View style={InfoTela4Style.esquerdaBottomView}>
-                <Text style={InfoTela4Style.prediosText}>O PRÉDIO 30, MAIS CONHECIDO COMO MACKGRAPHE, É ONDE ESTÃO OS LABORATÓRIOS DE PESQUISA DE GRAFENO E NANOTECNOLOGIA.</Text>
-            </View>
-            <View style={InfoTela4Style.frenteTopView}>
-                <Text style={InfoTela4Style.frenteText}>PRÉDIO 31 - FCI</Text>
-            </View>
-            <View style={InfoTela4Style.frenteBottomView}>
-                <Text style={InfoTela4Style.prediosText}>O PRÉDIO 31 É O PRÉDIO DE TECNOLOGIA E INFORMAÇÃO. ELE TEM QUATRO ANDARES E PODE SER ACESSADO PELO TÉRREO, POR MEIO DE RAMPA DE ACESSO, OU PELO PRIMEIRO ANDAR, POR MEIO DE ESCADAS. POSSUI UM ELEVADOR E ESCADAS PARA ACESSAR OS ANDARES. NELE TEM LABORATÓRIOS COM NOTEBOOKS ONDE SÃO MINISTRADAS AS AULAS DOS CURSOS DE TECNOLOGIA. NO PRIMEIRO ANDAR FICA A SECRETARIA DA FACULDADE DE TECNOLOGIA E INFORMAÇÃO E A SALA DE PROFESSORES. ALÉM DISSO, NO TERCEIRO ANDAR, TEM UMA DAS ENTRADAS DO LABORATÓRIO DA APPLE ACADEMY.</Text>
+                <Text style={InfoTela4Style.prediosText}>O PRÉDIO 30, MAIS CONHECIDO COMO MACKGRAPHE, É ONDE ESTÃO OS LABORATÓRIOS DE PESQUISA DE GRAFENO E NANOTECNOLOGIA. O ACESSO É POR MEIO DE RAMPA E O PRÉDIO CONTÉM ELEVADOR.</Text>
             </View>
             <View style={InfoTela4Style.buttonsView}>
                 <TouchableOpacity

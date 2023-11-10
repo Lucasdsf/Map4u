@@ -6,19 +6,17 @@ import { SafeAreaView } from "react-native-safe-area-context";
 export function InfoTela6({ navigation }) {
     return (
         <SafeAreaView style={InfoTela6Style.areaView}>
+            <View style={InfoTela6Style.esquerdaTopView}>
+                <Text style={InfoTela6Style.esquerdaText}>PRÉDIO 35</Text>
+            </View>
+            <View style={InfoTela6Style.esquerdaBottomView}>
+                <Text style={InfoTela6Style.prediosText}>O PRÉDIO 35 É ONDE TEM OS ACHADOS E PERDIDOS, A GERÊNCIA DE SEGURANÇA DO CAMPUS E O CONTROLE E CHAVES. O ACESSO É POR MEIO DE RAMPA.</Text>
+            </View>
             <View style={InfoTela6Style.frenteTopView}>
                 <Text style={InfoTela6Style.frenteText}>PRÉDIO 45</Text>
             </View>
             <View style={InfoTela6Style.frenteBottomView}>
-                <Text style={InfoTela6Style.prediosText}>O PRÉDIO 45 É O CENTRO DE CIÊNCIAS SOCIAIS E APLICADAS. ELE TEM CINCO ANDARES E PODE SER ACESSADO ATRAVÉS DO SUBSOLO OU DO PRIMEIRO ANDAR, POR MEIO DE ESCADAS, MAS NO PRÉDIO TEM ELEVADORES E ESCADAS PARA ACESSAR OS OUTROS ANDARES. ALÉM DE SALAS DE AULA, ELE TEM UMA BIBLIOTECA VOLTADA ÀS MATÉRIAS DE CIÊNCIAS SOCIAIS NO SUBSOLO 1 E 2 COM SALAS PRIVATIVAS DE ESTUDO. E, NO PRIMEIRO ANDAR, TEM UMA PRAÇA DE ALIMENTAÇÃO.
-                    POSSUI 6 ANDARES COM SALAS DE AULA.
-                </Text>
-            </View>
-            <View style={InfoTela6Style.direitaTopView}>
-                <Text style={InfoTela6Style.direitaText}>PRÉDIO 46</Text>
-            </View>
-            <View style={InfoTela6Style.direitaBottomView}>
-                <Text style={InfoTela6Style.prediosText}>O PRÉDIO 46 FAZ PARTE DOS PRÉDIOS DA ESCOLA, NELE TÊM SALAS DE EDUCAÇÃO INFANTIL E FUNDAMENTAL I. ALÉM DISSO, TAMBÉM POSSUI UM AMBULATÓRIO.</Text>
+                <Text style={InfoTela6Style.prediosText}>O PRÉDIO 45 É O CENTRO DE CIÊNCIAS SOCIAIS E APLICADAS. ELE TEM SEIS ANDARES E PODE SER ACESSADO ATRAVÉS DO SUBSOLO OU DO PRIMEIRO ANDAR, POR MEIO DE ESCADAS, MAS NO PRÉDIO TEM ELEVADORES E ESCADAS PARA ACESSAR OS OUTROS ANDARES. ALÉM DE SALAS DE AULA, ELE TEM UMA BIBLIOTECA VOLTADA ÀS MATÉRIAS DE CIÊNCIAS SOCIAIS NO SUBSOLO 1 E 2 COM SALAS PRIVATIVAS DE ESTUDO. E, NO TÉRREO, TEM UMA PRAÇA DE ALIMENTAÇÃO.</Text>
             </View>
             <View style={InfoTela6Style.buttonsView}>
                 <TouchableOpacity

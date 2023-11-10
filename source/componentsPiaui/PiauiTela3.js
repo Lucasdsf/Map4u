@@ -9,8 +9,7 @@ export function PiauiTela3({ navigation }) {
                 <Text style={PiauiTela3Style.esquerdaText}>ESQUERDA</Text>
             </View>
             <View style={PiauiTela3Style.esquerdaBottomView}>
-                <TouchableOpacity
-                    onPress={() => navigation.navigate('InfoTela4')}>
+                <TouchableOpacity>
                     <Text style={PiauiTela3Style.esquerdaBottomText}>SEGUINDO À ESQUERDA, TEMOS UMA ÁREA DE DESCANSO EXTERNA COM BANCOS DE MADEIRA E ESPAÇO SOCIAL.</Text>
                 </TouchableOpacity>
             </View>
@@ -28,7 +27,7 @@ export function PiauiTela3({ navigation }) {
             </View>
             <View style={PiauiTela3Style.direitaBottomView}>
                 <TouchableOpacity
-                    onPress={() => navigation.navigate('InfoTela3')}>
+                    onPress={() => navigation.navigate('InfoTela4')}>
                     <Text style={PiauiTela3Style.direitaBottomText}>SEGUINDO À DIREITA, TEMOS ACESSO AO MACKGRAPHE E AO PRÉDIO 29 COM AS QUADRAS POLIESPORTIVAS E VESTIÁRIOS.</Text>
                 </TouchableOpacity>
             </View>

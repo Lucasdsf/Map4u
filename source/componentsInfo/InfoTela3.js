@@ -10,19 +10,13 @@ export function InfoTela3({ navigation }) {
                 <Text style={InfoTela3Style.frenteText}>PRÉDIO 25</Text>
             </View>
             <View style={InfoTela3Style.frenteBottomView}>
-                <Text style={InfoTela3Style.prediosText}>O PRÉDIO 25 É UM DOS PRÉDIOS DE DIREITO, MAS TAMBÉM É USADO PARA OUTROS CURSOS. ALÉM DE SALAS DE AULA, ELE TEM NO TÉRREO UM LABORATÓRIO DE ENGENHARIA. ELE TEM QUATRO ANDARES QUE PODEM SER ACESSADOS POR MEIO DE ELEVADOR OU ESCADAS.</Text>
+                <Text style={InfoTela3Style.prediosText}>O PRÉDIO 25 É UM DOS PRÉDIOS DE DIREITO, MAS TAMBÉM É USADO PARA OUTROS CURSOS. ALÉM DE SALAS DE AULA, ELE TEM NO TÉRREO UM LABORATÓRIO DE ENGENHARIA. POSSUI QUATRO ANDARES QUE PODEM SER ACESSADOS POR MEIO DE ELEVADOR OU ESCADAS. O ACESSO AO PRÉDIO É POR MEIO DE ESCADAS OU RAMPA.</Text>
             </View>
             <View style={InfoTela3Style.frenteTopView}>
                 <Text style={InfoTela3Style.frenteText}>PRÉDIO 28</Text>
             </View>
             <View style={InfoTela3Style.frenteBottomView}>
-                <Text style={InfoTela3Style.prediosText}>ENGENHARIA E LABORATÓRIOS DE FOTOGRAFIA, ÁUDIO E VÍDEO.</Text>
-            </View>
-            <View style={InfoTela3Style.direitaTopView}>
-                <Text style={InfoTela3Style.direitaText}>PRÉDIO 29</Text>
-            </View>
-            <View style={InfoTela3Style.direitaBottomView}>
-                <Text style={InfoTela3Style.prediosText}>O PRÉDIO 29 É COMPOSTO POR DOIS ANDARES, NO TÉRREO TEM VESTIÁRIOS FEMININO E MASCULINO E DUAS QUADRAS DE VÔLEI. NO PRIMEIRO ANDAR, TEM UMA QUADRA POLIESPORTIVA, ELA É USADA PARA TREINOS DE HANDEBOL, FUTSAL E BASQUETE. O PRIMEIRO ANDAR PODE SER ACESSADO POR MEIO DE ESCADA OU ELEVADOR.</Text>
+                <Text style={InfoTela3Style.prediosText}>É UM PRÉDIO DO CURSO DE ENGENHARIA E POSSUI LABORATÓRIOS DE FOTOGRAFIA, ÁUDIO E VÍDEO. O ACESSO É POR MEIO DE ESCADAS OU RAMPA E O PRÉDIO POSSUI ELEVADOR.</Text>
             </View>
             <View style={InfoTela3Style.buttonsView}>
                 <TouchableOpacity
