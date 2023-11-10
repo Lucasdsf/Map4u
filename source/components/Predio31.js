@@ -13,7 +13,7 @@ export function Predio31({ navigation }) {
                 <TouchableOpacity
                     style={PortariasStyle.button}
                     onPress={() => navigation.navigate('Portarias')}>
-                    <Text style={PortariasStyle.buttonText}>PRÉDIO 31</Text>
+                    <Text style={PortariasStyle.buttonText}>PRÉDIO 31 - FCI</Text>
                 </TouchableOpacity>
             </View>
             <View style={PortariasStyle.buttonsView}>
@@ -40,8 +40,7 @@ const PortariasStyle = {
         textAlign: 'center',
         lineHeight: 32,
         fontWeight: 'bold',
-        padding: 32,
-        fontFamily: 'Arial'
+        padding: 32
     },
     buttonsView: {
         backgroundColor: 'rgb(190, 190, 190)',
@@ -55,8 +54,7 @@ const PortariasStyle = {
         lineHeight: 32,
         fontWeight: 'bold',
         paddingVertical: 10,
-        paddingHorizontal: 90,
-        fontFamily: 'Arial'
+        paddingHorizontal: 90
     },
     buttonText1: {
         color: 'black',
@@ -65,7 +63,6 @@ const PortariasStyle = {
         lineHeight: 32,
         fontWeight: 'bold',
         paddingVertical: 10,
-        paddingHorizontal: 100,
-        fontFamily: 'Arial'
+        paddingHorizontal: 100
     }
 }

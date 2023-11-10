@@ -1,7 +1,6 @@
 import * as React from "react";
-import { Button, View, Text } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-
 
 export function MariaAntoniaTela2({ navigation }) {
     return (
@@ -10,28 +9,28 @@ export function MariaAntoniaTela2({ navigation }) {
                 <Text style={MariaAntoniaTela2Style.esquerdaText}>ESQUERDA</Text>
             </View>
             <View style={MariaAntoniaTela2Style.esquerdaBottomView}>
-                <Button
-                    title='NA ESQUERDA TEMOS ACESSO AO PRÉDIO 24 DE ENGENHARIA. O ACESSO É POR MEIO DE RAMPAS DE ACESSO.'
-                    color='black'
-                    onPress={() => navigation.navigate('InfoTela2')} />
+                <TouchableOpacity
+                    onPress={() => navigation.navigate('InfoTela2')}>
+                    <Text style={MariaAntoniaTela2Style.esquerdaBottomText}>NA ESQUERDA TEMOS ACESSO AO PRÉDIO 24 DE ENGENHARIA. O ACESSO É POR MEIO DE RAMPAS DE ACESSO.</Text>
+                </TouchableOpacity>
             </View>
             <View style={MariaAntoniaTela2Style.frenteTopView}>
                 <Text style={MariaAntoniaTela2Style.frenteText}>PARA FRENTE</Text>
             </View>
             <View style={MariaAntoniaTela2Style.frenteBottomView}>
-                <Button
-                    title='SEGUINDO EM FRENTE ENCONTRAREMOS ACESSO AO PRÉDIO 25 DOS CURSOS DE DIREITO E ALGUNS LABORATÓRIOS DE ENGENHARIA. O ACESSO É POR MEIO DE RAMPA OU ESCADAS. ESSA É A DIREÇÃO INDICADA PARA CHEGAR AO PRÉDIO 31.'
-                    color='black'
-                    onPress={() => navigation.navigate('MariaAntoniaTela3')} />
+                <TouchableOpacity
+                    onPress={() => navigation.navigate('MariaAntoniaTela3')}>
+                    <Text style={MariaAntoniaTela2Style.frenteBottomText}>SEGUINDO EM FRENTE ENCONTRAREMOS ACESSO AO PRÉDIO 25 DOS CURSOS DE DIREITO E ALGUNS LABORATÓRIOS DE ENGENHARIA. O ACESSO É POR MEIO DE RAMPA OU ESCADAS. ESSA É A DIREÇÃO INDICADA PARA CHEGAR AO PRÉDIO 31.</Text>
+                </TouchableOpacity>
             </View>
             <View style={MariaAntoniaTela2Style.direitaTopView}>
                 <Text style={MariaAntoniaTela2Style.direitaText}>DIREITA</Text>
             </View>
             <View style={MariaAntoniaTela2Style.direitaBottomView}>
-                <Button
-                    title='NA DIREITA TEMOS O PRÉDIO 6 DE ENGENHARIA.'
-                    color='black'
-                    onPress={() => navigation.navigate('InfoTela1')} />
+                <TouchableOpacity
+                    onPress={() => navigation.navigate('InfoTela1')}>
+                    <Text style={MariaAntoniaTela2Style.direitaBottomText}>NA DIREITA TEMOS O PRÉDIO 6 DE ENGENHARIA.</Text>
+                </TouchableOpacity>
             </View>
         </SafeAreaView>
     );
@@ -51,7 +50,6 @@ const MariaAntoniaTela2Style = {
     esquerdaText: {
         color: 'black',
         fontSize: 24,
-        fontFamily: 'Arial',
         fontWeight: 'bold'
     },
     esquerdaBottomView: {
@@ -59,8 +57,7 @@ const MariaAntoniaTela2Style = {
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'rgb(190, 190, 190)',
-        fontFamily: 'Arial'
+        backgroundColor: 'rgb(190, 190, 190)'
     },
     frenteTopView: {
         borderTopLeftRadius: 10,
@@ -71,7 +68,6 @@ const MariaAntoniaTela2Style = {
     frenteText: {
         color: 'black',
         fontSize: 24,
-        fontFamily: 'Arial',
         fontWeight: 'bold'
     },
     frenteBottomView: {
@@ -79,8 +75,7 @@ const MariaAntoniaTela2Style = {
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'rgb(190, 190, 190)',
-        fontFamily: 'Arial'
+        backgroundColor: 'rgb(190, 190, 190)'
     },
     direitaTopView: {
         borderTopLeftRadius: 10,
@@ -91,7 +86,6 @@ const MariaAntoniaTela2Style = {
     direitaText: {
         color: 'black',
         fontSize: 24,
-        fontFamily: 'Arial',
         fontWeight: 'bold'
     },
     direitaBottomView: {
@@ -99,7 +93,21 @@ const MariaAntoniaTela2Style = {
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'rgb(190, 190, 190)',
-        fontFamily: 'Arial'
+        backgroundColor: 'rgb(190, 190, 190)'
+    },
+    esquerdaBottomText: {
+        color: 'black',
+        fontSize: 18,
+        textAlign: 'center',
+    },
+    frenteBottomText: {
+        color: 'black',
+        fontSize: 18,
+        textAlign: 'center',
+    },
+    direitaBottomText: {
+        color: 'black',
+        fontSize: 18,
+        textAlign: 'center',
     }
 }

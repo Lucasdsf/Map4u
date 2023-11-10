@@ -1,40 +1,28 @@
 import * as React from "react";
-import { Button, View, Text, TouchableOpacity } from "react-native";
+import { View, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 
-export function InfoTela2({ navigation }) {
+export function InfoTela8 ({ navigation }) {
     return (
-        <SafeAreaView style={InfoTela2Style.areaView}>
-            <View style={InfoTela2Style.direitaTopView}>
-                <Text style={InfoTela2Style.direitaText}>PRÉDIO 20</Text>
+        <SafeAreaView style={InfoTela7Style.areaView}>
+            <View style={InfoTela7Style.esquerdaTopView}>
+                <Text style={InfoTela7Style.esquerdaText}>PRÉDIO 50</Text>
             </View>
-            <View style={InfoTela2Style.direitaBottomView}>
-                <Text style={InfoTela2Style.prediosText}>O PRÉDIO 20 É ONDE TEM A QUADRA INTERNA DE BASQUETE, VESTIÁRIOS E UMA DAS PAPELARIAS NA UNIVERSIDADE.</Text>
+            <View style={InfoTela7Style.esquerdaBottomView}>
+                <Text style={InfoTela7Style.prediosText}>O PRÉDIO 50 É O CENTRO DE CIÊNCIAS BIOLÓGICAS E DA SAÚDE, ALÉM DE SER O PRÉDIO DA CHANCELARIA.</Text>
             </View>
-            <View style={InfoTela2Style.esquerdaTopView}>
-                <Text style={InfoTela2Style.esquerdaText}>PRÉDIO 23</Text>
+            <View style={InfoTela7Style.frenteTopView}>
+                <Text style={InfoTela7Style.frenteText}>QUADRAS EXTERNAS</Text>
             </View>
-            <View style={InfoTela2Style.esquerdaBottomView}>
-                <Text style={InfoTela2Style.prediosText}>ENFERMARIA E LABORATÓRIOS FACULDADE DE ARQUITETURA E URBANISMO.</Text>
-            </View>
-            <View style={InfoTela2Style.esquerdaTopView}>
-                <Text style={InfoTela2Style.esquerdaText}>PRÉDIO 24</Text>
-            </View>
-            <View style={InfoTela2Style.esquerdaBottomView}>
-                <Text style={InfoTela2Style.prediosText}>O PRÉDIO 24 É OUTRO PRÉDIO DA ESCOLA DE ENGENHARIA E POSSUI DIVERSOS LABORATÓRIOS.</Text>
-            </View>
-            <View style={InfoTela2Style.buttonsView}>
-                <TouchableOpacity
-                    onPress={() => navigation.navigate('InfoTela3')}>
-                    <Text style={InfoTela2Style.buttonText}>PRÓXIMO</Text>
-                </TouchableOpacity>
+            <View style={InfoTela7Style.frenteBottomView}>
+                <Text style={InfoTela7Style.prediosText}>SÃO QUADRAS POLIESPORTIVAS ONDE OCORREM TREINOS DE FUTSAL, VÔLEI, HANDEBOL, BASQUETE E RUGBY.</Text>
             </View>
         </SafeAreaView>
     );
 }
 
-const InfoTela2Style = {
+const InfoTela7Style = {
     areaView: {
         flex: 1,
         backgroundColor: 'white'

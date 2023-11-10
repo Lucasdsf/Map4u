@@ -37,8 +37,7 @@ const PortariasStyle = {
         lineHeight: 32,
         fontWeight: 'bold',
         padding: 32,
-        margin: 10,
-        fontFamily: 'Arial'
+        margin: 10
     },
     buttonsView: {
         backgroundColor: 'rgb(190, 190, 190)',
@@ -52,8 +51,7 @@ const PortariasStyle = {
         lineHeight: 32,
         fontWeight: 'bold',
         paddingVertical: 10,
-        paddingHorizontal: 93,
-        fontFamily: 'Arial'
+        paddingHorizontal: 93
     },
     buttonText1: {
         color: 'black',
@@ -62,7 +60,6 @@ const PortariasStyle = {
         lineHeight: 32,
         fontWeight: 'bold',
         paddingVertical: 10,
-        paddingHorizontal: 40,
-        fontFamily: 'Arial'
+        paddingHorizontal: 40
     }
 }

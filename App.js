@@ -22,6 +22,7 @@ import { InfoTela4 } from './source/componentsInfo/InfoTela4';
 import { InfoTela5 } from './source/componentsInfo/InfoTela5';
 import { InfoTela6 } from './source/componentsInfo/InfoTela6';
 import { InfoTela7 } from './source/componentsInfo/InfoTela7';
+import { InfoTela8 } from './source/componentsInfo/InfoTela8';
 
 
 const Stack = createNativeStackNavigator();
@@ -220,6 +221,15 @@ function App() {
         <Stack.Screen
           name='InfoTela7'
           component={InfoTela7}
+          options={{
+            headerTitle: '',
+            headerBackTitle: 'VOLTAR',
+            headerBackTitleVisible: true,
+            headerTintColor: 'black',
+          }} />
+      <Stack.Screen
+          name='InfoTela8'
+          component={InfoTela8}
           options={{
             headerTitle: '',
             headerBackTitle: 'VOLTAR',

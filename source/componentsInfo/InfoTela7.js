@@ -20,17 +20,11 @@ export function InfoTela7({ navigation }) {
             <View style={InfoTela7Style.esquerdaBottomView}>
                 <Text style={InfoTela7Style.prediosText}>CENTRO DE COMUNICAÇÃO E LETRAS, POSSUI SALAS DO CURSO DE PUBLICIDADE, ENGENHARIA E OUTROS CURSOS DE EXATAS. POSSUI ACESSO POR ESCADAS E ELEVADOR.</Text>
             </View>
-            <View style={InfoTela7Style.esquerdaTopView}>
-                <Text style={InfoTela7Style.esquerdaText}>PRÉDIO 50</Text>
-            </View>
-            <View style={InfoTela7Style.esquerdaBottomView}>
-                <Text style={InfoTela7Style.prediosText}>O PRÉDIO 50 É O CENTRO DE CIÊNCIAS BIOLÓGICAS E DA SAÚDE, ALÉM DE SER O PRÉDIO DA CHANCELARIA.</Text>
-            </View>
-            <View style={InfoTela7Style.frenteTopView}>
-                <Text style={InfoTela7Style.frenteText}>QUADRAS EXTERNAS</Text>
-            </View>
-            <View style={InfoTela7Style.frenteBottomView}>
-                <Text style={InfoTela7Style.prediosText}>SÃO QUADRAS POLIESPORTIVAS ONDE OCORREM TREINOS DE FUTSAL, VÔLEI, HANDEBOL, BASQUETE E RUGBY.</Text>
+            <View style={InfoTela7Style.buttonsView}>
+                <TouchableOpacity
+                    onPress={() => navigation.navigate('InfoTela8')}>
+                    <Text style={InfoTela7Style.buttonText}>PRÓXIMO</Text>
+                </TouchableOpacity>
             </View>
         </SafeAreaView>
     );
@@ -50,7 +44,6 @@ const InfoTela7Style = {
     esquerdaText: {
         color: 'black',
         fontSize: 24,
-        fontFamily: 'Arial',
         fontWeight: 'bold'
     },
     esquerdaBottomView: {
@@ -58,8 +51,7 @@ const InfoTela7Style = {
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'rgb(190, 190, 190)',
-        fontFamily: 'Arial'
+        backgroundColor: 'rgb(190, 190, 190)'
     },
     frenteTopView: {
         borderTopLeftRadius: 10,
@@ -70,7 +62,6 @@ const InfoTela7Style = {
     frenteText: {
         color: 'black',
         fontSize: 24,
-        fontFamily: 'Arial',
         fontWeight: 'bold'
     },
     frenteBottomView: {
@@ -78,8 +69,7 @@ const InfoTela7Style = {
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'rgb(190, 190, 190)',
-        fontFamily: 'Arial'
+        backgroundColor: 'rgb(190, 190, 190)'
     },
     direitaTopView: {
         borderTopLeftRadius: 10,
@@ -90,7 +80,6 @@ const InfoTela7Style = {
     direitaText: {
         color: 'black',
         fontSize: 24,
-        fontFamily: 'Arial',
         fontWeight: 'bold'
     },
     direitaBottomView: {
@@ -98,8 +87,7 @@ const InfoTela7Style = {
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'rgb(190, 190, 190)',
-        fontFamily: 'Arial',
+        backgroundColor: 'rgb(190, 190, 190)'
 
     },
     buttonsView: {
@@ -114,13 +102,11 @@ const InfoTela7Style = {
         lineHeight: 32,
         fontWeight: 'bold',
         paddingVertical: 10,
-        paddingHorizontal: 90,
-        fontFamily: 'Arial'
+        paddingHorizontal: 90
     },
     prediosText: {
         color: 'black',
         fontSize: 18,
-        fontFamily: 'Arial',
         textAlign: 'center'
     }
 }

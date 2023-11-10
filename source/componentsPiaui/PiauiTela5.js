@@ -1,7 +1,6 @@
 import * as React from "react";
-import { Button, View, Text, Alert } from "react-native";
+import { View, Text, TouchableOpacity, Alert } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-
 
 export function PiauiTela5({ navigation }) {
     return (
@@ -10,28 +9,28 @@ export function PiauiTela5({ navigation }) {
                 <Text style={PiauiTela5Style.esquerdaText}>ESQUERDA</Text>
             </View>
             <View style={PiauiTela5Style.esquerdaBottomView}>
-                <Button
-                    title='NA ESQUERDA TEMOS O ACESSO AO PRIMEIRO ANDAR DO PRÉDIO 31 DE TECNOLOGIA E INFORMAÇÃO. O ACESSO É POR MEIO DE ESCADAS.'
-                    color='black'
-                    onPress={() => Alert.alert('VOCÊ CHEGOU NO ACESSO AO PRIMEIRO ANDAR DO PRÉDIO 31. O ACESSO É POR MEIO DE ESCADAS.')} />
+                <TouchableOpacity
+                    onPress={() => Alert.alert('VOCÊ CHEGOU NO PRÉDIO 31.')}>
+                    <Text style={PiauiTela5Style.esquerdaBottomText}>NA ESQUERDA TEMOS O ACESSO AO PRIMEIRO ANDAR DO PRÉDIO 31 DE TECNOLOGIA E INFORMAÇÃO. O ACESSO É POR MEIO DE ESCADAS.</Text>
+                </TouchableOpacity>
             </View>
             <View style={PiauiTela5Style.frenteTopView}>
                 <Text style={PiauiTela5Style.frenteText}>PARA FRENTE</Text>
             </View>
             <View style={PiauiTela5Style.frenteBottomView}>
-                <Button
-                    title='SEGUINDO EM FRENTE TEMOS O PRÉDIO 33 DE TECNOLOGIA E INFORMAÇÃO E O PRÉDIO 35 DE ACHADOS E PERDIDOS.'
-                    color='black'
-                    onPress={() => navigation.navigate('InfoTela5')} />
+                <TouchableOpacity
+                    onPress={() => navigation.navigate('InfoTela5')}>
+                    <Text style={PiauiTela5Style.frenteBottomText}>SEGUINDO EM FRENTE TEMOS O PRÉDIO 33 DE TECNOLOGIA E INFORMAÇÃO E O PRÉDIO 35 DE ACHADOS E PERDIDOS.</Text>
+                </TouchableOpacity>
             </View>
             <View style={PiauiTela5Style.direitaTopView}>
                 <Text style={PiauiTela5Style.direitaText}>DIREITA</Text>
             </View>
             <View style={PiauiTela5Style.direitaBottomView}>
-                <Button
-                    title='NA DIREITA TEMOS O MACKGRAPHE, PRÉDIO FOCADO EM ESTUDOS DE NANOTECNOLOGIA E GRAFENO.'
-                    color='black'
-                    onPress={() => navigation.navigate('InfoTela4')} />
+                <TouchableOpacity
+                    onPress={() => navigation.navigate('InfoTela4')}>
+                    <Text style={PiauiTela5Style.direitaBottomText}>NA DIREITA TEMOS O MACKGRAPHE, PRÉDIO FOCADO EM ESTUDOS DE NANOTECNOLOGIA E GRAFENO.</Text>
+                </TouchableOpacity>
             </View>
         </SafeAreaView>
     );
@@ -51,7 +50,6 @@ const PiauiTela5Style = {
     esquerdaText: {
         color: 'black',
         fontSize: 24,
-        fontFamily: 'Arial',
         fontWeight: 'bold'
     },
     esquerdaBottomView: {
@@ -59,8 +57,7 @@ const PiauiTela5Style = {
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'rgb(190, 190, 190)',
-        fontFamily: 'Arial'
+        backgroundColor: 'rgb(190, 190, 190)'
     },
     frenteTopView: {
         borderTopLeftRadius: 10,
@@ -71,7 +68,6 @@ const PiauiTela5Style = {
     frenteText: {
         color: 'black',
         fontSize: 24,
-        fontFamily: 'Arial',
         fontWeight: 'bold'
     },
     frenteBottomView: {
@@ -79,8 +75,7 @@ const PiauiTela5Style = {
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'rgb(190, 190, 190)',
-        fontFamily: 'Arial'
+        backgroundColor: 'rgb(190, 190, 190)'
     },
     direitaTopView: {
         borderTopLeftRadius: 10,
@@ -91,7 +86,6 @@ const PiauiTela5Style = {
     direitaText: {
         color: 'black',
         fontSize: 24,
-        fontFamily: 'Arial',
         fontWeight: 'bold'
     },
     direitaBottomView: {
@@ -99,7 +93,21 @@ const PiauiTela5Style = {
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'rgb(190, 190, 190)',
-        fontFamily: 'Arial'
+        backgroundColor: 'rgb(190, 190, 190)'
+    },
+    esquerdaBottomText: {
+        color: 'black',
+        fontSize: 18,
+        textAlign: 'center',
+    },
+    frenteBottomText: {
+        color: 'black',
+        fontSize: 18,
+        textAlign: 'center',
+    },
+    direitaBottomText: {
+        color: 'black',
+        fontSize: 18,
+        textAlign: 'center',
     }
 }

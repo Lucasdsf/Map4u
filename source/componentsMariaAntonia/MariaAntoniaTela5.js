@@ -1,7 +1,6 @@
 import * as React from "react";
-import { Button, View, Text, Alert } from "react-native";
+import { View, Text, TouchableOpacity, Alert } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-
 
 export function MariaAntoniaTela5({ navigation }) {
     return (
@@ -10,28 +9,28 @@ export function MariaAntoniaTela5({ navigation }) {
                 <Text style={MariaAntoniaTela5Style.esquerdaText}>ESQUERDA</Text>
             </View>
             <View style={MariaAntoniaTela5Style.esquerdaBottomView}>
-                <Button
-                    title='NA ESQUERDA TEMOS ACESSO AO TÉRREO DO PRÉDIO 31 DE TECNOLOGIA E INFORMAÇÃO QUE É A PARTE DO ENSINO À DISTÂNCIA. O ACESSO É POR MEIO DE RAMPA.'
-                    color='black'
-                    onPress={() => navigation.navigate('MariaAntoniaTela6')} />
+                <TouchableOpacity
+                    onPress={() => navigation.navigate('MariaAntoniaTela6')}>
+                    <Text style={MariaAntoniaTela5Style.esquerdaBottomText}>NA ESQUERDA TEMOS ACESSO AO TÉRREO DO PRÉDIO 31 DE TECNOLOGIA E INFORMAÇÃO QUE É A PARTE DO ENSINO À DISTÂNCIA. O ACESSO É POR MEIO DE RAMPA.</Text>
+                </TouchableOpacity>
             </View>
             <View style={MariaAntoniaTela5Style.frenteTopView}>
                 <Text style={MariaAntoniaTela5Style.frenteText}>PARA FRENTE</Text>
             </View>
             <View style={MariaAntoniaTela5Style.frenteBottomView}>
-                <Button
-                    title='SEGUINDO EM FRENTE ENCONTRAREMOS ACESSO AO PRIMEIRO ANDAR DO PRÉDIO 31 E O PRÉDIO 33, AMBOS DE TECNOLOGIA E INFORMAÇÃO.'
-                    color='black'
-                    onPress={() => Alert.alert('VOCÊ CHEGOU NO ACESSO AO PRIMEIRO ANDAR DO PRÉDIO 31. O ACESSO É POR MEIO DE ESCADAS.')} />
+                <TouchableOpacity
+                    onPress={() => Alert.alert('VOCÊ CHEGOU NO PRÉDIO 31.')}>
+                    <Text style={MariaAntoniaTela5Style.frenteBottomText}>SEGUINDO EM FRENTE ENCONTRAREMOS ACESSO AO PRIMEIRO ANDAR DO PRÉDIO 31 E O PRÉDIO 33, AMBOS DE TECNOLOGIA E INFORMAÇÃO.</Text>
+                </TouchableOpacity>
             </View>
             <View style={MariaAntoniaTela5Style.direitaTopView}>
                 <Text style={MariaAntoniaTela5Style.direitaText}>DIREITA</Text>
             </View>
             <View style={MariaAntoniaTela5Style.direitaBottomView}>
-                <Button
-                    title='NA DIREITA TEMOS O CAMINHO PARA A PORTARIA PIAUÍ.'
-                    color='black'
-                    onPress={() => navigation.navigate('Portarias')} />
+                <TouchableOpacity
+                    onPress={() => navigation.navigate('Portarias')}>
+                    <Text style={MariaAntoniaTela5Style.direitaBottomText}>NA DIREITA TEMOS O CAMINHO PARA A PORTARIA PIAUÍ.</Text>
+                </TouchableOpacity>
             </View>
         </SafeAreaView>
     );
@@ -51,7 +50,6 @@ const MariaAntoniaTela5Style = {
     esquerdaText: {
         color: 'black',
         fontSize: 24,
-        fontFamily: 'Arial',
         fontWeight: 'bold'
     },
     esquerdaBottomView: {
@@ -59,8 +57,7 @@ const MariaAntoniaTela5Style = {
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'rgb(190, 190, 190)',
-        fontFamily: 'Arial'
+        backgroundColor: 'rgb(190, 190, 190)'
     },
     frenteTopView: {
         borderTopLeftRadius: 10,
@@ -71,7 +68,6 @@ const MariaAntoniaTela5Style = {
     frenteText: {
         color: 'black',
         fontSize: 24,
-        fontFamily: 'Arial',
         fontWeight: 'bold'
     },
     frenteBottomView: {
@@ -79,8 +75,7 @@ const MariaAntoniaTela5Style = {
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'rgb(190, 190, 190)',
-        fontFamily: 'Arial'
+        backgroundColor: 'rgb(190, 190, 190)'
     },
     direitaTopView: {
         borderTopLeftRadius: 10,
@@ -91,7 +86,6 @@ const MariaAntoniaTela5Style = {
     direitaText: {
         color: 'black',
         fontSize: 24,
-        fontFamily: 'Arial',
         fontWeight: 'bold'
     },
     direitaBottomView: {
@@ -99,7 +93,21 @@ const MariaAntoniaTela5Style = {
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'rgb(190, 190, 190)',
-        fontFamily: 'Arial'
+        backgroundColor: 'rgb(190, 190, 190)'
+    },
+    esquerdaBottomText: {
+        color: 'black',
+        fontSize: 18,
+        textAlign: 'center',
+    },
+    frenteBottomText: {
+        color: 'black',
+        fontSize: 18,
+        textAlign: 'center',
+    },
+    direitaBottomText: {
+        color: 'black',
+        fontSize: 18,
+        textAlign: 'center',
     }
 }

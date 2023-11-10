@@ -13,7 +13,7 @@ export function InfoTela4({ navigation }) {
                 <Text style={InfoTela4Style.prediosText}>O PRÉDIO 30, MAIS CONHECIDO COMO MACKGRAPHE, É ONDE ESTÃO OS LABORATÓRIOS DE PESQUISA DE GRAFENO E NANOTECNOLOGIA.</Text>
             </View>
             <View style={InfoTela4Style.frenteTopView}>
-                <Text style={InfoTela4Style.frenteText}>PRÉDIO 31</Text>
+                <Text style={InfoTela4Style.frenteText}>PRÉDIO 31 - FCI</Text>
             </View>
             <View style={InfoTela4Style.frenteBottomView}>
                 <Text style={InfoTela4Style.prediosText}>O PRÉDIO 31 É O PRÉDIO DE TECNOLOGIA E INFORMAÇÃO. ELE TEM QUATRO ANDARES E PODE SER ACESSADO PELO TÉRREO, POR MEIO DE RAMPA DE ACESSO, OU PELO PRIMEIRO ANDAR, POR MEIO DE ESCADAS. POSSUI UM ELEVADOR E ESCADAS PARA ACESSAR OS ANDARES. NELE TEM LABORATÓRIOS COM NOTEBOOKS ONDE SÃO MINISTRADAS AS AULAS DOS CURSOS DE TECNOLOGIA. NO PRIMEIRO ANDAR FICA A SECRETARIA DA FACULDADE DE TECNOLOGIA E INFORMAÇÃO E A SALA DE PROFESSORES. ALÉM DISSO, NO TERCEIRO ANDAR, TEM UMA DAS ENTRADAS DO LABORATÓRIO DA APPLE ACADEMY.</Text>
@@ -42,7 +42,6 @@ const InfoTela4Style = {
     esquerdaText: {
         color: 'black',
         fontSize: 24,
-        fontFamily: 'Arial',
         fontWeight: 'bold'
     },
     esquerdaBottomView: {
@@ -50,8 +49,7 @@ const InfoTela4Style = {
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'rgb(190, 190, 190)',
-        fontFamily: 'Arial'
+        backgroundColor: 'rgb(190, 190, 190)'
     },
     frenteTopView: {
         borderTopLeftRadius: 10,
@@ -62,7 +60,6 @@ const InfoTela4Style = {
     frenteText: {
         color: 'black',
         fontSize: 24,
-        fontFamily: 'Arial',
         fontWeight: 'bold'
     },
     frenteBottomView: {
@@ -70,8 +67,7 @@ const InfoTela4Style = {
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'rgb(190, 190, 190)',
-        fontFamily: 'Arial'
+        backgroundColor: 'rgb(190, 190, 190)'
     },
     direitaTopView: {
         borderTopLeftRadius: 10,
@@ -82,7 +78,6 @@ const InfoTela4Style = {
     direitaText: {
         color: 'black',
         fontSize: 24,
-        fontFamily: 'Arial',
         fontWeight: 'bold'
     },
     direitaBottomView: {
@@ -90,8 +85,7 @@ const InfoTela4Style = {
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'rgb(190, 190, 190)',
-        fontFamily: 'Arial',
+        backgroundColor: 'rgb(190, 190, 190)'
 
     },
     buttonsView: {
@@ -106,13 +100,11 @@ const InfoTela4Style = {
         lineHeight: 32,
         fontWeight: 'bold',
         paddingVertical: 10,
-        paddingHorizontal: 90,
-        fontFamily: 'Arial'
+        paddingHorizontal: 90
     },
     prediosText: {
         color: 'black',
         fontSize: 18,
-        fontFamily: 'Arial',
         textAlign: 'center'
     }
 }

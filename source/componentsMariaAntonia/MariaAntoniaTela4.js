@@ -1,7 +1,6 @@
 import * as React from "react";
-import { Button, View, Text, Alert } from "react-native";
+import { View, Text, TouchableOpacity, Alert } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-
 
 export function MariaAntoniaTela4({ navigation }) {
     return (
@@ -10,30 +9,28 @@ export function MariaAntoniaTela4({ navigation }) {
                 <Text style={MariaAntoniaTela4Style.esquerdaText}>ESQUERDA</Text>
             </View>
             <View style={MariaAntoniaTela4Style.esquerdaBottomView}>
-                <Button
-                    title='NA ESQUERDA TEMOS O PRÉDIO 31 DE TECNOLOGIA E INFORMAÇÃO.'
-                    color='black'
-                    onPress={() => Alert.alert('VOCÊ CHEGOU NO ACESSO AO PRIMEIRO ANDAR DO PRÉDIO 31. O ACESSO É POR MEIO DE ESCADAS.')}
-                />
-
+                <TouchableOpacity
+                    onPress={() => Alert.alert('VOCÊ CHEGOU NO PRÉDIO 31.')}>
+                    <Text style={MariaAntoniaTela4Style.esquerdaBottomText}>NA ESQUERDA TEMOS O PRÉDIO 31 DE TECNOLOGIA E INFORMAÇÃO.</Text>
+                </TouchableOpacity>
             </View>
             <View style={MariaAntoniaTela4Style.frenteTopView}>
                 <Text style={MariaAntoniaTela4Style.frenteText}>PARA FRENTE</Text>
             </View>
             <View style={MariaAntoniaTela4Style.frenteBottomView}>
-                <Button
-                    title='SEGUINDO EM FRENTE ENCONTRAREMOS ACESSO À LANCHONETE BORGES.'
-                    color='black'
-                    onPress={() => navigation.navigate('MariaAntoniaTela5')} />
+                <TouchableOpacity
+                    onPress={() => navigation.navigate('MariaAntoniaTela5')}>
+                    <Text style={MariaAntoniaTela4Style.frenteBottomText}>SEGUINDO EM FRENTE ENCONTRAREMOS ACESSO À LANCHONETE BORGES.</Text>
+                </TouchableOpacity>
             </View>
             <View style={MariaAntoniaTela4Style.direitaTopView}>
                 <Text style={MariaAntoniaTela4Style.direitaText}>DIREITA</Text>
             </View>
             <View style={MariaAntoniaTela4Style.direitaBottomView}>
-                <Button
-                    title='NA DIREITA TEMOS UMA ÁREA COM MESAS E CADEIRAS DA LANCHONETE BORGES.'
-                    color='black'
-                    onPress={() => navigation.navigate('InfoTela3')} />
+                <TouchableOpacity
+                    onPress={() => navigation.navigate('InfoTela3')}>
+                    <Text style={MariaAntoniaTela4Style.direitaBottomText}>NA DIREITA TEMOS UMA ÁREA COM MESAS E CADEIRAS DA LANCHONETE BORGES.</Text>
+                </TouchableOpacity>
             </View>
         </SafeAreaView>
     );
@@ -53,7 +50,6 @@ const MariaAntoniaTela4Style = {
     esquerdaText: {
         color: 'black',
         fontSize: 24,
-        fontFamily: 'Arial',
         fontWeight: 'bold'
     },
     esquerdaBottomView: {
@@ -61,8 +57,7 @@ const MariaAntoniaTela4Style = {
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'rgb(190, 190, 190)',
-        fontFamily: 'Arial'
+        backgroundColor: 'rgb(190, 190, 190)'
     },
     frenteTopView: {
         borderTopLeftRadius: 10,
@@ -73,7 +68,6 @@ const MariaAntoniaTela4Style = {
     frenteText: {
         color: 'black',
         fontSize: 24,
-        fontFamily: 'Arial',
         fontWeight: 'bold'
     },
     frenteBottomView: {
@@ -81,8 +75,7 @@ const MariaAntoniaTela4Style = {
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'rgb(190, 190, 190)',
-        fontFamily: 'Arial'
+        backgroundColor: 'rgb(190, 190, 190)'
     },
     direitaTopView: {
         borderTopLeftRadius: 10,
@@ -93,7 +86,6 @@ const MariaAntoniaTela4Style = {
     direitaText: {
         color: 'black',
         fontSize: 24,
-        fontFamily: 'Arial',
         fontWeight: 'bold'
     },
     direitaBottomView: {
@@ -101,7 +93,21 @@ const MariaAntoniaTela4Style = {
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'rgb(190, 190, 190)',
-        fontFamily: 'Arial'
+        backgroundColor: 'rgb(190, 190, 190)'
+    },
+    esquerdaBottomText: {
+        color: 'black',
+        fontSize: 18,
+        textAlign: 'center',
+    },
+    frenteBottomText: {
+        color: 'black',
+        fontSize: 18,
+        textAlign: 'center',
+    },
+    direitaBottomText: {
+        color: 'black',
+        fontSize: 18,
+        textAlign: 'center',
     }
 }

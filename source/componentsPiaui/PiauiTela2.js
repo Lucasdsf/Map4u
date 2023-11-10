@@ -1,39 +1,36 @@
 import * as React from "react";
-import { Button, View, Text } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-
 
 export function PiauiTela2({ navigation }) {
     return (
         <SafeAreaView style={ParaFrentePiauiStyle.areaView}>
             <View style={ParaFrentePiauiStyle.esquerdaTopView}>
-                <View>
-                    <Text style={ParaFrentePiauiStyle.esquerdaText}>ESQUERDA</Text>
-                </View>
+                <Text style={ParaFrentePiauiStyle.esquerdaText}>ESQUERDA</Text>
             </View>
             <View style={ParaFrentePiauiStyle.esquerdaBottomView}>
-                <Button
-                    title='SEGUINDO A ESQUERDA, TEMOS O ACESSO AO SUBSOLO DO PRÉDIO 45 DE CIÊNCIAS SOCIAIS E APLICADAS. O ACESSO AO PRÉDIO É POR MEIO DE ESCADAS.'
-                    color='black'
-                    onPress={() => navigation.navigate('InfoTela6')} />
+                <TouchableOpacity
+                    onPress={() => navigation.navigate('InfoTela6')}>
+                    <Text style={ParaFrentePiauiStyle.esquerdaBottomText}>SEGUINDO A ESQUERDA, TEMOS O ACESSO AO SUBSOLO DO PRÉDIO 45 DE CIÊNCIAS SOCIAIS E APLICADAS. O ACESSO AO PRÉDIO É POR MEIO DE ESCADAS.</Text>
+                </TouchableOpacity>
             </View>
             <View style={ParaFrentePiauiStyle.frenteTopView}>
                 <Text style={ParaFrentePiauiStyle.frenteText}>PARA FRENTE</Text>
             </View>
             <View style={ParaFrentePiauiStyle.frenteBottomView}>
-                <Button
-                    title='SEGUINDO EM FRENTE TEMOS ACESSO AO MACKGRAPHE E AO PRÉDIO 29 COM QUADRAS POLIESPORTIVAS E VESTIÁRIOS. ESSA É A DIREÇÃO INDICADA PARA CHEGAR AO PRÉDIO 31.'
-                    color='black'
-                    onPress={() => navigation.navigate('PiauiTela3')} />
+                <TouchableOpacity
+                    onPress={() => navigation.navigate('PiauiTela3')}>
+                    <Text style={ParaFrentePiauiStyle.frenteBottomText}>SEGUINDO EM FRENTE TEMOS ACESSO AO MACKGRAPHE E AO PRÉDIO 29 COM QUADRAS POLIESPORTIVAS E VESTIÁRIOS. ESSA É A DIREÇÃO INDICADA PARA CHEGAR AO PRÉDIO 31.</Text>
+                </TouchableOpacity>
             </View>
             <View style={ParaFrentePiauiStyle.direitaTopView}>
                 <Text style={ParaFrentePiauiStyle.direitaText}>DIREITA</Text>
             </View>
             <View style={ParaFrentePiauiStyle.direitaBottomView}>
-                <Button
-                    title='SEGUINDO À DIREITA, TEMOS ACESSO AOS VESTIÁRIOS, QUADRAS EXTERNAS E AO PRÉDIO 50 DE CIÊNCIAS BIOLÓGICAS E SAÚDE. O ACESSO AO VESTIÁRIO FEMININO É POR MEIO DE ESCADA.'
-                    color='black'
-                    onPress={() => navigation.navigate('InfoTela7')} />
+                <TouchableOpacity
+                    onPress={() => navigation.navigate('InfoTela7')}>
+                    <Text style={ParaFrentePiauiStyle.direitaBottomText}>SEGUINDO À DIREITA, TEMOS ACESSO AOS VESTIÁRIOS, QUADRAS EXTERNAS E AO PRÉDIO 50 DE CIÊNCIAS BIOLÓGICAS E SAÚDE. O ACESSO AO VESTIÁRIO FEMININO É POR MEIO DE ESCADA.</Text>
+                </TouchableOpacity>
             </View>
         </SafeAreaView>
     );
@@ -53,7 +50,6 @@ const ParaFrentePiauiStyle = {
     esquerdaText: {
         color: 'black',
         fontSize: 24,
-        fontFamily: 'Arial',
         fontWeight: 'bold'
     },
     esquerdaBottomView: {
@@ -61,8 +57,7 @@ const ParaFrentePiauiStyle = {
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'rgb(190, 190, 190)',
-        fontFamily: 'Arial'
+        backgroundColor: 'rgb(190, 190, 190)'
     },
     frenteTopView: {
         borderTopLeftRadius: 10,
@@ -73,7 +68,6 @@ const ParaFrentePiauiStyle = {
     frenteText: {
         color: 'black',
         fontSize: 24,
-        fontFamily: 'Arial',
         fontWeight: 'bold'
     },
     frenteBottomView: {
@@ -81,8 +75,7 @@ const ParaFrentePiauiStyle = {
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'rgb(190, 190, 190)',
-        fontFamily: 'Arial'
+        backgroundColor: 'rgb(190, 190, 190)'
     },
     direitaTopView: {
         borderTopLeftRadius: 10,
@@ -93,7 +86,6 @@ const ParaFrentePiauiStyle = {
     direitaText: {
         color: 'black',
         fontSize: 24,
-        fontFamily: 'Arial',
         fontWeight: 'bold'
     },
     direitaBottomView: {
@@ -101,7 +93,21 @@ const ParaFrentePiauiStyle = {
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'rgb(190, 190, 190)',
-        fontFamily: 'Arial'
+        backgroundColor: 'rgb(190, 190, 190)'
+    },
+    esquerdaBottomText: {
+        color: 'black',
+        fontSize: 18,
+        textAlign: 'center',
+    },
+    frenteBottomText: {
+        color: 'black',
+        fontSize: 18,
+        textAlign: 'center',
+    },
+    direitaBottomText: {
+        color: 'black',
+        fontSize: 18,
+        textAlign: 'center',
     }
 }

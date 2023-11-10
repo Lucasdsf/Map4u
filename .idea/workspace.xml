@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad21d664-83e7-447f-a575-cf023af653d6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Map4u.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Map4u.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/components/HomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/source/components/HomeScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/components/Portarias.js" beforeDir="false" afterPath="$PROJECT_DIR$/source/components/Portarias.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/components/Predio31.js" beforeDir="false" afterPath="$PROJECT_DIR$/source/components/Predio31.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/componentsInfo/InfoTela1.js" beforeDir="false" afterPath="$PROJECT_DIR$/source/componentsInfo/InfoTela1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/componentsInfo/InfoTela2.js" beforeDir="false" afterPath="$PROJECT_DIR$/source/componentsInfo/InfoTela2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/componentsInfo/InfoTela3.js" beforeDir="false" afterPath="$PROJECT_DIR$/source/componentsInfo/InfoTela3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/componentsInfo/InfoTela4.js" beforeDir="false" afterPath="$PROJECT_DIR$/source/componentsInfo/InfoTela4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/componentsInfo/InfoTela5.js" beforeDir="false" afterPath="$PROJECT_DIR$/source/componentsInfo/InfoTela5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/componentsInfo/InfoTela6.js" beforeDir="false" afterPath="$PROJECT_DIR$/source/componentsInfo/InfoTela6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/componentsInfo/InfoTela7.js" beforeDir="false" afterPath="$PROJECT_DIR$/source/componentsInfo/InfoTela7.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +44,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Unnamed" type="AndroidRunConfigurationType" factoryName="Android App" nameIsGenerated="true">
+      <module name="Map4u" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />

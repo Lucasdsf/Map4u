@@ -44,7 +44,6 @@ const InfoTela6Style = {
     esquerdaText: {
         color: 'black',
         fontSize: 24,
-        fontFamily: 'Arial',
         fontWeight: 'bold'
     },
     esquerdaBottomView: {
@@ -52,8 +51,7 @@ const InfoTela6Style = {
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'rgb(190, 190, 190)',
-        fontFamily: 'Arial'
+        backgroundColor: 'rgb(190, 190, 190)'
     },
     frenteTopView: {
         borderTopLeftRadius: 10,
@@ -64,7 +62,6 @@ const InfoTela6Style = {
     frenteText: {
         color: 'black',
         fontSize: 24,
-        fontFamily: 'Arial',
         fontWeight: 'bold'
     },
     frenteBottomView: {
@@ -72,8 +69,7 @@ const InfoTela6Style = {
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'rgb(190, 190, 190)',
-        fontFamily: 'Arial'
+        backgroundColor: 'rgb(190, 190, 190)'
     },
     direitaTopView: {
         borderTopLeftRadius: 10,
@@ -84,7 +80,6 @@ const InfoTela6Style = {
     direitaText: {
         color: 'black',
         fontSize: 24,
-        fontFamily: 'Arial',
         fontWeight: 'bold'
     },
     direitaBottomView: {
@@ -92,8 +87,7 @@ const InfoTela6Style = {
         borderBottomRightRadius: 10,
         padding: 16,
         marginBottom: 16,
-        backgroundColor: 'rgb(190, 190, 190)',
-        fontFamily: 'Arial',
+        backgroundColor: 'rgb(190, 190, 190)'
 
     },
     buttonsView: {
@@ -108,13 +102,11 @@ const InfoTela6Style = {
         lineHeight: 32,
         fontWeight: 'bold',
         paddingVertical: 10,
-        paddingHorizontal: 90,
-        fontFamily: 'Arial'
+        paddingHorizontal: 90
     },
     prediosText: {
         color: 'black',
         fontSize: 18,
-        fontFamily: 'Arial',
         textAlign: 'center'
     }
 }
