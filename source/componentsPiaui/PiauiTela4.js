@@ -28,7 +28,7 @@ export function PiauiTela4({ navigation }) {
             </View>
             <View style={PiauiTela4Style.direitaBottomView}>
                 <TouchableOpacity
-                    onPress={() => Alert.alert('VOCÊ CHEGOU NO PRÉDIO 31.')}>
+                    onPress={() => navigation.navigate('PiauiTela5')}>
                     <Text style={PiauiTela4Style.direitaBottomText}>SEGUINDO À DIREITA, TEMOS ACESSO AO PRIMEIRO ANDAR DO PRÉDIO 31 E AO PRÉDIO 33, AMBOS DE TECNOLOGIA E INFORMAÇÃO. O ACESSO É POR MEIO DE ESCADAS.</Text>
                 </TouchableOpacity>
             </View>
