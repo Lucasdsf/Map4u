@@ -43,7 +43,7 @@ function App() {
           component={HomeScreen}
           options={{
             headerBackTitleVisible: false,
-            headerBackTitle: 'Menu',
+            headerBackTitle: 'MENU',
             headerBackTitleVisible: true,
             headerTintColor: 'black'
           }} />
@@ -52,7 +52,7 @@ function App() {
           component={Predio31}
           options={{
             headerTitle: '',
-            headerBackTitle: 'Menu',
+            headerBackTitle: 'MENU',
             headerBackTitleVisible: true,
             headerTintColor: 'black'
           }} />
@@ -61,7 +61,7 @@ function App() {
           component={Portarias}
           options={{
             headerTitle: '',
-            headerBackTitle: 'Menu',
+            headerBackTitle: 'MENU',
             headerBackTitleVisible: true,
             headerTintColor: 'black'
           }} />
@@ -70,7 +70,7 @@ function App() {
           component={PiauiTela1}
           options={{
             headerTitle: '',
-            headerBackTitle: 'Portarias',
+            headerBackTitle: 'PORTARIAS',
             headerBackTitleVisible: true,
             headerTintColor: 'black'
           }} />
@@ -227,7 +227,7 @@ function App() {
             headerBackTitleVisible: true,
             headerTintColor: 'black',
           }} />
-      <Stack.Screen
+        <Stack.Screen
           name='InfoTela8'
           component={InfoTela8}
           options={{
