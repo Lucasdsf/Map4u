@@ -10,7 +10,7 @@ export function MariaAntoniaTela5({ navigation }) {
             </View>
             <View style={MariaAntoniaTela5Style.esquerdaBottomView}>
                 <TouchableOpacity
-                    onPress={() => navigation.navigate('MariaAntoniaTela6')}>
+                    onPress={() => Alert.alert('VOCÊ CHEGOU NO PRÉDIO 31.')}>
                     <Text style={MariaAntoniaTela5Style.esquerdaBottomText}>NA ESQUERDA TEMOS ACESSO AO TÉRREO DO PRÉDIO 31 DE TECNOLOGIA E INFORMAÇÃO QUE É A PARTE DO ENSINO À DISTÂNCIA. O ACESSO É POR MEIO DE RAMPA.</Text>
                 </TouchableOpacity>
             </View>
@@ -19,7 +19,7 @@ export function MariaAntoniaTela5({ navigation }) {
             </View>
             <View style={MariaAntoniaTela5Style.frenteBottomView}>
                 <TouchableOpacity
-                    onPress={() => Alert.alert('VOCÊ CHEGOU NO PRÉDIO 31.')}>
+                    onPress={() => navigation.navigate('MariaAntoniaTela6')}>
                     <Text style={MariaAntoniaTela5Style.frenteBottomText}>SEGUINDO EM FRENTE ENCONTRAREMOS ACESSO AO PRIMEIRO ANDAR DO PRÉDIO 31 E O PRÉDIO 33, AMBOS DE TECNOLOGIA E INFORMAÇÃO.</Text>
                 </TouchableOpacity>
             </View>
@@ -27,8 +27,7 @@ export function MariaAntoniaTela5({ navigation }) {
                 <Text style={MariaAntoniaTela5Style.direitaText}>DIREITA</Text>
             </View>
             <View style={MariaAntoniaTela5Style.direitaBottomView}>
-                <TouchableOpacity
-                    onPress={() => navigation.navigate('Portarias')}>
+                <TouchableOpacity>
                     <Text style={MariaAntoniaTela5Style.direitaBottomText}>NA DIREITA TEMOS O CAMINHO PARA A PORTARIA PIAUÍ.</Text>
                 </TouchableOpacity>
             </View>

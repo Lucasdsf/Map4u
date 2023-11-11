@@ -19,7 +19,7 @@ export function MariaAntoniaTela6({ navigation }) {
             </View>
             <View style={MariaAntoniaTela6Style.frenteBottomView}>
                 <TouchableOpacity
-                    onPress={() => navigation.navigate('InfoTela5')}>
+                    onPress={() => navigation.navigate('InfoTela6')}>
                     <Text style={MariaAntoniaTela6Style.frenteBottomText}>SEGUINDO EM FRENTE ENCONTRAREMOS O PRÉDIO 33 DE TECNOLOGIA E INFORMAÇÃO.</Text>
                 </TouchableOpacity>
             </View>

@@ -6,6 +6,12 @@ import { SafeAreaView } from "react-native-safe-area-context";
 export function InfoTela2({ navigation }) {
     return (
         <SafeAreaView style={InfoTela2Style.areaView}>
+            <View style={InfoTela2Style.esquerdaTopView}>
+                <Text style={InfoTela2Style.esquerdaText}>PRÉDIO 19</Text>
+            </View>
+            <View style={InfoTela2Style.esquerdaBottomView}>
+                <Text style={InfoTela2Style.prediosText}>O PRÉDIO 19 POSSUI SALAS DO ENSINO MÉDIO DA ESCOLA E NO TÉRREO POSSUI UMA PRAÇA DE ALIMENTAÇÃO. O ACESSO É POR MEIO DE ESCADAS E RAMPA.</Text>
+            </View>
             <View style={InfoTela2Style.direitaTopView}>
                 <Text style={InfoTela2Style.direitaText}>PRÉDIO 20</Text>
             </View>
@@ -16,13 +22,7 @@ export function InfoTela2({ navigation }) {
                 <Text style={InfoTela2Style.esquerdaText}>PRÉDIO 23</Text>
             </View>
             <View style={InfoTela2Style.esquerdaBottomView}>
-                <Text style={InfoTela2Style.prediosText}>O PRÉDIO 23 É ONDE TEM A ENFERMARIA E LABORATÓRIOS FACULDADE DE ARQUITETURA E URBANISMO. O ACESSO É POR MEIO DE RAMPAS.</Text>
-            </View>
-            <View style={InfoTela2Style.esquerdaTopView}>
-                <Text style={InfoTela2Style.esquerdaText}>PRÉDIO 24</Text>
-            </View>
-            <View style={InfoTela2Style.esquerdaBottomView}>
-                <Text style={InfoTela2Style.prediosText}>O PRÉDIO 24 É OUTRO PRÉDIO DA ESCOLA DE ENGENHARIA E POSSUI DIVERSOS LABORATÓRIOS. O ACESSO É POR MEIO DE RAMPA E POSSUI ELEVADOR.</Text>
+                <Text style={InfoTela2Style.prediosText}>O PRÉDIO 23 É ONDE TEM A ENFERMARIA E LABORATÓRIOS DE ARQUITETURA E URBANISMO. O ACESSO É POR MEIO DE RAMPAS.</Text>
             </View>
             <View style={InfoTela2Style.buttonsView}>
                 <TouchableOpacity

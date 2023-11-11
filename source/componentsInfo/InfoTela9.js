@@ -1,34 +1,28 @@
 import * as React from "react";
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 
-export function InfoTela7({ navigation }) {
+export function InfoTela9({ navigation }) {
     return (
-        <SafeAreaView style={InfoTela7Style.areaView}>
-            <View style={InfoTela7Style.frenteTopView}>
-                <Text style={InfoTela7Style.frenteText}>PRÉDIO 45</Text>
+        <SafeAreaView style={InfoTela9Style.areaView}>
+            <View style={InfoTela9Style.esquerdaTopView}>
+                <Text style={InfoTela9Style.esquerdaText}>PRÉDIO 50</Text>
             </View>
-            <View style={InfoTela7Style.frenteBottomView}>
-                <Text style={InfoTela7Style.prediosText}>O PRÉDIO 45 É O CENTRO DE CIÊNCIAS SOCIAIS E APLICADAS. ELE TEM SEIS ANDARES E PODE SER ACESSADO ATRAVÉS DO SUBSOLO OU DO PRIMEIRO ANDAR, POR MEIO DE ESCADAS, MAS NO PRÉDIO TEM ELEVADORES E ESCADAS PARA ACESSAR OS OUTROS ANDARES. ALÉM DE SALAS DE AULA, ELE TEM UMA BIBLIOTECA VOLTADA ÀS MATÉRIAS DE CIÊNCIAS SOCIAIS NO SUBSOLO 1 E 2 COM SALAS PRIVATIVAS DE ESTUDO. E, NO TÉRREO, TEM UMA PRAÇA DE ALIMENTAÇÃO.</Text>
+            <View style={InfoTela9Style.esquerdaBottomView}>
+                <Text style={InfoTela9Style.prediosText}>O PRÉDIO 50 É O CENTRO DE CIÊNCIAS BIOLÓGICAS E DA SAÚDE, ALÉM DE SER O PRÉDIO DA CHANCELARIA. O ACESSO É POR MEIO DE RAMPA.</Text>
             </View>
-            <View style={InfoTela7Style.direitaTopView}>
-                <Text style={InfoTela7Style.direitaText}>PRÉDIO 46</Text>
+            <View style={InfoTela9Style.frenteTopView}>
+                <Text style={InfoTela9Style.frenteText}>QUADRAS EXTERNAS</Text>
             </View>
-            <View style={InfoTela7Style.direitaBottomView}>
-                <Text style={InfoTela7Style.prediosText}>O PRÉDIO 46 FAZ PARTE DOS PRÉDIOS DA ESCOLA, O QUAL POSSUI SALAS DE EDUCAÇÃO INFANTIL E FUNDAMENTAL I. ALÉM DISSO, TAMBÉM POSSUI UM AMBULATÓRIO. O ACESSO É POR MEIO DE RAMPA.</Text>
-            </View>
-            <View style={InfoTela7Style.buttonsView}>
-                <TouchableOpacity
-                    onPress={() => navigation.navigate('InfoTela8')}>
-                    <Text style={InfoTela7Style.buttonText}>PRÓXIMO</Text>
-                </TouchableOpacity>
+            <View style={InfoTela9Style.frenteBottomView}>
+                <Text style={InfoTela9Style.prediosText}>SÃO QUADRAS POLIESPORTIVAS ONDE OCORREM TREINOS DE FUTSAL, VÔLEI, HANDEBOL, BASQUETE E RUGBY. O ACESSO É POR MEIO DE RAMPA.</Text>
             </View>
         </SafeAreaView>
     );
 }
 
-const InfoTela7Style = {
+const InfoTela9Style = {
     areaView: {
         flex: 1,
         backgroundColor: 'white'

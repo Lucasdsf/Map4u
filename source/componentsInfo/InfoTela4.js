@@ -6,17 +6,17 @@ import { SafeAreaView } from "react-native-safe-area-context";
 export function InfoTela4({ navigation }) {
     return (
         <SafeAreaView style={InfoTela4Style.areaView}>
+            <View style={InfoTela4Style.frenteTopView}>
+                <Text style={InfoTela4Style.frenteText}>PRÉDIO 28</Text>
+            </View>
+            <View style={InfoTela4Style.frenteBottomView}>
+                <Text style={InfoTela4Style.prediosText}>É UM PRÉDIO DO CURSO DE ENGENHARIA E POSSUI LABORATÓRIOS DE FOTOGRAFIA, ÁUDIO E VÍDEO. O ACESSO É POR MEIO DE ESCADAS OU RAMPA E O PRÉDIO POSSUI ELEVADOR.</Text>
+            </View>
             <View style={InfoTela4Style.direitaTopView}>
                 <Text style={InfoTela4Style.direitaText}>PRÉDIO 29</Text>
             </View>
             <View style={InfoTela4Style.direitaBottomView}>
                 <Text style={InfoTela4Style.prediosText}>O PRÉDIO 29 É COMPOSTO POR DOIS ANDARES, NO TÉRREO TEM VESTIÁRIOS FEMININO E MASCULINO E DUAS QUADRAS DE VÔLEI. NO PRIMEIRO ANDAR, TEM UMA QUADRA POLIESPORTIVA, ELA É USADA PARA TREINOS DE HANDEBOL, FUTSAL E BASQUETE. O PRIMEIRO ANDAR PODE SER ACESSADO POR MEIO DE ESCADA OU ELEVADOR.</Text>
-            </View>
-            <View style={InfoTela4Style.esquerdaTopView}>
-                <Text style={InfoTela4Style.esquerdaText}>PRÉDIO 30 - MACKGRAPHE</Text>
-            </View>
-            <View style={InfoTela4Style.esquerdaBottomView}>
-                <Text style={InfoTela4Style.prediosText}>O PRÉDIO 30, MAIS CONHECIDO COMO MACKGRAPHE, É ONDE ESTÃO OS LABORATÓRIOS DE PESQUISA DE GRAFENO E NANOTECNOLOGIA. O ACESSO É POR MEIO DE RAMPA E O PRÉDIO CONTÉM ELEVADOR.</Text>
             </View>
             <View style={InfoTela4Style.buttonsView}>
                 <TouchableOpacity

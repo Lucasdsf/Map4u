@@ -19,7 +19,7 @@ export function PiauiTela5({ navigation }) {
             </View>
             <View style={PiauiTela5Style.frenteBottomView}>
                 <TouchableOpacity
-                    onPress={() => navigation.navigate('InfoTela5')}>
+                    onPress={() => navigation.navigate('InfoTela6')}>
                     <Text style={PiauiTela5Style.frenteBottomText}>SEGUINDO EM FRENTE TEMOS O PRÉDIO 33 DE TECNOLOGIA E INFORMAÇÃO E O PRÉDIO 35 DE ACHADOS E PERDIDOS.</Text>
                 </TouchableOpacity>
             </View>

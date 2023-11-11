@@ -19,7 +19,7 @@ export function PiauiTela1({ navigation }) {
             </View>
             <View style={PiauiTela1Style.frenteBottomView}>
                 <TouchableOpacity
-                    onPress={() => navigation.navigate('PiauiTela2')}>
+                    onPress={() => navigation.navigate('PiauiTela7')}>
                     <Text style={PiauiTela1Style.frenteBottomText}>SEGUINDO EM FRENTE TEMOS ACESSO AO SUBSOLO DO PRÉDIO 45, ÀS QUADRAS EXTERNAS E VESTIÁRIOS, AO MACKGRAPHE E AO PRÉDIO 29. ESSA É A DIREÇÃO INDICADA PARA CHEGAR AO PRÉDIO 31.</Text>
                 </TouchableOpacity>
             </View>
@@ -28,7 +28,7 @@ export function PiauiTela1({ navigation }) {
             </View>
             <View style={PiauiTela1Style.direitaBottomView}>
                 <TouchableOpacity
-                    onPress={() => navigation.navigate('InfoTela7')}>
+                    onPress={() => navigation.navigate('InfoTela8')}>
                     <Text style={PiauiTela1Style.direitaBottomText}>SEGUINDO À DIREITA, TEMOS ACESSO AOS PRÉDIOS 48 E 49.</Text>
                 </TouchableOpacity>
             </View>

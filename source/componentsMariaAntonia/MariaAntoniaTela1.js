@@ -10,7 +10,7 @@ export function MariaAntoniaTela1({ navigation }) {
             </View>
             <View style={MariaAntoniaTela1Style.direitaBottomView}>
                 <TouchableOpacity
-                    onPress={() => navigation.navigate('MariaAntoniaTela2')}>
+                    onPress={() => navigation.navigate('MariaAntoniaTela3')}>
                     <Text style={MariaAntoniaTela1Style.direitaText}>SEGUINDO À ESQUERDA TEMOS OS PRÉDIOS 24 E 6, AMBOS DE ENGENHARIA. ESSA É A DIREÇÃO INDICADA PARA CHEGAR AO PRÉDIO 31</Text>
                 </TouchableOpacity>
             </View>
@@ -18,8 +18,7 @@ export function MariaAntoniaTela1({ navigation }) {
                 <Text style={MariaAntoniaTela1Style.direitaTopText}>PARA FRENTE</Text>
             </View>
             <View style={MariaAntoniaTela1Style.direitaBottomView}>
-                <TouchableOpacity
-                    onPress={() => navigation.navigate('InfoTela1')}>
+                <TouchableOpacity>
                     <Text style={MariaAntoniaTela1Style.direitaText}>SEGUINDO EM FRENTE TEMOS UM DOS ACESSOS AO PRÉDIO 5 DE ENGENHARIA. O ACESSO É POR MEIO DE ESCADAS.</Text>
                 </TouchableOpacity>
             </View>
@@ -27,8 +26,7 @@ export function MariaAntoniaTela1({ navigation }) {
                 <Text style={MariaAntoniaTela1Style.direitaTopText}>DIREITA</Text>
             </View>
             <View style={MariaAntoniaTela1Style.direitaBottomView}>
-                <TouchableOpacity
-                    onPress={() => navigation.navigate('InfoTela1')}>
+                <TouchableOpacity>
                     <Text style={MariaAntoniaTela1Style.direitaText}>SEGUINDO À DIREITA, TEMOS ESCADAS PARA ACESSAR O PRÉDIO 4 DE DIREITO.</Text>
                 </TouchableOpacity>
             </View>
@@ -43,12 +41,12 @@ const MariaAntoniaTela1Style = {
     direitaTopView: {
         borderTopLeftRadius: 10,
         borderTopRightRadius: 10,
-        padding: 16,
+        padding: 24,
         backgroundColor: 'gray',
     },
     direitaTopText: { // Estilo para o texto do topo
         color: 'black',
-        fontSize: 18,
+        fontSize: 24,
         fontWeight: 'bold'
     },
     direitaText: { // Estilo para o texto da parte inferior

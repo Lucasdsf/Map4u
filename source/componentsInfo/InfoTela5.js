@@ -6,17 +6,17 @@ import { SafeAreaView } from "react-native-safe-area-context";
 export function InfoTela5({ navigation }) {
     return (
         <SafeAreaView style={InfoTela5Style.areaView}>
+            <View style={InfoTela5Style.esquerdaTopView}>
+                <Text style={InfoTela5Style.esquerdaText}>PRÉDIO 30 - MACKGRAPHE</Text>
+            </View>
+            <View style={InfoTela5Style.esquerdaBottomView}>
+                <Text style={InfoTela5Style.prediosText}>O PRÉDIO 30, MAIS CONHECIDO COMO MACKGRAPHE, É ONDE ESTÃO OS LABORATÓRIOS DE PESQUISA DE GRAFENO E NANOTECNOLOGIA. O ACESSO É POR MEIO DE RAMPA E O PRÉDIO CONTÉM ELEVADOR.</Text>
+            </View>
             <View style={InfoTela5Style.frenteTopView}>
                 <Text style={InfoTela5Style.frenteText}>PRÉDIO 31 - FCI</Text>
             </View>
             <View style={InfoTela5Style.frenteBottomView}>
                 <Text style={InfoTela5Style.prediosText}>O PRÉDIO 31 É O PRÉDIO DE TECNOLOGIA E INFORMAÇÃO. ELE TEM QUATRO ANDARES E PODE SER ACESSADO PELO TÉRREO, POR MEIO DE RAMPA DE ACESSO, OU PELO PRIMEIRO ANDAR, POR MEIO DE ESCADAS. POSSUI UM ELEVADOR E ESCADAS PARA ACESSAR OS ANDARES. NELE TEM LABORATÓRIOS COM NOTEBOOKS ONDE SÃO MINISTRADAS AS AULAS DOS CURSOS DE TECNOLOGIA. NO PRIMEIRO ANDAR FICA A SECRETARIA DA FACULDADE DE TECNOLOGIA E INFORMAÇÃO E A SALA DE PROFESSORES. ALÉM DISSO, NO TERCEIRO ANDAR, TEM UMA DAS ENTRADAS DO LABORATÓRIO DA APPLE ACADEMY.</Text>
-            </View>
-            <View style={InfoTela5Style.direitaTopView}>
-                <Text style={InfoTela5Style.direitaText}>PRÉDIO 33</Text>
-            </View>
-            <View style={InfoTela5Style.direitaBottomView}>
-                <Text style={InfoTela5Style.prediosText}>O PRÉDIO 33 É O OUTRO PRÉDIO DE TECNOLOGIA E INFORMAÇÃO. ELE TEM QUATRO ANDARES COM SALAS E LABORATÓRIOS. NO TÉRREO TEM DOIS LABORATÓRIOS DE ENGENHARIA E, NO TERCEIRO ANDAR, FICA UM DOS ACESSOS AO LABORATÓRIO DA APPLE ACADEMY. O PRÉDIO CONTÉM ELEVADOR.</Text>
             </View>
             <View style={InfoTela5Style.buttonsView}>
                 <TouchableOpacity

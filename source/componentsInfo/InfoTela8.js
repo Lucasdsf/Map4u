@@ -1,28 +1,28 @@
 import * as React from "react";
-import { View, Text } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 
 export function InfoTela8({ navigation }) {
     return (
         <SafeAreaView style={InfoTela8Style.areaView}>
+            <View style={InfoTela8Style.direitaTopView}>
+                <Text style={InfoTela8Style.direitaText}>PRÉDIO 48</Text>
+            </View>
+            <View style={InfoTela8Style.direitaBottomView}>
+                <Text style={InfoTela8Style.prediosText}>O PRÉDIO 48 TEM OS DOIS PRIMEIROS ANDARES FOCADO EM AULAS DO COLÉGIO E NO TERCEIRO AULAS DA FACULDADE. ELE POSSUI DUAS ENTRADAS, COM ELEVADOR E RAMPA. NA PARTE DE TRÁS DO PRÉDIO HÁ BANHEIROS COM ACESSIBILIDADE.</Text>
+            </View>
             <View style={InfoTela8Style.esquerdaTopView}>
                 <Text style={InfoTela8Style.esquerdaText}>PRÉDIO 49</Text>
             </View>
             <View style={InfoTela8Style.esquerdaBottomView}>
                 <Text style={InfoTela8Style.prediosText}>O PRÉDIO 49 É O CENTRO DE COMUNICAÇÃO E LETRAS, POSSUI SALAS DO CURSO DE PUBLICIDADE, ENGENHARIA E OUTROS CURSOS DE EXATAS. POSSUI ACESSO POR ESCADAS E ELEVADOR.</Text>
             </View>
-            <View style={InfoTela8Style.esquerdaTopView}>
-                <Text style={InfoTela8Style.esquerdaText}>PRÉDIO 50</Text>
-            </View>
-            <View style={InfoTela8Style.esquerdaBottomView}>
-                <Text style={InfoTela8Style.prediosText}>O PRÉDIO 50 É O CENTRO DE CIÊNCIAS BIOLÓGICAS E DA SAÚDE, ALÉM DE SER O PRÉDIO DA CHANCELARIA. O ACESSO É POR MEIO DE RAMPA.</Text>
-            </View>
-            <View style={InfoTela8Style.frenteTopView}>
-                <Text style={InfoTela8Style.frenteText}>QUADRAS EXTERNAS</Text>
-            </View>
-            <View style={InfoTela8Style.frenteBottomView}>
-                <Text style={InfoTela8Style.prediosText}>SÃO QUADRAS POLIESPORTIVAS ONDE OCORREM TREINOS DE FUTSAL, VÔLEI, HANDEBOL, BASQUETE E RUGBY. O ACESSO É POR MEIO DE RAMPA.</Text>
+            <View style={InfoTela8Style.buttonsView}>
+                <TouchableOpacity
+                    onPress={() => navigation.navigate('InfoTela9')}>
+                    <Text style={InfoTela8Style.buttonText}>PRÓXIMO</Text>
+                </TouchableOpacity>
             </View>
         </SafeAreaView>
     );

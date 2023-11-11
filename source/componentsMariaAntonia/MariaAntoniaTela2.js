@@ -10,7 +10,7 @@ export function MariaAntoniaTela2({ navigation }) {
             </View>
             <View style={MariaAntoniaTela2Style.esquerdaBottomView}>
                 <TouchableOpacity
-                    onPress={() => navigation.navigate('InfoTela2')}>
+                    onPress={() => navigation.navigate('InfoTela3')}>
                     <Text style={MariaAntoniaTela2Style.esquerdaBottomText}>NA ESQUERDA TEMOS ACESSO AO PRÉDIO 24 DE ENGENHARIA. O ACESSO É POR MEIO DE RAMPAS DE ACESSO.</Text>
                 </TouchableOpacity>
             </View>

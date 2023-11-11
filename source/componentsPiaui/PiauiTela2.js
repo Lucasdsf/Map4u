@@ -10,7 +10,7 @@ export function PiauiTela2({ navigation }) {
             </View>
             <View style={ParaFrentePiauiStyle.esquerdaBottomView}>
                 <TouchableOpacity
-                    onPress={() => navigation.navigate('InfoTela6')}>
+                    onPress={() => navigation.navigate('InfoTela7')}>
                     <Text style={ParaFrentePiauiStyle.esquerdaBottomText}>SEGUINDO A ESQUERDA, TEMOS O ACESSO AO SUBSOLO DO PRÉDIO 45 DE CIÊNCIAS SOCIAIS E APLICADAS. O ACESSO AO PRÉDIO É POR MEIO DE ESCADAS.</Text>
                 </TouchableOpacity>
             </View>
@@ -28,7 +28,7 @@ export function PiauiTela2({ navigation }) {
             </View>
             <View style={ParaFrentePiauiStyle.direitaBottomView}>
                 <TouchableOpacity
-                    onPress={() => navigation.navigate('InfoTela8')}>
+                    onPress={() => navigation.navigate('InfoTela9')}>
                     <Text style={ParaFrentePiauiStyle.direitaBottomText}>SEGUINDO À DIREITA, TEMOS ACESSO AOS VESTIÁRIOS, QUADRAS EXTERNAS E AO PRÉDIO 50 DE CIÊNCIAS BIOLÓGICAS E SAÚDE. O ACESSO AO VESTIÁRIO FEMININO É POR MEIO DE ESCADA.</Text>
                 </TouchableOpacity>
             </View>
