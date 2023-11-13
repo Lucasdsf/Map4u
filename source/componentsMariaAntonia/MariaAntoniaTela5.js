@@ -1,5 +1,5 @@
 import * as React from "react";
-import { View, Text, TouchableOpacity, Alert } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export function MariaAntoniaTela5({ navigation }) {
@@ -10,7 +10,7 @@ export function MariaAntoniaTela5({ navigation }) {
             </View>
             <View style={MariaAntoniaTela5Style.esquerdaBottomView}>
                 <TouchableOpacity
-                    onPress={() => Alert.alert('VOCÊ CHEGOU NO PRÉDIO 31.')}>
+                    onPress={() => navigation.navigate('Chegou31')}>
                     <Text style={MariaAntoniaTela5Style.esquerdaBottomText}>NA ESQUERDA TEMOS ACESSO AO TÉRREO DO PRÉDIO 31 DE TECNOLOGIA E INFORMAÇÃO QUE É A PARTE DO ENSINO À DISTÂNCIA. O ACESSO É POR MEIO DE RAMPA.</Text>
                 </TouchableOpacity>
             </View>

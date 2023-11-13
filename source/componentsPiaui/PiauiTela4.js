@@ -1,5 +1,5 @@
 import * as React from "react";
-import { View, Text, TouchableOpacity, Alert } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export function PiauiTela4({ navigation }) {
@@ -19,7 +19,7 @@ export function PiauiTela4({ navigation }) {
             </View>
             <View style={PiauiTela4Style.frenteBottomView}>
                 <TouchableOpacity
-                    onPress={() => Alert.alert('VOCÊ CHEGOU NO PRÉDIO 31.')}>
+                    onPress={() => navigation.navigate('Chegou31')}>
                     <Text style={PiauiTela4Style.frenteBottomText}>SEGUINDO EM FRENTE, TEMOS ACESSO AO TÉRREO DO PRÉDIO 31 QUE É A PARTE DO ENSINO À DISTÂNCIA. O ACESSO É POR MEIO DE RAMPA.</Text>
                 </TouchableOpacity>
             </View>

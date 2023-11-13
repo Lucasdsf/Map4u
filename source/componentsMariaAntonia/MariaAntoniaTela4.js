@@ -1,5 +1,5 @@
 import * as React from "react";
-import { View, Text, TouchableOpacity, Alert } from "react-native";
+import { View, Text, TouchableOpacity} from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export function MariaAntoniaTela4({ navigation }) {

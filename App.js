@@ -24,6 +24,7 @@ import { InfoTela6 } from './source/componentsInfo/InfoTela6';
 import { InfoTela7 } from './source/componentsInfo/InfoTela7';
 import { InfoTela8 } from './source/componentsInfo/InfoTela8';
 import { InfoTela9 } from './source/componentsInfo/InfoTela9';
+import { Chegou31 } from './source/componentsFCI/Chegou31';
 
 
 const Stack = createNativeStackNavigator();
@@ -240,6 +241,15 @@ function App() {
         <Stack.Screen
           name='InfoTela9'
           component={InfoTela9}
+          options={{
+            headerTitle: '',
+            headerBackTitle: 'VOLTAR',
+            headerBackTitleVisible: true,
+            headerTintColor: 'black',
+          }} />
+        <Stack.Screen
+          name='Chegou31'
+          component={Chegou31}
           options={{
             headerTitle: '',
             headerBackTitle: 'VOLTAR',
