@@ -32,17 +32,17 @@ const Chegou31Style = StyleSheet.create({
         alignItems: 'center',
     },
     image: {
-        width: 300, // Set the width of the image
+        width: 300,
         height: 200,
         resizeMode: 'contain'
     },
     textBlock: {
-        width: 350, // Match the width of the text block with the image
+        width: 350,
         padding: 16,
-        backgroundColor: 'gray', // Set the desired background color here
-        alignItems: 'center', // Center the contents inside the block
-        justifyContent: 'center', // Center vertically as well
-        // You may adjust padding or add additional styling as needed
+        backgroundColor: 'gray',
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 10,
     },
     
     esquerdaText: {
@@ -52,7 +52,7 @@ const Chegou31Style = StyleSheet.create({
         textAlign: 'center',
     },
     buttonView: {
-        marginTop: 8, // Only top margin to separate it from the text block
+        marginTop: 8,
         backgroundColor: 'rgb(190, 190, 190)',
         borderRadius: 10,
         padding: 16,
