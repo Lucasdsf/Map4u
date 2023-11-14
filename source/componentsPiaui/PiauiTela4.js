@@ -28,10 +28,15 @@ export function PiauiTela4({ navigation }) {
             </View>
             <View style={PiauiTela4Style.direitaBottomView}>
                 <TouchableOpacity
-                    onPress={() => navigation.navigate('PiauiTela6')}>
+                    onPress={() => navigation.navigate('PiauiTela5')}>
                     <Text style={PiauiTela4Style.direitaBottomText}>SEGUINDO À DIREITA, TEMOS ACESSO AO PRIMEIRO ANDAR DO PRÉDIO 31 E AO PRÉDIO 33, AMBOS DE TECNOLOGIA E INFORMAÇÃO. O ACESSO É POR MEIO DE ESCADAS.</Text>
                 </TouchableOpacity>
             </View>
+            <TouchableOpacity
+                style={PiauiTela4Style.buttonVoltarView}
+                onPress={() => navigation.navigate('MENU PRINCIPAL')}>
+                <Text style={PiauiTela4Style.buttonVoltarText}>VOLTAR AO INICIO</Text>
+            </TouchableOpacity>
         </SafeAreaView>
     );
 }
@@ -109,5 +114,18 @@ const PiauiTela4Style = {
         color: 'black',
         fontSize: 18,
         textAlign: 'center',
-    }
+    },
+    buttonVoltarView: {
+        marginTop: 8,
+        backgroundColor: 'rgb(190, 190, 190)',
+        borderRadius: 10,
+        padding: 16,
+        width: '60%',
+        alignSelf: 'center'
+    },
+    buttonVoltarText: {
+        color: 'black',
+        fontSize: 16,
+        textAlign: 'center',
+    },
 }

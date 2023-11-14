@@ -32,6 +32,11 @@ export function PiauiTela5({ navigation }) {
                     <Text style={PiauiTela5Style.direitaBottomText}>NA DIREITA TEMOS O MACKGRAPHE, PRÉDIO FOCADO EM ESTUDOS DE NANOTECNOLOGIA E GRAFENO.</Text>
                 </TouchableOpacity>
             </View>
+            <TouchableOpacity
+                style={PiauiTela5Style.buttonVoltarView}
+                onPress={() => navigation.navigate('MENU PRINCIPAL')}>
+                <Text style={PiauiTela5Style.buttonVoltarText}>VOLTAR AO INICIO</Text>
+            </TouchableOpacity>
         </SafeAreaView>
     );
 }
@@ -109,5 +114,18 @@ const PiauiTela5Style = {
         color: 'black',
         fontSize: 18,
         textAlign: 'center',
-    }
+    },
+    buttonVoltarView: {
+        marginTop: 8,
+        backgroundColor: 'rgb(190, 190, 190)',
+        borderRadius: 10,
+        padding: 16,
+        width: '60%',
+        alignSelf: 'center'
+    },
+    buttonVoltarText: {
+        color: 'black',
+        fontSize: 16,
+        textAlign: 'center',
+    },
 }

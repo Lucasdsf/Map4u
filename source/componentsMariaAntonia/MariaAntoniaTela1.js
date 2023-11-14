@@ -11,7 +11,7 @@ export function MariaAntoniaTela1({ navigation }) {
             <View style={MariaAntoniaTela1Style.direitaBottomView}>
                 <TouchableOpacity
                     onPress={() => navigation.navigate('MariaAntoniaTela3')}>
-                    <Text style={MariaAntoniaTela1Style.direitaText}>SEGUINDO À ESQUERDA TEMOS OS PRÉDIOS 24 E 6, AMBOS DE ENGENHARIA. ESSA É A DIREÇÃO INDICADA PARA CHEGAR AO PRÉDIO 31</Text>
+                    <Text style={MariaAntoniaTela1Style.direitaText}>SEGUINDO À ESQUERDA TEMOS OS PRÉDIOS 24 E 6, AMBOS DE ENGENHARIA. ESTA É A DIREÇÃO INDICADA PARA CHEGAR AO PRÉDIO 31</Text>
                 </TouchableOpacity>
             </View>
             <View style={MariaAntoniaTela1Style.direitaTopView}>
@@ -30,6 +30,11 @@ export function MariaAntoniaTela1({ navigation }) {
                     <Text style={MariaAntoniaTela1Style.direitaText}>SEGUINDO À DIREITA, TEMOS ESCADAS PARA ACESSAR O PRÉDIO 4 DE DIREITO.</Text>
                 </TouchableOpacity>
             </View>
+            <TouchableOpacity
+                style={MariaAntoniaTela1Style.buttonVoltarView}
+                onPress={() => navigation.navigate('MENU PRINCIPAL')}>
+                <Text style={MariaAntoniaTela1Style.buttonVoltarText}>VOLTAR AO INICIO</Text>
+            </TouchableOpacity>
         </SafeAreaView>
     );
 }
@@ -60,5 +65,18 @@ const MariaAntoniaTela1Style = {
         padding: 16,
         marginBottom: 16,
         backgroundColor: 'rgb(190, 190, 190)'
-    }
+    },
+    buttonVoltarView: {
+        marginTop: 8,
+        backgroundColor: 'rgb(190, 190, 190)',
+        borderRadius: 10,
+        padding: 16,
+        width: '60%',
+        alignSelf: 'center'
+    },
+    buttonVoltarText: {
+        color: 'black',
+        fontSize: 16,
+        textAlign: 'center',
+    },
 }

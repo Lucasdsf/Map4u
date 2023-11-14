@@ -32,6 +32,11 @@ export function PiauiTela2({ navigation }) {
                     <Text style={ParaFrentePiauiStyle.direitaBottomText}>SEGUINDO À DIREITA, TEMOS ACESSO AOS VESTIÁRIOS, QUADRAS EXTERNAS E AO PRÉDIO 50 DE CIÊNCIAS BIOLÓGICAS E SAÚDE. O ACESSO AO VESTIÁRIO FEMININO É POR MEIO DE ESCADA.</Text>
                 </TouchableOpacity>
             </View>
+            <TouchableOpacity
+                style={ParaFrentePiauiStyle.buttonVoltarView}
+                onPress={() => navigation.navigate('MENU PRINCIPAL')}>
+                <Text style={ParaFrentePiauiStyle.buttonVoltarText}>VOLTAR AO INICIO</Text>
+            </TouchableOpacity>
         </SafeAreaView>
     );
 }
@@ -109,5 +114,18 @@ const ParaFrentePiauiStyle = {
         color: 'black',
         fontSize: 18,
         textAlign: 'center',
-    }
+    },
+    buttonVoltarView: {
+        marginTop: 8,
+        backgroundColor: 'rgb(190, 190, 190)',
+        borderRadius: 10,
+        padding: 16,
+        width: '60%',
+        alignSelf: 'center'
+    },
+    buttonVoltarText: {
+        color: 'black',
+        fontSize: 16,
+        textAlign: 'center',
+    },
 }

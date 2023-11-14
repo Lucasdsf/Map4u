@@ -31,6 +31,11 @@ export function PiauiTela3({ navigation }) {
                     <Text style={PiauiTela3Style.direitaBottomText}>SEGUINDO À DIREITA, TEMOS ACESSO AO MACKGRAPHE E AO PRÉDIO 29 COM AS QUADRAS POLIESPORTIVAS E VESTIÁRIOS.</Text>
                 </TouchableOpacity>
             </View>
+            <TouchableOpacity
+                style={PiauiTela3Style.buttonVoltarView}
+                onPress={() => navigation.navigate('MENU PRINCIPAL')}>
+                <Text style={PiauiTela3Style.buttonVoltarText}>VOLTAR AO INICIO</Text>
+            </TouchableOpacity>
         </SafeAreaView>
     );
 }
@@ -108,5 +113,18 @@ const PiauiTela3Style = {
         color: 'black',
         fontSize: 18,
         textAlign: 'center',
-    }
+    },
+    buttonVoltarView: {
+        marginTop: 8,
+        backgroundColor: 'rgb(190, 190, 190)',
+        borderRadius: 10,
+        padding: 16,
+        width: '60%',
+        alignSelf: 'center'
+    },
+    buttonVoltarText: {
+        color: 'black',
+        fontSize: 16,
+        textAlign: 'center',
+    },
 }

@@ -32,6 +32,11 @@ export function MariaAntoniaTela3({ navigation }) {
                     <Text style={MariaAntoniaTela3Style.direitaBottomText}>NA DIREITA TEMOS ACESSO AO PRÉDIO 6 DE ENGENHARIA, NA PARTE DE QUÍMICA E ÀS ESCADAS PARA ACESSAR A STARBUCKS, PRÉDIO 19 QUE TEM UMA PRAÇA DE ALIMENTAÇÃO E O PRÉDIO 20 QUE TEM A QUADRA DE BASQUETE INTERNA.</Text>
                 </TouchableOpacity>
             </View>
+            <TouchableOpacity
+                style={MariaAntoniaTela3Style.buttonVoltarView}
+                onPress={() => navigation.navigate('MENU PRINCIPAL')}>
+                <Text style={MariaAntoniaTela3Style.buttonVoltarText}>VOLTAR AO INICIO</Text>
+            </TouchableOpacity>
         </SafeAreaView>
     );
 }
@@ -109,5 +114,18 @@ const MariaAntoniaTela3Style = {
         color: 'black',
         fontSize: 18,
         textAlign: 'center',
-    }
+    },
+    buttonVoltarView: {
+        marginTop: 8,
+        backgroundColor: 'rgb(190, 190, 190)',
+        borderRadius: 10,
+        padding: 16,
+        width: '60%',
+        alignSelf: 'center'
+    },
+    buttonVoltarText: {
+        color: 'black',
+        fontSize: 16,
+        textAlign: 'center',
+    },
 }

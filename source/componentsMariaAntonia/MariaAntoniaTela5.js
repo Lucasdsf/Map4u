@@ -31,6 +31,11 @@ export function MariaAntoniaTela5({ navigation }) {
                     <Text style={MariaAntoniaTela5Style.direitaBottomText}>NA DIREITA TEMOS O CAMINHO PARA A PORTARIA PIAUÍ.</Text>
                 </TouchableOpacity>
             </View>
+            <TouchableOpacity
+                style={MariaAntoniaTela5Style.buttonVoltarView}
+                onPress={() => navigation.navigate('MENU PRINCIPAL')}>
+                <Text style={MariaAntoniaTela5Style.buttonVoltarText}>VOLTAR AO INICIO</Text>
+            </TouchableOpacity>
         </SafeAreaView>
     );
 }
@@ -108,5 +113,18 @@ const MariaAntoniaTela5Style = {
         color: 'black',
         fontSize: 18,
         textAlign: 'center',
-    }
+    },
+    buttonVoltarView: {
+        marginTop: 8,
+        backgroundColor: 'rgb(190, 190, 190)',
+        borderRadius: 10,
+        padding: 16,
+        width: '60%',
+        alignSelf: 'center'
+    },
+    buttonVoltarText: {
+        color: 'black',
+        fontSize: 16,
+        textAlign: 'center',
+    },
 }

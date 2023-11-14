@@ -20,7 +20,7 @@ export function MariaAntoniaTela2({ navigation }) {
             <View style={MariaAntoniaTela2Style.frenteBottomView}>
                 <TouchableOpacity
                     onPress={() => navigation.navigate('MariaAntoniaTela3')}>
-                    <Text style={MariaAntoniaTela2Style.frenteBottomText}>SEGUINDO EM FRENTE ENCONTRAREMOS ACESSO AO PRÉDIO 25 DOS CURSOS DE DIREITO E ALGUNS LABORATÓRIOS DE ENGENHARIA. O ACESSO É POR MEIO DE RAMPA OU ESCADAS. ESSA É A DIREÇÃO INDICADA PARA CHEGAR AO PRÉDIO 31.</Text>
+                    <Text style={MariaAntoniaTela2Style.frenteBottomText}>SEGUINDO EM FRENTE ENCONTRAREMOS ACESSO AO PRÉDIO 25 DOS CURSOS DE DIREITO E ALGUNS LABORATÓRIOS DE ENGENHARIA. O ACESSO É POR MEIO DE RAMPA OU ESCADAS. ESTA É A DIREÇÃO INDICADA PARA CHEGAR AO PRÉDIO 31.</Text>
                 </TouchableOpacity>
             </View>
             <View style={MariaAntoniaTela2Style.direitaTopView}>
@@ -32,6 +32,11 @@ export function MariaAntoniaTela2({ navigation }) {
                     <Text style={MariaAntoniaTela2Style.direitaBottomText}>NA DIREITA TEMOS O PRÉDIO 6 DE ENGENHARIA.</Text>
                 </TouchableOpacity>
             </View>
+            <TouchableOpacity
+                style={MariaAntoniaTela2Style.buttonVoltarView}
+                onPress={() => navigation.navigate('MENU PRINCIPAL')}>
+                <Text style={MariaAntoniaTela2Style.buttonVoltarText}>VOLTAR AO INICIO</Text>
+            </TouchableOpacity>
         </SafeAreaView>
     );
 }
@@ -109,5 +114,18 @@ const MariaAntoniaTela2Style = {
         color: 'black',
         fontSize: 18,
         textAlign: 'center',
-    }
+    },
+    buttonVoltarView: {
+        marginTop: 8,
+        backgroundColor: 'rgb(190, 190, 190)',
+        borderRadius: 10,
+        padding: 16,
+        width: '60%',
+        alignSelf: 'center'
+    },
+    buttonVoltarText: {
+        color: 'black',
+        fontSize: 16,
+        textAlign: 'center',
+    },
 }

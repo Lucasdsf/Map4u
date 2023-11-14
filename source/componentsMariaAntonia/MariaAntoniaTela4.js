@@ -32,6 +32,11 @@ export function MariaAntoniaTela4({ navigation }) {
                     <Text style={MariaAntoniaTela4Style.direitaBottomText}>NA DIREITA TEMOS UMA ÁREA COM MESAS E CADEIRAS DA LANCHONETE BORGES.</Text>
                 </TouchableOpacity>
             </View>
+            <TouchableOpacity
+                style={MariaAntoniaTela4Style.buttonVoltarView}
+                onPress={() => navigation.navigate('MENU PRINCIPAL')}>
+                <Text style={MariaAntoniaTela4Style.buttonVoltarText}>VOLTAR AO INICIO</Text>
+            </TouchableOpacity>
         </SafeAreaView>
     );
 }
@@ -109,5 +114,18 @@ const MariaAntoniaTela4Style = {
         color: 'black',
         fontSize: 18,
         textAlign: 'center',
-    }
+    },
+    buttonVoltarView: {
+        marginTop: 8,
+        backgroundColor: 'rgb(190, 190, 190)',
+        borderRadius: 10,
+        padding: 16,
+        width: '60%',
+        alignSelf: 'center'
+    },
+    buttonVoltarText: {
+        color: 'black',
+        fontSize: 16,
+        textAlign: 'center',
+    },
 }

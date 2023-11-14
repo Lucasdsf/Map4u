@@ -20,7 +20,7 @@ export function PiauiTela1({ navigation }) {
             <View style={PiauiTela1Style.frenteBottomView}>
                 <TouchableOpacity
                     onPress={() => navigation.navigate('PiauiTela2')}>
-                    <Text style={PiauiTela1Style.frenteBottomText}>SEGUINDO EM FRENTE TEMOS ACESSO AO SUBSOLO DO PRÉDIO 45, ÀS QUADRAS EXTERNAS E VESTIÁRIOS, AO MACKGRAPHE E AO PRÉDIO 29. ESSA É A DIREÇÃO INDICADA PARA CHEGAR AO PRÉDIO 31.</Text>
+                    <Text style={PiauiTela1Style.frenteBottomText}>SEGUINDO EM FRENTE TEMOS ACESSO AO SUBSOLO DO PRÉDIO 45, ÀS QUADRAS EXTERNAS E VESTIÁRIOS, AO MACKGRAPHE E AO PRÉDIO 29. ESTA É A DIREÇÃO INDICADA PARA CHEGAR AO PRÉDIO 31.</Text>
                 </TouchableOpacity>
             </View>
             <View style={PiauiTela1Style.direitaTopView}>
@@ -32,6 +32,11 @@ export function PiauiTela1({ navigation }) {
                     <Text style={PiauiTela1Style.direitaBottomText}>SEGUINDO À DIREITA, TEMOS ACESSO AOS PRÉDIOS 48 E 49.</Text>
                 </TouchableOpacity>
             </View>
+            <TouchableOpacity
+                style={PiauiTela1Style.buttonVoltarView}
+                onPress={() => navigation.navigate('MENU PRINCIPAL')}>
+                <Text style={PiauiTela1Style.buttonVoltarText}>VOLTAR AO INICIO</Text>
+            </TouchableOpacity>
         </SafeAreaView>
     );
 }
@@ -109,5 +114,18 @@ const PiauiTela1Style = {
         color: 'black',
         fontSize: 18,
         textAlign: 'center',
-    }
+    },
+    buttonVoltarView: {
+        marginTop: 8,
+        backgroundColor: 'rgb(190, 190, 190)',
+        borderRadius: 10,
+        padding: 16,
+        width: '60%',
+        alignSelf: 'center'
+    },
+    buttonVoltarText: {
+        color: 'black',
+        fontSize: 16,
+        textAlign: 'center',
+    },
 }
