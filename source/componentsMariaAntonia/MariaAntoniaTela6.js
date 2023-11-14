@@ -127,5 +127,6 @@ const MariaAntoniaTela6Style = {
         color: 'black',
         fontSize: 16,
         textAlign: 'center',
-    },
+        fontWeight: 'bold'
+    }
 }

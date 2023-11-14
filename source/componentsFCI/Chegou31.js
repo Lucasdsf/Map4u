@@ -62,5 +62,6 @@ const Chegou31Style = StyleSheet.create({
         color: 'black',
         fontSize: 16,
         textAlign: 'center',
-    },
+        fontWeight: 'bold'
+    }
 });

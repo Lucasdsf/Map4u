@@ -1,5 +1,5 @@
 import * as React from "react";
-import { View, Text } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 
@@ -18,6 +18,11 @@ export function InfoTela9({ navigation }) {
             <View style={InfoTela9Style.frenteBottomView}>
                 <Text style={InfoTela9Style.prediosText}>SÃO QUADRAS POLIESPORTIVAS ONDE OCORREM TREINOS DE FUTSAL, VÔLEI, HANDEBOL, BASQUETE E RUGBY. O ACESSO É POR MEIO DE RAMPA.</Text>
             </View>
+            <TouchableOpacity
+                style={InfoTela9Style.buttonVoltarView}
+                onPress={() => navigation.navigate('MENU PRINCIPAL')}>
+                <Text style={InfoTela9Style.buttonVoltarText}>VOLTAR AO INICIO</Text>
+            </TouchableOpacity>
         </SafeAreaView>
     );
 }
@@ -100,5 +105,19 @@ const InfoTela9Style = {
         color: 'black',
         fontSize: 18,
         textAlign: 'center'
+    },
+    buttonVoltarView: {
+        marginTop: 8,
+        backgroundColor: 'rgb(190, 190, 190)',
+        borderRadius: 10,
+        padding: 16,
+        width: '60%',
+        alignSelf: 'center'
+    },
+    buttonVoltarText: {
+        color: 'black',
+        fontSize: 16,
+        textAlign: 'center',
+        fontWeight: 'bold'
     }
 }
