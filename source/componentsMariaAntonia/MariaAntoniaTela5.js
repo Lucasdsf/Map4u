@@ -6,7 +6,9 @@ export function MariaAntoniaTela5({ navigation }) {
     return (
         <SafeAreaView style={MariaAntoniaTela5Style.areaView}>
             <View style={MariaAntoniaTela5Style.esquerdaTopView}>
-                <Text style={MariaAntoniaTela5Style.esquerdaText}>ESQUERDA</Text>
+                <Text chableOpacity
+                    onPress={() => navigation.navigate('Chegou31')}
+                    style={MariaAntoniaTela5Style.esquerdaText}>ESQUERDA</Text>
             </View>
             <View style={MariaAntoniaTela5Style.esquerdaBottomView}>
                 <TouchableOpacity
@@ -15,7 +17,8 @@ export function MariaAntoniaTela5({ navigation }) {
                 </TouchableOpacity>
             </View>
             <View style={MariaAntoniaTela5Style.frenteTopView}>
-                <Text style={MariaAntoniaTela5Style.frenteText}>PARA FRENTE</Text>
+                <Text onPress={() => navigation.navigate('MariaAntoniaTela6')}
+                    style={MariaAntoniaTela5Style.frenteText}>PARA FRENTE</Text>
             </View>
             <View style={MariaAntoniaTela5Style.frenteBottomView}>
                 <TouchableOpacity

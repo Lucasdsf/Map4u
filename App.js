@@ -62,7 +62,7 @@ function App() {
           name="Portarias"
           component={Portarias}
           options={{
-            headerTitle: '',
+            headerTitle: 'PORTARIAS',
             headerBackTitle: 'MENU',
             headerBackTitleVisible: true,
             headerTintColor: 'black'
@@ -71,7 +71,7 @@ function App() {
           name="PiauiTela1"
           component={PiauiTela1}
           options={{
-            headerTitle: '',
+            headerTitle: 'ESCOLHA UMA DIREÇÃO',
             headerBackTitle: 'PORTARIAS',
             headerBackTitleVisible: true,
             headerTintColor: 'black'
@@ -80,7 +80,7 @@ function App() {
           name="PiauiTela2"
           component={PiauiTela2}
           options={{
-            headerTitle: '',
+            headerTitle: 'ESCOLHA UMA DIREÇÃO',
             headerBackTitle: 'VOLTAR',
             headerBackTitleVisible: true,
             headerTintColor: 'black'
@@ -89,7 +89,7 @@ function App() {
           name="PiauiTela3"
           component={PiauiTela3}
           options={{
-            headerTitle: '',
+            headerTitle: 'ESCOLHA UMA DIREÇÃO',
             headerBackTitle: 'VOLTAR',
             headerBackTitleVisible: true,
             headerTintColor: 'black'
@@ -98,7 +98,7 @@ function App() {
           name="PiauiTela4"
           component={PiauiTela4}
           options={{
-            headerTitle: '',
+            headerTitle: 'ESCOLHA UMA DIREÇÃO',
             headerBackTitle: 'VOLTAR',
             headerBackTitleVisible: true,
             headerTintColor: 'black'
@@ -107,7 +107,7 @@ function App() {
           name="PiauiTela5"
           component={PiauiTela5}
           options={{
-            headerTitle: '',
+            headerTitle: 'ESCOLHA UMA DIREÇÃO',
             headerBackTitle: 'VOLTAR',
             headerBackTitleVisible: true,
             headerTintColor: 'black'
@@ -116,7 +116,7 @@ function App() {
           name="MariaAntoniaTela1"
           component={MariaAntoniaTela1}
           options={{
-            headerTitle: '',
+            headerTitle: 'ESCOLHA UMA DIREÇÃO',
             headerBackTitle: 'VOLTAR',
             headerBackTitleVisible: true,
             headerTintColor: 'black'
@@ -125,7 +125,7 @@ function App() {
           name="MariaAntoniaTela2"
           component={MariaAntoniaTela2}
           options={{
-            headerTitle: '',
+            headerTitle: 'ESCOLHA UMA DIREÇÃO',
             headerBackTitle: 'VOLTAR',
             headerBackTitleVisible: true,
             headerTintColor: 'black'
@@ -134,7 +134,7 @@ function App() {
           name="MariaAntoniaTela3"
           component={MariaAntoniaTela3}
           options={{
-            headerTitle: '',
+            headerTitle: 'ESCOLHA UMA DIREÇÃO',
             headerBackTitle: 'VOLTAR',
             headerBackTitleVisible: true,
             headerTintColor: 'black'
@@ -143,7 +143,7 @@ function App() {
           name='MariaAntoniaTela4'
           component={MariaAntoniaTela4}
           options={{
-            headerTitle: '',
+            headerTitle: 'ESCOLHA UMA DIREÇÃO',
             headerBackTitle: 'VOLTAR',
             headerBackTitleVisible: true,
             headerTintColor: 'black'
@@ -152,7 +152,7 @@ function App() {
           name='MariaAntoniaTela5'
           component={MariaAntoniaTela5}
           options={{
-            headerTitle: '',
+            headerTitle: 'ESCOLHA UMA DIREÇÃO',
             headerBackTitle: 'VOLTAR',
             headerBackTitleVisible: true,
             headerTintColor: 'black'
@@ -161,7 +161,7 @@ function App() {
           name='MariaAntoniaTela6'
           component={MariaAntoniaTela6}
           options={{
-            headerTitle: '',
+            headerTitle: 'ESCOLHA UMA DIREÇÃO',
             headerBackTitle: 'VOLTAR',
             headerBackTitleVisible: true,
             headerTintColor: 'black'
@@ -170,7 +170,7 @@ function App() {
           name='InfoTela1'
           component={InfoTela1}
           options={{
-            headerTitle: '',
+            headerTitle: 'INFORMAÇÕES',
             headerBackTitle: 'VOLTAR',
             headerBackTitleVisible: true,
             headerTintColor: 'black'
@@ -179,7 +179,7 @@ function App() {
           name='InfoTela2'
           component={InfoTela2}
           options={{
-            headerTitle: '',
+            headerTitle: 'INFORMAÇÕES',
             headerBackTitle: 'VOLTAR',
             headerBackTitleVisible: true,
             headerTintColor: 'black'
@@ -188,7 +188,7 @@ function App() {
           name='InfoTela3'
           component={InfoTela3}
           options={{
-            headerTitle: '',
+            headerTitle: 'INFORMAÇÕES',
             headerBackTitle: 'VOLTAR',
             headerBackTitleVisible: true,
             headerTintColor: 'black'
@@ -197,7 +197,7 @@ function App() {
           name='InfoTela4'
           component={InfoTela4}
           options={{
-            headerTitle: '',
+            headerTitle: 'INFORMAÇÕES',
             headerBackTitle: 'VOLTAR',
             headerBackTitleVisible: true,
             headerTintColor: 'black'
@@ -206,7 +206,7 @@ function App() {
           name='InfoTela5'
           component={InfoTela5}
           options={{
-            headerTitle: '',
+            headerTitle: 'INFORMAÇÕES',
             headerBackTitle: 'VOLTAR',
             headerBackTitleVisible: true,
             headerTintColor: 'black'
@@ -215,7 +215,7 @@ function App() {
           name='InfoTela6'
           component={InfoTela6}
           options={{
-            headerTitle: '',
+            headerTitle: 'INFORMAÇÕES',
             headerBackTitle: 'VOLTAR',
             headerBackTitleVisible: true,
             headerTintColor: 'black',
@@ -224,7 +224,7 @@ function App() {
           name='InfoTela7'
           component={InfoTela7}
           options={{
-            headerTitle: '',
+            headerTitle: 'INFORMAÇÕES',
             headerBackTitle: 'VOLTAR',
             headerBackTitleVisible: true,
             headerTintColor: 'black',
@@ -233,7 +233,7 @@ function App() {
           name='InfoTela8'
           component={InfoTela8}
           options={{
-            headerTitle: '',
+            headerTitle: 'INFORMAÇÕES',
             headerBackTitle: 'VOLTAR',
             headerBackTitleVisible: true,
             headerTintColor: 'black',
@@ -242,7 +242,7 @@ function App() {
           name='InfoTela9'
           component={InfoTela9}
           options={{
-            headerTitle: '',
+            headerTitle: 'INFORMAÇÕES',
             headerBackTitle: 'VOLTAR',
             headerBackTitleVisible: true,
             headerTintColor: 'black',
@@ -251,7 +251,7 @@ function App() {
           name='Chegou31'
           component={Chegou31}
           options={{
-            headerTitle: '',
+            headerTitle: 'PRÉDIO 31',
             headerBackTitle: 'VOLTAR',
             headerBackTitleVisible: true,
             headerTintColor: 'black',

@@ -6,7 +6,7 @@ export function Predio31({ navigation }) {
         <SafeAreaView style={PortariasStyle.PortariasView}>
             <View>
                 <Text style={PortariasStyle.PortariasText}>
-                    EDIFÍCIOS
+                    ESCOLHA UM DESTINO
                 </Text>
             </View>
             <View style={PortariasStyle.buttonsView}>
@@ -14,13 +14,6 @@ export function Predio31({ navigation }) {
                     style={PortariasStyle.button}
                     onPress={() => navigation.navigate('Portarias')}>
                     <Text style={PortariasStyle.buttonText}>PRÉDIO 31 - FCI</Text>
-                </TouchableOpacity>
-            </View>
-            <View style={PortariasStyle.buttonsView}>
-                <TouchableOpacity
-                    style={PortariasStyle.button}
-                    onPress={() => navigation.navigate('InfoTela1')}>
-                    <Text style={PortariasStyle.buttonText1}>OUTROS</Text>
                 </TouchableOpacity>
             </View>
         </SafeAreaView>

@@ -6,7 +6,8 @@ export function MariaAntoniaTela1({ navigation }) {
     return (
         <SafeAreaView style={MariaAntoniaTela1Style.areaView}>
             <View style={MariaAntoniaTela1Style.direitaTopView}>
-                <Text style={MariaAntoniaTela1Style.direitaTopText}>ESQUERDA</Text>
+                <Text onPress={() => navigation.navigate('MariaAntoniaTela3')}
+                    style={MariaAntoniaTela1Style.direitaTopText}>ESQUERDA</Text>
             </View>
             <View style={MariaAntoniaTela1Style.direitaBottomView}>
                 <TouchableOpacity

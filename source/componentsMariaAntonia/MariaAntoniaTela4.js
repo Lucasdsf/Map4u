@@ -1,12 +1,13 @@
 import * as React from "react";
-import { View, Text, TouchableOpacity} from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export function MariaAntoniaTela4({ navigation }) {
     return (
         <SafeAreaView style={MariaAntoniaTela4Style.areaView}>
             <View style={MariaAntoniaTela4Style.esquerdaTopView}>
-                <Text style={MariaAntoniaTela4Style.esquerdaText}>ESQUERDA</Text>
+                <Text onPress={() => navigation.navigate('MariaAntoniaTela5')}
+                    style={MariaAntoniaTela4Style.esquerdaText}>ESQUERDA</Text>
             </View>
             <View style={MariaAntoniaTela4Style.esquerdaBottomView}>
                 <TouchableOpacity
@@ -15,7 +16,8 @@ export function MariaAntoniaTela4({ navigation }) {
                 </TouchableOpacity>
             </View>
             <View style={MariaAntoniaTela4Style.frenteTopView}>
-                <Text style={MariaAntoniaTela4Style.frenteText}>PARA FRENTE</Text>
+                <Text onPress={() => navigation.navigate('MariaAntoniaTela5')}
+                    style={MariaAntoniaTela4Style.frenteText}>PARA FRENTE</Text>
             </View>
             <View style={MariaAntoniaTela4Style.frenteBottomView}>
                 <TouchableOpacity
@@ -24,7 +26,8 @@ export function MariaAntoniaTela4({ navigation }) {
                 </TouchableOpacity>
             </View>
             <View style={MariaAntoniaTela4Style.direitaTopView}>
-                <Text style={MariaAntoniaTela4Style.direitaText}>DIREITA</Text>
+                <Text onPress={() => navigation.navigate('InfoTela3')}
+                    style={MariaAntoniaTela4Style.direitaText}>DIREITA</Text>
             </View>
             <View style={MariaAntoniaTela4Style.direitaBottomView}>
                 <TouchableOpacity

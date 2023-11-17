@@ -12,13 +12,13 @@ export function HomeScreen({ navigation }) {
             <View style={PortariasStyle.buttonsView}>
                 <TouchableOpacity
                     onPress={() => navigation.navigate('Predio31')}>
-                    <Text style={PortariasStyle.buttonText}>INICIAR</Text>
+                    <Text style={PortariasStyle.buttonText}>INICIAR ROTA</Text>
                 </TouchableOpacity>
             </View>
             <View style={PortariasStyle.buttonsView}>
                 <TouchableOpacity
                     onPress={() => navigation.navigate('InfoTela1')}>
-                    <Text style={PortariasStyle.buttonText1}>MAIS INFORMAÇÕES</Text>
+                    <Text style={PortariasStyle.buttonText1}>INFORMAÇÕES SOBRE OS PRÉDIOS</Text>
                 </TouchableOpacity>
             </View>
         </SafeAreaView>

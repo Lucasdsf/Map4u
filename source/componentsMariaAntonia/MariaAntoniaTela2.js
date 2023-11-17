@@ -6,7 +6,8 @@ export function MariaAntoniaTela2({ navigation }) {
     return (
         <SafeAreaView style={MariaAntoniaTela2Style.areaView}>
             <View style={MariaAntoniaTela2Style.esquerdaTopView}>
-                <Text style={MariaAntoniaTela2Style.esquerdaText}>ESQUERDA</Text>
+                <Text onPress={() => navigation.navigate('InfoTela3')}
+                    style={MariaAntoniaTela2Style.esquerdaText}>ESQUERDA</Text>
             </View>
             <View style={MariaAntoniaTela2Style.esquerdaBottomView}>
                 <TouchableOpacity
@@ -15,7 +16,8 @@ export function MariaAntoniaTela2({ navigation }) {
                 </TouchableOpacity>
             </View>
             <View style={MariaAntoniaTela2Style.frenteTopView}>
-                <Text style={MariaAntoniaTela2Style.frenteText}>PARA FRENTE</Text>
+                <Text onPress={() => navigation.navigate('MariaAntoniaTela3')}
+                    style={MariaAntoniaTela2Style.frenteText}>PARA FRENTE</Text>
             </View>
             <View style={MariaAntoniaTela2Style.frenteBottomView}>
                 <TouchableOpacity
@@ -24,7 +26,8 @@ export function MariaAntoniaTela2({ navigation }) {
                 </TouchableOpacity>
             </View>
             <View style={MariaAntoniaTela2Style.direitaTopView}>
-                <Text style={MariaAntoniaTela2Style.direitaText}>DIREITA</Text>
+                <Text onPress={() => navigation.navigate('InfoTela1')}
+                    style={MariaAntoniaTela2Style.direitaText}>DIREITA</Text>
             </View>
             <View style={MariaAntoniaTela2Style.direitaBottomView}>
                 <TouchableOpacity

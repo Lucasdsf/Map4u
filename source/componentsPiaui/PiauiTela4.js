@@ -6,7 +6,8 @@ export function PiauiTela4({ navigation }) {
     return (
         <SafeAreaView style={PiauiTela4Style.areaView}>
             <View style={PiauiTela4Style.esquerdaTopView}>
-                <Text style={PiauiTela4Style.esquerdaText}>ESQUERDA</Text>
+                <Text onPress={() => navigation.navigate('InfoTela3')}
+                    style={PiauiTela4Style.esquerdaText}>ESQUERDA</Text>
             </View>
             <View style={PiauiTela4Style.esquerdaBottomView}>
                 <TouchableOpacity
@@ -15,7 +16,8 @@ export function PiauiTela4({ navigation }) {
                 </TouchableOpacity>
             </View>
             <View style={PiauiTela4Style.frenteTopView}>
-                <Text style={PiauiTela4Style.frenteText}>PARA FRENTE</Text>
+                <Text onPress={() => navigation.navigate('Chegou31')}
+                    style={PiauiTela4Style.frenteText}>PARA FRENTE</Text>
             </View>
             <View style={PiauiTela4Style.frenteBottomView}>
                 <TouchableOpacity
@@ -24,7 +26,8 @@ export function PiauiTela4({ navigation }) {
                 </TouchableOpacity>
             </View>
             <View style={PiauiTela4Style.direitaTopView}>
-                <Text style={PiauiTela4Style.direitaText}>DIREITA</Text>
+                <Text onPress={() => navigation.navigate('PiauiTela5')}
+                    style={PiauiTela4Style.direitaText}>DIREITA</Text>
             </View>
             <View style={PiauiTela4Style.direitaBottomView}>
                 <TouchableOpacity

@@ -14,7 +14,8 @@ export function PiauiTela3({ navigation }) {
                 </TouchableOpacity>
             </View>
             <View style={PiauiTela3Style.frenteTopView}>
-                <Text style={PiauiTela3Style.frenteText}>PARA FRENTE</Text>
+                <Text onPress={() => navigation.navigate('PiauiTela4')}
+                    style={PiauiTela3Style.frenteText}>PARA FRENTE</Text>
             </View>
             <View style={PiauiTela3Style.frenteBottomView}>
                 <TouchableOpacity
@@ -23,7 +24,8 @@ export function PiauiTela3({ navigation }) {
                 </TouchableOpacity>
             </View>
             <View style={PiauiTela3Style.direitaTopView}>
-                <Text style={PiauiTela3Style.direitaText}>DIREITA</Text>
+                <Text onPress={() => navigation.navigate('InfoTela4')}
+                    style={PiauiTela3Style.direitaText}>DIREITA</Text>
             </View>
             <View style={PiauiTela3Style.direitaBottomView}>
                 <TouchableOpacity
