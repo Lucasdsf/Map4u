@@ -15,9 +15,9 @@ export function PiauiTela1({ navigation }) {
                     <Text style={PiauiTela1Style.esquerdaBottomText}>SEGUINDO À ESQUERDA TEMOS ACESSO AO PRÉDIO 46.</Text>
                 </TouchableOpacity>
             </View>
-            <View onPress={() => navigation.navigate('PiauiTela2')}
-                style={PiauiTela1Style.frenteTopView}>
-                <Text style={PiauiTela1Style.frenteText}>PARA FRENTE</Text>
+            <View style={PiauiTela1Style.frenteTopView}>
+                <Text onPress={() => navigation.navigate('PiauiTela2')}
+                    style={PiauiTela1Style.frenteText}>PARA FRENTE</Text>
             </View>
             <View style={PiauiTela1Style.frenteBottomView}>
                 <TouchableOpacity
